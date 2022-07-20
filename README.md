@@ -1,7 +1,7 @@
 # Grupo_6_Mimate
 
 En Mimate ofrecemos distintos servicios y productos de belleza y relax para que tomes un break y te sientas bien.
-Ofrecemos: masajes, manicura, pedicura, tratamientos faciales y corporales, maquillaje, depilación y también vendemos cremas y productos para makeup.
+Ofrecemos: masajes, manicura, pedicura, tratamientos faciales y corporales, maquillaje, depilación y también vendemos cremas y distintos productos para hacerte sentir bien.
 Nos dirigimos a un público desde adolescentes en adelante tanto hombres como mujeres.
 
 **_¿Quiénes somos?_**
