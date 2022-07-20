@@ -1,1 +1,1 @@
-# grupo_6_nombre
+# Grupo_6_Mimate
