@@ -4,3 +4,4 @@ Ofrecemos: masajes, maricuria, pedicuria, tratamientos faciales y corporales, ma
 Nos dirigimos a un publico desde adolescentes en adelante tanto hombres como mujeres.
 Quienes somos?
 Jazmin Ester Romano, tengo 28 años, estudio programacion web y para aplicaciones mobiles.
+Jana Teitelbaum, 26 años,  me gusta aprender cosas nuevas.
