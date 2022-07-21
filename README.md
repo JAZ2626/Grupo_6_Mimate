@@ -8,7 +8,7 @@ Nos dirigimos a un público desde adolescentes en adelante tanto hombres como mu
 
 1. **Jazmin Ester Romano**, tengo 28 años, estudió programación web y aplicaciones móviles. 
 2. **Jana Teitelbaum**, 26 años, edito videos animados, me gusta aprender cosas nuevas. 
-3. **Menuja Teitelbaum**, 
+3. **Menuja Teitelbaum**, 22 años, vivo en Argentina y soy artista. 
 
 
 **_Nos inspiramos en los siguietes reperentes del mercado:_**
