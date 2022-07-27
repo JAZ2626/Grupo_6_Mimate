@@ -1,0 +1,387 @@
+ 	<!DOCTYPE html>
+ 	<html lang="en">
+
+ 	<head>
+ 		<meta charset="utf-8">
+ <!--[if lt IE 9]>
+ 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+ 	<meta name="robots" content="noindex, nofollow">
+ 	<title>MIMATE HOME - Wireframe.cc Preview</title>
+ 	
+ 				<link rel="stylesheet" href="https://cdn.wireframe.cc/style.4.1.min.css" type="text/css" />
+ 			<!-- <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'> -->
+ 		<style>
+ 		.grouped:empty{display: none !important;}
+ 		.preview .wire.hastext .textme {user-select: text;background-image: none !important;}
+ 		#wcc-toolbar-instance {opacity: 0;}
+ 		</style>
+ 		<style type="text/css" >
+ 		  @font-face {
+ 		    font-family: 'Arimo';
+ 		    font-style: normal;
+ 		    font-weight: 400;
+ 		    src: local(''),
+ 		         url('https://cdn.wireframe.cc/fonts/arimo-v17-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2') format('woff2'), 
+ 		         url('https://cdn.wireframe.cc/fonts/arimo-v17-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff') format('woff'); 
+ 		  }
+ 		  @font-face {
+ 		    font-family: 'Arimo';
+ 		    font-style: normal;
+ 		    font-weight: 700;
+ 		    src: local(''),
+ 		         url('https://cdn.wireframe.cc/fonts/arimo-v17-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700.woff2') format('woff2'), 
+ 		         url('https://cdn.wireframe.cc/fonts/arimo-v17-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700.woff') format('woff'); 
+ 		  }
+ 		  @font-face {
+ 		    font-family: 'Arimo';
+ 		    font-style: italic;
+ 		    font-weight: 400;
+ 		    src: local(''),
+ 		         url('https://cdn.wireframe.cc/fonts/arimo-v17-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff2') format('woff2'), 
+ 		         url('https://cdn.wireframe.cc/fonts/arimo-v17-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff') format('woff'); 
+ 		  }
+ 		  @font-face {
+ 		    font-family: 'Arimo';
+ 		    font-style: italic;
+ 		    font-weight: 700;
+ 		    src: local(''),
+ 		         url('https://cdn.wireframe.cc/fonts/arimo-v17-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700italic.woff2') format('woff2'), 
+ 		         url('https://cdn.wireframe.cc/fonts/arimo-v17-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700italic.woff') format('woff'); 
+ 		</style>    
+ </head>
+
+
+ <body class=preview>
+
+
+ 	<div class='container preview'>
+
+
+
+
+ 		
+
+
+
+ 		<!-- <div class="overlay"></div> -->
+
+ 	
+
+
+ 	<div class=supercanvas>
+ 		<!-- <div class="overlay"></div> -->
+
+ 	<div id="canvas-wrap" class="ui-resizable ui-draggable" snappy="0" data-grid="graph" data-template-version="2" data-template="browser" style="left: 171px; margin-left: 0px; width: 1024px; height: 2453px; position: absolute; top: 120px;" data-orientation="false"><span id="browser"><span></span></span><div id="canvas" data-snap-mark-v="e" data-snap-mark-h="s" style="width: 100%; height: 100%;"><div class="page active" id="1" data-pagename="Homepage" data-template="browser" data-page-width="1024" data-page-height="2453" style="height: 100%; width: 100%; display: block;" data-hidden="0" data-orientation="false"><div class="wire hastext text21 rich-text" id="w1658771789175" style="top: 0px; left: 0px; width: 301px; height: 50px; z-index: auto;"><div style="z-index: 2; position: absolute; height: auto; width: 299px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p style="font-size: 42px;"><strong><em>LOGO</em></strong></p></div></div></div><div class="wire hastext text21 rich-text" id="w1658772815263" style="top: 10px; left: 854px; width: 160px; height: 53px; z-index: auto;"><div style="z-index: 3; position: absolute; height: auto; width: 158px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p style="font-size: 22px;">CARRITO DE COMPRAS</p></div></div></div><div class="wire hastext text21 rich-text" id="w1658772853042" style="top: 99px; left: 6px; width: 96px; height: 22px; z-index: auto;"><div style="z-index: 4; position: absolute; height: auto; width: 94px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p><strong><em>INICIO</em></strong></p></div></div></div><div class="wire hastext text21 rich-text" id="w1658773230290" style="top: 99px; left: 120px; width: 181px; height: 22px; z-index: auto;"><div style="z-index: 6; position: absolute; height: auto; width: 179px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p><strong><em>PRODUCTOS</em></strong></p></div></div></div><div class="wire hastext text21 rich-text" id="w1658773248060" style="top: 99px; left: 300px; width: 155px; height: 22px; z-index: auto;"><div style="z-index: 7; position: absolute; height: auto; width: 153px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p><strong><em>SERVICIOS</em></strong></p></div></div></div><div class="wire hastext text21 rich-text" id="w1658773271014" style="top: 99px; left: 454px; width: 328px; height: 22px; z-index: auto;"><div style="z-index: 8; position: absolute; height: auto; width: 326px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p><strong><em>EXPERIENCIA EN MIMATE</em></strong></p></div></div></div><div class="wire hastext text21 rich-text" id="w1658773290306" style="top: 99px; left: 740px; width: 142px; height: 22px; z-index: auto;"><div style="z-index: 9; position: absolute; height: auto; width: 140px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p><strong><em>CONTACTO</em></strong></p></div></div></div><div class="wire" id="w1658773354101" style="top: 201px; left: 219px; width: 663px; height: 259px;" aria-disabled="false"><div style="background: rgb(255, 255, 255); z-index: 11; position: absolute;" class="wirejr box"></div></div><div class="wire hastext text21 rich-text" id="w1658773389374" style="top: 293px; left: 854px; width: 28px; height: 48px; z-index: auto; position: absolute;" aria-disabled="false"><div style="z-index: 12; position: absolute; height: auto; width: 55px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p style="font-size: 42px;"><strong><em>&gt;</em></strong></p></div></div></div><div class="wire hastext text21 rich-text" id="w1658773431985" style="top: 293px; left: 219px; width: 28px; height: 48px; z-index: auto; position: absolute;" aria-disabled="false"><div style="z-index: 13; position: absolute; height: auto; width: 92px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p style="font-size: 42px;"><strong><em>&lt;</em></strong></p></div></div></div><div class="wire hastext text21 rich-text" id="w1658773542359" style="top: 481px; left: 247px; width: 595px; height: 50px; z-index: auto;"><div style="z-index: 15; position: absolute; height: auto; width: 593px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p style="font-size: 42px;">&nbsp;&nbsp;&nbsp;NUESTROS SERVICIOS</p></div></div></div><div class="wire" id="w1658773572987" style="top: 660px; left: 9px; width: 291px; height: 262px;" aria-disabled="false"><div style="background: rgb(255, 255, 255); z-index: 16; position: absolute; border-width: 1px;" class="wirejr image hasSVG"><svg version="1.1" width="289" height="260"><line x1="0" y1="260" x2="289" y2="0" class="line1" stroke="#444" stroke-width="1"></line><line x1="0" y1="0" x2="289" y2="260" class="line2" stroke="#444" stroke-width="1"></line></svg></div></div><div class="wire" id="w1658773586992" style="top: 248px; left: 353px; width: 422px; height: 157px;"><div style="background: rgb(255, 255, 255); z-index: 17; position: absolute; border-width: 1px;" class="wirejr image hasSVG"><svg version="1.1" width="420" height="155"><line x1="0" y1="155" x2="420" y2="0" class="line1" stroke="#444" stroke-width="1"></line><line x1="0" y1="0" x2="420" y2="155" class="line2" stroke="#444" stroke-width="1"></line></svg></div></div><div class="wire" id="w1658773599791" style="top: 660px; left: 358px; width: 309px; height: 262px;" aria-disabled="false"><div style="background: rgb(255, 255, 255); z-index: 18; position: absolute; border-width: 1px;" class="wirejr image hasSVG"><svg version="1.1" width="307" height="260"><line x1="0" y1="260" x2="307" y2="0" class="line1" stroke="#444" stroke-width="1"></line><line x1="0" y1="0" x2="307" y2="260" class="line2" stroke="#444" stroke-width="1"></line></svg></div></div><div class="wire" id="w1658773604862" style="top: 660px; left: 741px; width: 274px; height: 262px; position: absolute;" aria-disabled="false"><div style="background: rgb(255, 255, 255); z-index: 19; position: absolute; border-width: 1px;" class="wirejr image hasSVG"><svg version="1.1" width="272" height="260"><line x1="0" y1="260" x2="272" y2="0" class="line1" stroke="#444" stroke-width="1"></line><line x1="0" y1="0" x2="272" y2="260" class="line2" stroke="#444" stroke-width="1"></line></svg></div></div><div class="wire" id="w1658773661851" style="top: 954px; left: 9px; width: 291px; height: 264px;" aria-disabled="false"><div style="background: rgb(255, 255, 255); z-index: 20; position: absolute; border-width: 1px;" class="wirejr image hasSVG"><svg version="1.1" width="289" height="262"><line x1="0" y1="262" x2="289" y2="0" class="line1" stroke="#444" stroke-width="1"></line><line x1="0" y1="0" x2="289" y2="262" class="line2" stroke="#444" stroke-width="1"></line></svg></div></div><div class="wire" id="w1658773672159" style="top: 954px; left: 358px; width: 309px; height: 264px;" aria-disabled="false"><div style="background: rgb(255, 255, 255); z-index: 21; position: absolute; border-width: 1px;" class="wirejr image hasSVG"><svg version="1.1" width="307" height="262"><line x1="0" y1="262" x2="307" y2="0" class="line1" stroke="#444" stroke-width="1"></line><line x1="0" y1="0" x2="307" y2="262" class="line2" stroke="#444" stroke-width="1"></line></svg></div></div><div class="wire" id="w1658773679852" style="top: 954px; left: 741px; width: 274px; height: 264px;" aria-disabled="false"><div style="background: rgb(255, 255, 255); z-index: 22; position: absolute; border-width: 1px;" class="wirejr image hasSVG"><svg version="1.1" width="272" height="262"><line x1="0" y1="262" x2="272" y2="0" class="line1" stroke="#444" stroke-width="1"></line><line x1="0" y1="0" x2="272" y2="262" class="line2" stroke="#444" stroke-width="1"></line></svg></div></div><div class="wire" id="w1658773717543" style="top: 1262px; left: 9px; width: 291px; height: 258px;" aria-disabled="false"><div style="background: rgb(255, 255, 255); z-index: 23; position: absolute; border-width: 1px;" class="wirejr image hasSVG"><svg version="1.1" width="289" height="256"><line x1="0" y1="256" x2="289" y2="0" class="line1" stroke="#444" stroke-width="1"></line><line x1="0" y1="0" x2="289" y2="256" class="line2" stroke="#444" stroke-width="1"></line></svg></div></div><div class="wire" id="w1658773727285" style="top: 1262px; left: 358px; width: 309px; height: 258px;" aria-disabled="false"><div style="background: rgb(255, 255, 255); z-index: 24; position: absolute; border-width: 1px;" class="wirejr image hasSVG"><svg version="1.1" width="307" height="256"><line x1="0" y1="256" x2="307" y2="0" class="line1" stroke="#444" stroke-width="1"></line><line x1="0" y1="0" x2="307" y2="256" class="line2" stroke="#444" stroke-width="1"></line></svg></div></div><div class="wire" id="w1658773739937" style="top: 1262px; left: 741px; width: 274px; height: 258px; position: absolute;" aria-disabled="false"><div style="background: rgb(255, 255, 255); z-index: 25; position: absolute; border-width: 1px;" class="wirejr image hasSVG"><svg version="1.1" width="272" height="256"><line x1="0" y1="256" x2="272" y2="0" class="line1" stroke="#444" stroke-width="1"></line><line x1="0" y1="0" x2="272" y2="256" class="line2" stroke="#444" stroke-width="1"></line></svg></div></div><div class="wire hastext text21 rich-text" id="w1658773861774" style="top: 539px; left: 291px; width: 470px; height: 43px; z-index: auto;"><div style="z-index: 26; position: absolute; height: auto; width: 468px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p class="ql-align-center">EN MIMATE TE OFRECEMOS LA MEJOR  EXPERIENCIA EN BELLEZA</p></div></div></div><div class="wire hastext text21 rich-text" id="w1658773956586" style="top: 1561px; left: 299px; width: 541px; height: 48px; z-index: auto; position: absolute;" aria-disabled="false"><div style="z-index: 27; position: absolute; height: auto; width: 501px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p style="font-size: 42px;"><strong><em>NUESTROS PRODUCTOS</em></strong></p></div></div></div><div class="wire" id="w1658774012703" style="top: 1703px; left: 9px; width: 291px; height: 280px;"><div style="background: rgb(255, 255, 255); z-index: 28; position: absolute; border-width: 1px;" class="wirejr image hasSVG"><svg version="1.1" width="289" height="278"><line x1="0" y1="278" x2="289" y2="0" class="line1" stroke="#444" stroke-width="1"></line><line x1="0" y1="0" x2="289" y2="278" class="line2" stroke="#444" stroke-width="1"></line></svg></div></div><div class="wire" id="w1658774027849" style="top: 1703px; left: 358px; width: 318px; height: 280px;"><div style="background: rgb(255, 255, 255); z-index: 29; position: absolute; border-width: 1px;" class="wirejr image hasSVG"><svg version="1.1" width="316" height="278"><line x1="0" y1="278" x2="316" y2="0" class="line1" stroke="#444" stroke-width="1"></line><line x1="0" y1="0" x2="316" y2="278" class="line2" stroke="#444" stroke-width="1"></line></svg></div></div><div class="wire" id="w1658774051978" style="top: 1703px; left: 741px; width: 274px; height: 282px;"><div style="background: rgb(255, 255, 255); z-index: 30; position: absolute; border-width: 1px;" class="wirejr image hasSVG"><svg version="1.1" width="272" height="280"><line x1="0" y1="280" x2="272" y2="0" class="line1" stroke="#444" stroke-width="1"></line><line x1="0" y1="0" x2="272" y2="280" class="line2" stroke="#444" stroke-width="1"></line></svg></div></div><div class="wire hastext text21 rich-text" id="w1658774077061" style="top: 2085px; left: 39px; width: 277px; height: 20px; z-index: auto; position: absolute;" aria-disabled="false"><div style="z-index: 31; position: absolute; height: auto; width: 259px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p><strong><em>DESCRIPCION DE LA PAGINA</em></strong></p></div></div></div><div class="wire hastext text21 rich-text" id="w1658774110097" style="top: 2122px; left: 39px; width: 261px; height: 43px; z-index: auto;"><div style="z-index: 32; position: absolute; height: auto; width: 259px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p>Estamos de lunes a viernes de 9:00 am a 20:00 pm.</p></div></div></div><div class="wire" id="w1658774165891" style="top: 2040px; left: 358px; width: 105px; height: 37px;"><div style="background: rgb(255, 255, 255); z-index: 33; position: absolute; border-width: 1px;" class="wirejr image hasSVG"><svg version="1.1" width="103" height="35"><line x1="0" y1="35" x2="103" y2="0" class="line1" stroke="#444" stroke-width="1"></line><line x1="0" y1="0" x2="103" y2="35" class="line2" stroke="#444" stroke-width="1"></line></svg></div></div><div class="wire" id="w1658774172853" style="top: 2035px; left: 580px; width: 102px; height: 46px;" aria-disabled="false"><div style="background: rgb(255, 255, 255); z-index: 34; position: absolute; border-width: 1px;" class="wirejr image hasSVG"><svg version="1.1" width="100" height="44"><line x1="0" y1="44" x2="100" y2="0" class="line1" stroke="#444" stroke-width="1"></line><line x1="0" y1="0" x2="100" y2="44" class="line2" stroke="#444" stroke-width="1"></line></svg></div></div><div class="wire" id="w1658774202740" style="top: 74px; left: 901px; width: 92px; height: 26px;"><div style="background: rgb(255, 255, 255); z-index: 36; position: absolute; border-width: 1px;" class="wirejr image hasSVG"><svg version="1.1" width="90" height="24"><line x1="0" y1="24" x2="90" y2="0" class="line1" stroke="#444" stroke-width="1"></line><line x1="0" y1="0" x2="90" y2="24" class="line2" stroke="#444" stroke-width="1"></line></svg></div></div><div class="wire hastext text21 rich-text" id="w1658774246001" style="top: 2085px; left: 368px; width: 134px; height: 22px; z-index: auto;"><div style="z-index: 37; position: absolute; height: auto; width: 132px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p><strong><em>LINKS</em></strong></p></div></div></div><div class="wire hastext text21 rich-text" id="w1658774263301" style="top: 2122px; left: 358px; width: 144px; height: 22px; z-index: auto;"><div style="z-index: 38; position: absolute; height: auto; width: 142px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p>envios</p></div></div></div><div class="wire hastext text21 rich-text" id="w1658774278146" style="top: 2164px; left: 358px; width: 105px; height: 22px; z-index: auto;"><div style="z-index: 39; position: absolute; height: auto; width: 103px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p>compras</p></div></div></div><div class="wire hastext text21 rich-text" id="w1658774291511" style="top: 2203px; left: 358px; width: 86px; height: 22px; z-index: auto;"><div style="z-index: 40; position: absolute; height: auto; width: 84px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p>contacto</p></div></div></div><div class="wire hastext text21 rich-text" id="w1658774303401" style="top: 2243px; left: 358px; width: 184px; height: 20px; z-index: auto; position: absolute;" aria-disabled="false"><div style="z-index: 41; position: absolute; height: auto; width: 157px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p>preguntas frecuentes</p></div></div></div><div class="wire hastext text21 rich-text" id="w1658774322103" style="top: 2285px; left: 358px; width: 242px; height: 22px; z-index: auto;"><div style="z-index: 42; position: absolute; height: auto; width: 240px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p>como comprar</p></div></div></div><div class="wire hastext text21 rich-text" id="w1658774334502" style="top: 2321px; left: 358px; width: 184px; height: 22px; z-index: auto;"><div style="z-index: 43; position: absolute; height: auto; width: 182px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p>sobre nosotros</p></div></div></div><div class="wire hastext text21 rich-text" id="w1658774356520" style="top: 2085px; left: 605px; width: 153px; height: 22px; z-index: auto;"><div style="z-index: 44; position: absolute; height: auto; width: 151px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p><strong><em>CUENTA</em></strong></p></div></div></div><div class="wire hastext text21 rich-text" id="w1658774375229" style="top: 2122px; left: 605px; width: 100px; height: 22px; z-index: auto;"><div style="z-index: 45; position: absolute; height: auto; width: 98px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p>mi cuenta</p></div></div></div><div class="wire hastext text21 rich-text" id="w1658774393881" style="top: 2164px; left: 605px; width: 111px; height: 22px; z-index: auto;"><div style="z-index: 46; position: absolute; height: auto; width: 109px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p>mi carrito</p></div></div></div><div class="wire hastext text21 rich-text" id="w1658774407006" style="top: 2085px; left: 802px; width: 165px; height: 22px; z-index: auto;"><div style="z-index: 47; position: absolute; height: auto; width: 163px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p><strong><em>CONTACTO</em></strong></p></div></div></div><div class="wire hastext text21 rich-text" id="w1658774435257" style="top: 2122px; left: 802px; width: 99px; height: 22px; z-index: auto;"><div style="z-index: 49; position: absolute; height: auto; width: 97px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p>blog</p></div></div></div><div class="wire hastext text21 rich-text" id="w1658774454125" style="top: 2164px; left: 802px; width: 99px; height: 22px; z-index: auto;"><div style="z-index: 50; position: absolute; height: auto; width: 97px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p>e-mail</p></div></div></div><div class="wire hastext text21 rich-text" id="w1658774468286" style="top: 2214px; left: 802px; width: 99px; height: 22px; z-index: auto;"><div style="z-index: 51; position: absolute; height: auto; width: 97px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p>telefono</p></div></div></div><div class="wire hastext text21 rich-text" id="w1658774490243" style="top: 2261px; left: 802px; width: 141px; height: 20px; z-index: auto; position: absolute;" aria-disabled="false"><div style="z-index: 52; position: absolute; height: auto; width: 97px;" class="wirejr headlinetxt textnew text21 text-arimo"><div class="textme ql-editor" contenteditable="false"><p>formas de pago</p></div></div></div><div class="wire" id="w1658774506564" style="top: 2306px; left: 784px; width: 68px; height: 55px;"><div style="background: rgb(255, 255, 255); z-index: 53; position: absolute; border-width: 1px;" class="wirejr image hasSVG"><svg version="1.1" width="66" height="53"><line x1="0" y1="53" x2="66" y2="0" class="line1" stroke="#444" stroke-width="1"></line><line x1="0" y1="0" x2="66" y2="53" class="line2" stroke="#444" stroke-width="1"></line></svg></div></div><div class="wire" id="w1658774510246" style="top: 2306px; left: 866px; width: 77px; height: 55px;"><div style="background: rgb(255, 255, 255); z-index: 54; position: absolute; border-width: 1px;" class="wirejr image hasSVG"><svg version="1.1" width="75" height="53"><line x1="0" y1="53" x2="75" y2="0" class="line1" stroke="#444" stroke-width="1"></line><line x1="0" y1="0" x2="75" y2="53" class="line2" stroke="#444" stroke-width="1"></line></svg></div></div><div class="wire" id="w1658774519932" style="top: 2309px; left: 957px; width: 58px; height: 52px;"><div style="background: rgb(255, 255, 255); z-index: 55; position: absolute; border-width: 1px;" class="wirejr image hasSVG"><svg version="1.1" width="56" height="50"><line x1="0" y1="50" x2="56" y2="0" class="line1" stroke="#444" stroke-width="1"></line><line x1="0" y1="0" x2="56" y2="50" class="line2" stroke="#444" stroke-width="1"></line></svg></div></div><div class="wire" id="w1658774526838" style="top: 2379px; left: 784px; width: 68px; height: 54px;"><div style="background: rgb(255, 255, 255); z-index: 56; position: absolute; border-width: 1px;" class="wirejr image hasSVG"><svg version="1.1" width="66" height="52"><line x1="0" y1="52" x2="66" y2="0" class="line1" stroke="#444" stroke-width="1"></line><line x1="0" y1="0" x2="66" y2="52" class="line2" stroke="#444" stroke-width="1"></line></svg></div></div><div class="wire" id="w1658774534337" style="top: 2379px; left: 866px; width: 77px; height: 48px;"><div style="background: rgb(255, 255, 255); z-index: 57; position: absolute; border-width: 1px;" class="wirejr image hasSVG"><svg version="1.1" width="75" height="46"><line x1="0" y1="46" x2="75" y2="0" class="line1" stroke="#444" stroke-width="1"></line><line x1="0" y1="0" x2="75" y2="46" class="line2" stroke="#444" stroke-width="1"></line></svg></div></div><div class="wire" id="w1658774538217" style="top: 2379px; left: 957px; width: 58px; height: 48px;"><div style="background: rgb(255, 255, 255); z-index: 58; position: absolute; border-width: 1px;" class="wirejr latestwire image hasSVG"><svg version="1.1" width="56" height="46"><line x1="0" y1="46" x2="56" y2="0" class="line1" stroke="#444" stroke-width="1"></line><line x1="0" y1="0" x2="56" y2="46" class="line2" stroke="#444" stroke-width="1"></line></svg></div></div></div></div></div> 		</div><!-- #supercanvas end -->
+
+
+
+ 	
+
+ 	
+ </div>
+ 		<!-- <div class="overlay"></div> -->
+
+ 	<div id='top' >
+ 			
+ 			<div id="userlogo" class="userlogo left">
+ 				 
+ 			</div>
+
+ 						<span class="pagename-wrap" id='pagename-wrap'>
+
+ 			<span class="left wiretitle" title='MIMATE HOME'>MIMATE HOME</span>
+ 			<span id="project-name-separator" class=left></span>
+ 			<span class="pagename-wrap" ><span id=pagenametop class="pagename-top left " ></span>
+ 			<div id='sitemap-icon' class="sitemap-icon tooltip topicon left single-icon has-helper svg-stroke" data-hint='Sitemap (project structure)' data-link="visible{:!activepage.prevPage}"></div>
+ 	    	</span>
+ 			
+ 			</span>
+ 		<div  class='right mr10'>
+ 			 			<span class="right">
+ 				<div class="topicon right single-icon tooltip saveComment withlabel"  title='Save comments'><p>Save</p></div>
+ 			</span>
+ 			<div class="topicon right single-icon tooltip addComment"  title='Add comment'><p>Add comment</p></div>
+
+ 			
+ 			
+ 			<span class="right">
+ 						<div id='hide-annotation' class='topicon svg-stroke left single-icon' data-hint='Hide annotations'><span>
+ 							<svg  >
+ 									<use xlink:href="../../sprite3.svg#icon-str-hide-comments"></use>
+ 							</svg>
+ 						</span></div>
+ 			</span>
+ 					<span class="right">
+ 						<div id='show-annotation' class='topicon svg-stroke left single-icon' style='display:none;' data-hint='Show annotations'><span>
+ 							<svg  >
+ 									<use xlink:href="../../sprite3.svg#icon-str-comments"></use>
+ 							</svg>
+ 						</span></div>
+ 					</span>
+ 					<span class=right>
+ 				<div id='prev' class='topicon left ' title='Previous page' ><span>
+ 					<svg>
+ 						<use xlink:href="../../sprite3.svg#arrow-left"></use>
+ 					</svg>
+ 				</span></div>
+ 				<div id='next' class='topicon left ' title='Next page' ><span style="transform: rotate(180deg) translate(-.5px,-.5px);;">
+ 					<svg>
+ 						<use xlink:href="../../sprite3.svg#arrow-left"></use>
+ 					</svg>
+ 				</span></div>
+ 			</span>
+ 		</div>
+ 		
+ 	</div>
+
+
+ <div id="sitemap-wrap">
+ 			<div class="pane pane-t">
+ 				<div  class='addpage-wrap' >
+ 					<section class="icon-group">
+ 						
+ 						<span id="pagetools" >
+
+ 						
+ 						<span id=collapse-expand class='pg-btn'>
+ 							<span data-action="expand-all" style='display:none;' data-hint='Expand all'><svg>
+ 								<use xlink:href="../../sprite3.svg#icon-expand-all"></use>
+ 							</svg></span>
+ 							<span data-action="collapse-all" data-hint='Collapse all'><svg>
+ 								<use xlink:href="../../sprite3.svg#icon-expand-all"></use>
+ 							</svg></span>
+ 						</span>
+ 				
+ 					</span>
+ 				</section>
+ 				<span class="left">Pages</span>
+ 			</div>
+
+ 		
+
+ 			<div class='sitemap' ><ol id='sitemaplist' class=dd-list>
+ 			</ol></div>
+
+ 		</div>
+
+
+ 	</div>
+
+
+ 	<script id="pageListTmpl" type="text/x-jsrender">
+ 	{^{for pagesOrder}}
+
+ 	{^{props ~root.getPageObjById(#data) ~data=~root.getPageObjById(#data)}}
+ 	{^{if !#data.prop.parent && !#data.prop.hidden}}
+ 	{^{include ~data tmpl='#pageLiTmpl'/}}
+ 	{{/if}}
+ 	{{/props}}
+ 	{{/for}}
+
+ 	</script>
+
+ 	<script id="pageLiTmpl" type="text/x-jsrender">
+ 	{^{props}}
+ 	{^{if !prop.hidden}}
+
+ 	<li class="dd-item"  data-link="
+ 	class{merge:(prop.children && prop.children.length)  toggle='dd-parent'}
+ 	class{merge:(key == ~root.activepage.id) toggle='li-activepage'}
+ 	data-hidden{>prop.hidden}
+ 	data-pageid{>key}"  >
+
+ 	
+
+ 	<div class="dd-handle" data-link="title{>prop.name}">
+ 	{^{>prop.name}}
+ 	</div>
+
+ 	{^{if prop.children && prop.children.length}}
+ 	<button data-action="collapse" type="button"></button>
+ 	<button data-action="expand" type="button" style="display: none;"></button>
+ 	<ol>
+ 	{^{for prop.children }}
+ 	{^{include ~root.getChildObjById(#data) tmpl='#pageLiTmpl'/}}
+
+ 	{{/for}}
+ 	</ol>
+ 	{{/if}}
+
+ 	</li>
+ 	{{/if}}
+
+ 	{{/props}}
+
+ 	</script>
+
+ 	<script id="pagenameTmpl" type="text/x-jsrender">
+ 	<span data-link="class{merge:activepage.type === 'masterpages' toggle='masterInd'}
+ 	class{merge:activepage.prevPage toggle='master-tomato'}">{^{:getActivepageName()}}</span>
+ 	</script>
+
+ 	<div class="saved">Saved</div><div class="copied">Copied</div><div class="exporting">Exporting</div>
+ 		
+
+ 		<script nonce=39bd6fe05c70ff6087a7be7d491480c1 >
+ 		var previewid = "245213aea568540";
+ 		</script>
+ 		
+ 		<script src="https://cdn.wireframe.cc/js/scripts.2.min.js" ></script>
+
+		<script nonce=39bd6fe05c70ff6087a7be7d491480c1 >
+			if (!window.jQuery) {
+			document.write('<link rel=stylesheet href="../../style.4.1.min.css">')
+			document.write('<script src="../../js/scripts.2.min.js"><\/script>')
+			var fallback = true;
+		}
+		</script>
+
+ 		<script nonce=39bd6fe05c70ff6087a7be7d491480c1 >
+ 		if (!$('.page').length) {
+
+ 			$('.wire , .aa ').not('.grouped .wire').wrapAll('<div class="page" id="1" data-pagename="Homepage"></div>');
+ 			var multipaged = true;
+ 		}
+ 		</script>
+
+ 		 <script src="https://cdn.wireframe.cc/js/jsviews.min.js" type="text/javascript"></script>
+ 		 <!-- <script src="https://cdn.wireframe.cc/js/wireframe.2.109.4.2.min.js" type="text/javascript"></script> -->
+ 		 <script src="https://cdn.wireframe.cc/js/wireframe.2.111.2.min.js" type="text/javascript"></script>
+ 		 <script src="https://cdn.wireframe.cc/js/wireframe.pro.1.2.min.js" type="text/javascript"></script>
+
+		<script nonce=39bd6fe05c70ff6087a7be7d491480c1 >
+			if (fallback) {
+			document.write('<script src="../../js/jsviews.min.js"><\/script>')
+			document.write('<script src="../../js/wireframe.2.111.2.min.js"><\/script>')
+			document.write('<script src="../../js/wireframe.pro.1.2.min.js"><\/script>')
+		}
+		</script>
+
+ 		<script nonce=39bd6fe05c70ff6087a7be7d491480c1 >
+
+
+
+		$('#wcc-toolbar-instance').remove()
+ 		previewMode= true;
+ 		$( "#canvas-wrap").resizable('destroy').center();
+ 		var $canvas = $('#canvas');
+ 		$canvas.addClass('preview');
+ 		$canvas.find('.ui-boxer').boxer('destroy');
+        $canvas.on('click', '.wire[data-link]',gotopage);
+ 		
+ 		$canvas.on('click', function (e) {
+ 			if (!$(e.target).is('.textme')) {highlightclickable();};
+ 		});
+ 		// $canvas.find('.page').hide().first().show();
+
+ 		// make_page_active($canvas.find('.page').first().attr('id'));
+ 		var p_hash = window.location.hash.replace('#', '');
+ 		if (p_hash === '') {
+ 					p_hash = findFirstVisiblePage(app.pagesOrder);
+ 				}
+ 			if ($('.page#' + p_hash).length && $('.page#' + p_hash).attr('data-hidden') !== 'true') {
+ 				make_page_active(p_hash);
+				setTimeout(function() {
+			        $container.scrollTop(0).scrollLeft(0).perfectScrollbar('update');
+
+		    	}, 10);
+ 			}else{
+ 				make_page_active( $canvas.find('.page:not([data-hidden=true]):not(.masterpage)').first().attr('id') );
+ 				setTimeout(function() {
+ 			        $container.scrollTop(60).scrollLeft(0).perfectScrollbar('update');
+
+ 		    	}, 30);
+ 			}
+ 		$('grammarly-btn').remove();
+ 		
+ 		$( document ).ready(function() {
+
+ 			$('.hasSVG').each(function (i,v) {
+ 			    	    var imgwidth = $(this).parent('.wire').width();
+ 			    	    var imgheight = $(this).parent('.wire').height();
+ 			    	    var imgstrk = parseInt($(this).css('borderWidth'));
+ 			    	    $(this).find('.line1').attr('x2', imgwidth - (imgstrk * 2));
+ 			    	    $(this).find('.line1').attr('y1', imgheight - (imgstrk * 2));
+ 			    	    $(this).find('.line2').attr('x2', imgwidth - (imgstrk * 2));
+ 			    	    $(this).find('.line2').attr('y2', imgheight - (imgstrk * 2));
+ 			    	    $(this).find('svg').attr('height', imgheight - (imgstrk * 2));
+ 			    	    $(this).find('svg').attr('width', imgwidth - (imgstrk * 2));
+ 			    	});
+
+ 			$canvas.find('[data-snap-mark-h] , [data-snap-mark-v]').removeAttr('data-snap-mark-h').removeAttr('data-snap-mark-v');
+ 		    highlightclickable();
+
+ 		    (function($) {
+ 		      'use strict';
+ 		      
+ 		      $.fn.removeDuplicates = function() {
+ 		        var $original = $([]);
+ 		        
+ 		        this.each(function(i, el) {
+ 		          var $el = $(el),
+ 		              isDuplicate;
+ 		          
+ 		          $original.each(function(i, orig) {
+ 		            if (el.isEqualNode(orig)) {
+ 		              isDuplicate = true;
+ 		              $el.remove();
+ 		            }
+ 		          });
+ 		          
+ 		          if (!isDuplicate) {
+ 		            $original = $original.add($el);
+ 		          }
+ 		        });
+ 		        
+ 		        return $original;
+ 		      };
+ 		      
+ 		    }(jQuery));
+
+ 		    $('.publiccomment , .aa').removeClass('latestwire').removeDuplicates();
+ 		    
+ 		    positionAA();
+ 		    supercanvas.delegate('.publiccomment .closeannot','click',  function() {
+ 		        var delit = $(this).parent();
+ 		        delit.remove();
+ 		        if (previewMode) {
+ 		            saveComment();
+ 		        }
+ 		    })
+ 		    if($('#canvas-wrap').position().top < 60){$('#canvas-wrap').css('top', 80)}
+ 		    $('.page.selected').removeClass('selected');
+ 		    $canvas.find('[data-snap-mark-h] , [data-snap-mark-v]').removeAttr('data-snap-mark-h').removeAttr('data-snap-mark-v');
+ 		    if(!$('.aa:visible , .publiccomment:visible').length){
+			    $('#hide-annotation').hide();
+			    $('#show-annotation').show();
+			}
+ 		});
+ 		$('#canvas .textme[contenteditable]').removeAttr('contenteditable');
+ 		$('#canvas').find('.page > div').not('.wire').not('.aa').not('.publiccomment').remove();
+ 		if (/mobile/i.test(navigator.userAgent)) {$('.container').removeClass('ps').css('overflow','auto')}
+
+ 		
+
+
+
+ 		</script>
+ 		
+ 		<!-- Piwik -->
+ 		<script type="text/javascript" nonce=39bd6fe05c70ff6087a7be7d491480c1 >
+ 		  var _paq = _paq || [];
+ 		  _paq.push(['disableCookies']);
+ 		  _paq.push(["trackPageView"]);
+ 		  _paq.push(["enableLinkTracking"]);
+
+ 		  (function() {
+ 		    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://wireframe.cc/piwik/";
+ 		    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+ 		    _paq.push(["setSiteId", "2"]);
+ 		    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+ 		    g.defer=true; g.async=true; g.src="https://cdn.wireframe.cc/piwik/piwik.js"; s.parentNode.insertBefore(g,s);
+ 		  })();
+ 		</script>
+ 		<!-- End Piwik Code -->
+
+ 	</body>
+ 	 	</html>
