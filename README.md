@@ -20,3 +20,5 @@ Nos dirigimos a un público desde adolescentes mujeres en adelante también pode
 ● Por la estética que presentan: https://www.tiendabeauty.com.ar/, https://www.ulta.com/, https://draurcera.com.ar/
 
 ● Por las funcionalidades implementadas: https://www.tiendabeauty.com.ar/
+
+● Por la tematica de la pagina : https://naamspa.com/es/
