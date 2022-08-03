@@ -11,9 +11,9 @@ Nos dirigimos a un público desde adolescentes mujeres en adelante también pode
 3. **Menuja Teitelbaum**, 22 años, vivo en Argentina y soy artista. 
 
 
-**_Nos inspiramos en los siguietes reperentes del mercado:_**
+**_Nos inspiramos en los siguientes referentes del mercado:_**
 
-● Por los productos o servicios que ofrecen: https://duederma.mitiendanube.com/, http://www.drarosiflom.com/contacto.html.
+● Por los productos o servicios que ofrecen: https://duederma.mitiendanube.com/, http://www.drarosiflom.com/
 
 ● Por los clientes a los que apuntan: https://draurcera.com.ar/
 
