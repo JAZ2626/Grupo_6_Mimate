@@ -117,6 +117,10 @@ display: none;
         display: flex;
         justify-content: center;
      }
+     
+     .main-navbar ul{
+        display: flex;
+    }
 
     #search-bar{
            display: block;
