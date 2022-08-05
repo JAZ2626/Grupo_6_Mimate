@@ -7,7 +7,7 @@ app.listen(3030, ()=>{
 })
 app.use(express.static('public'));
 app.get('/', (req, res)=>{
-    res.sendFile(path.resolve(__dirname, "./views/home.html"))
+    res.sendFile(path.resolve(__dirname, "./views/index.html"))
 });
 
 app.get('/login', (req, res)=>{
