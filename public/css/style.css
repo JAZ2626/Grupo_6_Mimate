@@ -19,12 +19,10 @@ body {
 }
 
 .hamburguer-button {
-    background-color: #ffffff;
     color: #000000;
     display: block;
     max-width: 50px;
     padding: 8px;
-    border-radius: 8px;
     text-align: center;
     font-size: 18px;
     margin: auto 2px;
@@ -69,14 +67,20 @@ display: none;
 }
 
 .text-bar a{
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     color: #222222;
-    display: inline-block;
     padding: 5px;
     font-size: 18px;
 
 }
 
+.inicio {
+    display: none;
+    margin: 0;
+    padding: 0 5px;
+ }
 .main-navbar {
     display: none;
     background-color: #e1c2b7;
@@ -106,6 +110,11 @@ display: none;
         justify-content: space-between;
 
     }
+
+    .inicio {
+        display: block;
+     }
+
     .text-bar {
         max-width:350px;
         text-align: right;
@@ -116,8 +125,9 @@ display: none;
     .main-navbar {
         display: flex;
         justify-content: center;
+        
      }
-     
+
      .main-navbar ul{
         display: flex;
     }
