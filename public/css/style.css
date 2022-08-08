@@ -18,6 +18,7 @@ body {
     justify-content: space-around;
 }
 
+
 .hamburguer-button {
     color: #000000;
     display: block;
@@ -119,6 +120,8 @@ display: none;
         max-width:350px;
         text-align: right;
     }
+
+
     .hamburguer-button {
         display: none;
     }
