@@ -23,4 +23,6 @@ Nos dirigimos a un público desde adolescentes mujeres en adelante también pode
 
 ● Por la tematica de la pagina: https://naamspa.com/es/
 
-● Este es nuestro trello: https://trello.com/b/f1ffo20i/mimate
+
+
+Este es nuestro trello: https://trello.com/b/f1ffo20i/mimate
