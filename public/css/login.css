@@ -17,9 +17,12 @@ h1{
 .inicio{
     border-radius: 8px;
     border: solid 0.5px black;
-    margin: 25px 80px;
+    margin: 25px auto;
     background-color: #f5f1f07e;
     display: block;
+    width: 50%;
+    
+    
    
     
 }
