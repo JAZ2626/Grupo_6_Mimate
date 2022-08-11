@@ -1,0 +1,77 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Abhaya Libre', serif;
+    background-color: #dbc1b6;
+}
+h1{
+    font-size: 20px;
+    text-align: center;
+
+}
+.inicio{
+    border-radius: 8px;
+    border: solid 0.5px black;
+    margin: 25px 80px;
+    background-color: #f5f1f07e;
+    display: block;
+   
+    
+}
+
+
+.top{
+        background-color: #dbc1b6;
+        height: 15px;
+
+}
+
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #be9485;
+}
+
+.logo{
+    width: 10%;
+    margin-left: 5px;
+    padding: 5px;
+}
+ header .nombre{
+    text-align: left;
+    margin-left: 8px;
+    font-size: 25px;
+ }
+
+.create-form{
+    padding: 20px 15px;
+}
+
+.control-formulario{
+    margin-bottom: 15px;
+}
+
+.control-formulario label{
+    font-style: italic;
+    margin-bottom: 5px;
+    display: inline-block;
+   
+}
+.control{
+    width: 100%;
+    padding: 8px;
+}
+
+.button{
+    background-color: #39b54a;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    font-size: 20px;}

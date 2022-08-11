@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ff9aab0ecf.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="top"> </div>
+        <div class="main-header">
+            <img src="img/WhatsApp Image 2022-07-31 at 10.17.04 PM.jpeg" class="logo">
+            <h3 class="nombre">Mimate</h3>
+        </div>
+    </header>
+    <main>
+        <h1>Hola de nuevo!</h1>
+        <section class="inicio">
+        <form action="/login" method="post" class="create-form">
+            <div class="control-formulario">
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="correo electronico" class="control">
+            </div>
+            <div class="control-formulario">
+                <label>Contraseña:</label>
+                <input type="password" name="password" placeholder="contraseña" class="control" required>
+            </div>
+            <div class="control-formulario">
+                <button type="submit" class="button"> <a href="/"></a>Iniciar Sesion</button> <br>
+                <button> <a href="#"></a>Iniciar con google</button>
+                </div>
+                <div>
+                    <a href="#">No recuerdo mi contraseña</a> <br>
+                    <a href="/register">Crear cuenta</a>
+                </div>
+            
+
+        </form>
+        </section>
+    </main>
 </body>
+
 </html>
