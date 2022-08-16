@@ -185,6 +185,10 @@ article img {
     .articulo1, .articulo2, .articulo3, .articulo4{
        width: 20%;
     }
+    main {
+        max-width: 1000px;
+        margin: auto;
+    }
     .product {
         max-width: 1000px;
         margin: auto;
