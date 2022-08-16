@@ -24,17 +24,17 @@ main {
  background-color: white;
  display: flex;
  flex-wrap: wrap;
+ padding-top: 20px;
 }
 
 .product-img {
     width:90%;
     padding:10px;
-    margin: 20px;
+    margin: auto;
 }
 .detalle {
     width: 90%;
-    padding:10px;
-    margin: 20px;
+    margin: 0 20px;
 }
 .product-name{
     font-size: 16px;
@@ -60,7 +60,7 @@ main {
 #button {
     padding: 3px;
     margin: auto;
-    width: 100%;
+    width: 75%;
 }
 .envio{
     display: flex;
@@ -72,13 +72,13 @@ main {
 }
 .text-cod {
     width: 30%;
-    margin: 5px;
+    margin: 5px 5px 5px 0;
 }
 .calcular {
     width: 40%;
     padding: 2px;
     font-size: 12px;
-    margin: 5px;
+    margin: 5px 0 5px 5px;
 }
 .compartir {
     font-size: 12px;
@@ -89,7 +89,7 @@ main {
 }
 
 .descripicion {
-    width: 50%;
+    margin: 0 20px;
 }
 .descripicion h4 {
     margin:10px 3px;
@@ -150,15 +150,23 @@ article img {
 
 
 
-@media (min-width: 480px) {
+@media (min-width: 420px) {
     .product-img {
         width:55%;
         margin: 0;
 
     }
+    #button {
+        font-size: 14px;
+    }
     .detalle {
         width: 45%;
         margin: 0;
+    }
+    .descripicion {
+        width: 50%;
+        margin: 0;
+        padding: 0 10px;
     }
     .product-relac {
         display: block;
@@ -178,7 +186,7 @@ article img {
     
 }
 
-@media (min-width: 814px) {
+@media (min-width: 768px) {
     .articulo3, .articulo4{
         display: block;
     }
@@ -189,10 +197,23 @@ article img {
         max-width: 1000px;
         margin: auto;
     }
+    .descripicion {
+        width: 50%;
+    }
+    
     .product {
         max-width: 1000px;
         margin: auto;
     }
+
+    .product-name {
+        font-size: 20px;
+    }
+ 
+    .precio {
+        font-size: 16px;
+    }
+
 
 }
 
