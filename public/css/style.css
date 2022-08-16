@@ -18,6 +18,12 @@ body {
     align-content: center;
     justify-content: space-around;
 }
+.lo-nom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 5px;
+}
 
 
 .hamburguer-button {
@@ -31,9 +37,11 @@ body {
 }
 
 .logo {
-    margin: 0 15px;
     padding-bottom: 5px;
     width: 50px;
+}
+.nombre {
+    font-size: 20px;
 }
 
 #buscador {
@@ -53,7 +61,6 @@ body {
 }
 
 #search-bar {
-    display: none;
     background-color: #ebebeb;
     border: solid 0.6px rgb(132, 131, 131);
     border-radius: 3px;
