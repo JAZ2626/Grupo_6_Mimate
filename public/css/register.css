@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Abhaya Libre', serif;
+    background-color: #f5eee8;
+}
+
+h1 {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+p{
+    text-align: center;
+}
+
+.inicio {
+    border-radius: 8px;
+    border: solid 0.5px black;
+    margin: 40px auto 60px;
+    background-color: rgba(255, 255, 255, 0.607);
+    display: flex;
+    width: 60%;
+}
+
+main {
+    background-color: #f5eee8;
+}
+
+/* f5eee8
+e1ccc7
+e1c2b7
+be9485 */
+
+.top {
+    background-color: #e1c2b7;
+    height: 15px;
+    width: 100vw;
+
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #be9485;
+    width: 100vw;
+}
+
+.logo {
+    width: 50px;
+    margin-left: 5px;
+    padding-bottom: 3px;
+}
+
+header .nombre {
+    margin-left: 4px;
+    font-size: 100%;
+}
+
+.create-form {
+    padding: 20px 15px;
+}
+
+.control-formulario {
+    margin-bottom: 15px;
+}
+
+.control-formulario label {
+    /* font-style: italic; */
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.control {
+    width: 100%;
+    padding: 8px;
+    background-color: #f5eee862;
+    border-color: #f5eee862;
+}
+
+.control-formulario2 {
+    text-align: center;
+    margin: 10px;
+    font-size: 85%;
+}
+
+
+.button {
+    background-color: #39b54a;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+footer {
+    background-color: #e1c2b7;
+    padding: 30px;
+    width: 100vw;
+    margin-bottom: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.links-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 80%;
+}
+
+.links-footer h2 {
+    font-size: 100%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .inicio {
+        width: 40vw;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .inicio {
+        width: 30vw;
+    }
+
+}
