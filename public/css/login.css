@@ -1,4 +1,3 @@
-
 * {
     padding: 0;
     margin: 0;
@@ -11,18 +10,19 @@ body {
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
+    margin-top: 30px;
 
 }
 
 .inicio {
     border-radius: 8px;
     border: solid 0.5px black;
-    margin: 20px auto;
+    margin: 40px auto 60px;
     background-color: rgba(255, 255, 255, 0.607);
     display: block;
-    width: 48%;
+    width: 55%;
 }
 
 main {
@@ -46,18 +46,18 @@ be9485 */
     align-items: center;
     justify-content: left;
     background-color: #be9485;
+    width: 100vw;
 }
 
 .logo {
-    width: 10%;
+    width: 50px;
     margin-left: 5px;
-    padding: 5px;
+    padding-bottom: 3px;
 }
 
 header .nombre {
-    text-align: left;
-    margin-left: 8px;
-    font-size: 25px;
+    margin-left: 4px;
+    font-size: 100%;
 }
 
 .create-form {
@@ -72,6 +72,7 @@ header .nombre {
     /* font-style: italic; */
     margin-bottom: 5px;
     display: inline-block;
+    font-size: 20px;
 
 }
 
@@ -81,9 +82,11 @@ header .nombre {
     background-color: #f5eee862;
     border-color: #f5eee862;
 }
+
 .control-formulario2 {
     text-align: center;
     margin: 10px;
+    font-size: 85%;
 }
 
 
@@ -97,29 +100,41 @@ header .nombre {
     margin-bottom: 15px;
 }
 
-footer{
-        background-color: #e1c2b7;
-        padding: 40px;
+footer {
+    background-color: #e1c2b7;
+    padding: 30px;
+    width: 100vw;
+    margin-bottom: 0;
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: space-evenly;
 
 }
-.links-footer{
+
+.links-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 80%;
 }
 
-.links-footer h2{
-    font-size: 18px;
+.links-footer h2 {
+    font-size: 100%;
     text-align: center;
 }
 
-/* @media (min-width: 361px) {
-    .inicio{
+@media (min-width: 768px) {
+    .inicio {
+        width: 40vw;
     }
-    
-} */
+
+}
+
+@media (min-width: 1200px) {
+    .inicio {
+        width: 30vw;
+    }
+
+}

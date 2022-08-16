@@ -1,43 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ff9aab0ecf.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/register.css">
+    <title>Login</title>
 </head>
+
 <body>
-    <header class="main-header">
-        <div class="top-bar">
-            <a href="#" class="hamburguer-button">
-                <i class="fas fa-bars"></i>
-            </a>
+    <header>
+        <div class="top"> </div>
+        <div class="main-header">
             <img src="img/WhatsApp Image 2022-07-31 at 10.17.04 PM.jpeg" class="logo">
             <h3 class="nombre">Mimate</h3>
-
-            <div id="buscador">
-                <p id="search-bar"> Buscar productos, marcas </p>
-                <i id="buscar" class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <ul class=" text-bar">
-                <li><a href="#">
-                        <h6 class="inicio">Inciar seción</h6> <i class="fa-solid fa-right-to-bracket"> </i>
-                    </a> </li>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-            </ul>
         </div>
-
-
-        <nav class="main-navbar">
-            <ul>
-                <li><a href="#"> Inicio </a> </li>
-                <li><a href="#"> Productos </a> </li>
-                <li><a href="#"> Servicios </a> </li>
-                <li><a href="#"> Experiencia en Mimate </a> </li>
-                <li><a href="#"> Contacto </a> </li>
-                <li><a href="#"> <i class="fa-brands fa-whatsapp"></i> </a> </li>
-            </ul>
-        </nav>
     </header>
+    <main>
+        <h1>Crear cuenta</h1>
+        <p>Compra mas rapido y lleva el control de tus pedidos. en un solo lugar!</p>
+        <section class="inicio">
+        <form action="/login" method="post" class="create-form">
+            <div class="control-formulario">
+                <label>Nombre:</label>
+                <input type="text" name="nombre" placeholder="nombre" class="control">
+            </div>
+            <div class="control-formulario">
+                <label>Apellido:</label>
+                <input type="text" name="Apellido" placeholder="Apellido" class="control">
+            </div>
+            <div class="control-formulario">
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="correo electronico" class="control">
+            </div>
+            <div class="control-formulario">
+                <label>Telefono:</label>
+                <input type="tel" name="telefono" placeholder="tel" class="control">
+            </div>
+            <div class="control-formulario">
+                <label>Contraseña:</label>
+                <input type="password" name="password" placeholder="contraseña" class="control" required>
+            </div>
+            <div class="control-formulario">
+                <label>Confirmar contraseña:</label>
+                <input type="password" name="confirmPassword" placeholder="confirmar contraseña" class="control" required>
+            </div>
+            <div class="control-formulario2">
+                <button type="submit" class="button"> <a href="/"></a>Crear cuenta</button> 
+                <p>or</p>
+                <button> <a href="#"></a>Iniciar con google</button>
+                </div>
+                <div class="control-formulario2">
+                    <a href="/login">Ya tienes una cuenta? Inicia sesion</a>      
+
+        </form>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <article class="links-footer">
+                <h2>Titulo</h2>
+                <a href="#">texto</a>
+                <a href="#">texto</a>
+                <a href="#">texto</a>
+            </article>
+            <article class="links-footer">
+                <h2>Titulo</h2>
+                <a href="#">texto</a>
+                <a href="#">texto</a>
+                <a href="#">texto</a>
+            </article>
+            <article class="links-footer">
+                <h2>Titulo</h2>
+                <a href="#">texto</a>
+                <a href="#">texto</a>
+                <a href="#">texto</a>
+            </article>
+            <article class="links-footer">
+                <h2>Contacto</h2>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">E-mail</a></li>
+                    <li><a href="#">Telefono</a></li>
+                    <li><a href="#">Telefono</a></li>
+                </ul>
+            </article>
+        </section>
+    </footer>
 </body>
+
 </html>
