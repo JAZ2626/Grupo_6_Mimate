@@ -26,7 +26,7 @@ p{
     margin: 40px auto 60px;
     background-color: rgba(255, 255, 255, 0.607);
     display: flex;
-    width: 60%;
+    width: 75%;
 }
 
 main {
@@ -68,9 +68,12 @@ header .nombre {
     padding: 20px 15px;
 }
 
+
 .control-formulario {
     margin-bottom: 15px;
 }
+
+
 
 .control-formulario label {
     /* font-style: italic; */
@@ -127,16 +130,22 @@ footer {
     text-align: center;
 }
 
-@media (min-width: 768px) {
-    .inicio {
-        width: 40vw;
+@media (min-width: 420px){
+    .parte-arriba {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
+    .control-formulario {
+        width:47%;
+    }
+
+}
+@media (min-width: 768px){
 
 }
 
 @media (min-width: 1200px) {
-    .inicio {
-        width: 30vw;
-    }
+    
 
 }
