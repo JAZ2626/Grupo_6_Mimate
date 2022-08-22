@@ -20,7 +20,7 @@ p{
     text-align: center;
 }
 
-.inicio {
+.inicio1 {
     border-radius: 8px;
     border: solid 0.5px black;
     margin: 40px auto 60px;
@@ -38,31 +38,6 @@ e1ccc7
 e1c2b7
 be9485 */
 
-.top {
-    background-color: #e1c2b7;
-    height: 15px;
-    width: 100vw;
-
-}
-
-.main-header {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    background-color: #be9485;
-    width: 100vw;
-}
-
-.logo {
-    width: 50px;
-    margin-left: 5px;
-    padding-bottom: 3px;
-}
-
-header .nombre {
-    margin-left: 4px;
-    font-size: 100%;
-}
 
 .create-form {
     padding: 20px 15px;
@@ -146,6 +121,9 @@ footer {
 }
 
 @media (min-width: 1200px) {
-    
+    .main-register {
+        max-width: 1200px;
+        margin: auto;
+    }   
 
 }

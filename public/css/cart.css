@@ -2,132 +2,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Abhaya Libre', serif;
-}
-
-.main-header {
-    background-color: #be9485;
-    margin: 0;
-    padding: 0;
-}
-
-.top-bar {
-    display: flex;
-    text-align: center;
-    align-content: center;
-    justify-content: space-around;
-}
-
-.text-bar a h6,
-.text-bar a i {
-    font-size: 14px;
-}
-
-.lo-nom {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 5px;
-}
-
-
-.hamburguer-button {
-    color: #000000;
-    display: block;
-    max-width: 50px;
-    padding: 8px;
-    text-align: center;
-    font-size: 18px;
-    margin: auto 2px;
-}
-
-.logo {
-    padding-bottom: 5px;
-    width: 50px;
-    display: none;
-}
-
-.nombre, h1{
-    font-size: 20px;
-}
-
-.search-bar {
-    background-color: white;
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 45%;
-
-}
-
-.search-bar input {
-    border: none;
-    width: 85%;
-    font-size: 14px;
-}
-
-.search-icon {
-    border: none;
-    color: #666;
-    background-color: transparent;
-    width: 10%;
-}
-
-.search-icon i {
-    font-size: 12px;
-}
-
-.top-bar ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-}
-
-.text-bar a {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    color: #222222;
-    padding: 5px;
-
-}
-
-.inicio {
-    display: none;
-    margin: 0;
-    padding: 0 5px;
-}
-
-.main-navbar {
-    display: none;
-    background-color: #e1c2b7;
-    margin: 0;
-}
-
-
-.main-navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.main-navbar a {
-    text-decoration: none;
-    color: #222222;
-    display: inline-block;
-    font-size: 16px;
-    padding: 5px 0;
-}
-
 main {
     background-color: #f5eee8;
     font-family: 'Abhaya Libre', serif;
@@ -234,85 +108,22 @@ footer {
 
 
 @media (min-width: 420px) {
-    .logo {
-        display: block;
-    }
 
-    .inicio {
-        display: block;
-    }
-
-    .text-bar {
-        max-width: 350px;
-        text-align: right;
-    }
-
-
-    .hamburguer-button {
-        display: none;
-    }
-
-    .main-navbar {
-        display: block;
-    }
-
-    .nav-bar ul {
-        display: flex;
-        justify-content: space-evenly;
-
-    }
-
-    .nombre {
-        font-size: 21px;
-    }
 
 }
 
 @media (min-width: 768px) {
 
+    
 
-    .nombre {
-        font-size: 25px;
-    }
-
-
-    .main-navbar li {
-        margin: 0 5px;
-    }
-
-    .main-navbar a {
-        font-size: 18px;
-    }
 }
 
 
 @media (min-width: 1200px) {
 
-    .top-bar,
-    .nav-bar {
+    .main-cart {
         max-width: 1200px;
         margin: auto;
-    }
-
-    .top-bar {
-        align-items: center;
-    }
-
-    .text-bar {
-        max-width: none;
-        font-size: 22px;
-        font-weight: 400;
-        margin: 0;
-    }
-
-
-    .main-navbar li {
-        margin: 0 10px;
-    }
-
-    .main-navbar a {
-        font-size: 19px;
-
     }
 
 
