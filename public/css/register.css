@@ -105,7 +105,7 @@ footer {
     text-align: center;
 }
 
-@media (min-width: 420px){
+@media (min-width: 480px){
     .parte-arriba {
         display:flex;
         flex-wrap: wrap;
