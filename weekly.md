@@ -10,8 +10,8 @@ cada una mostro lo que hizo, el header, footer, los productos.
 
 Completado: login, register, descripcion de productos.
 
-En proceso: footer, carrito de compras.
-
+En proceso: footer, carrito de compras, bocetos mobile
+.
 Faltaria hacer: main del home
 
 **Lunes: 23/08/2022:**
