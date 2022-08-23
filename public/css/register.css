@@ -13,17 +13,18 @@ h1 {
     font-size: 18px;
     text-align: center;
     margin-top: 30px;
-
+    margin-bottom: 3px;
 }
 
-p{
+main p {
+    margin: 0 50px;
     text-align: center;
 }
 
 .inicio1 {
     border-radius: 8px;
     border: solid 0.5px black;
-    margin: 40px auto 60px;
+    margin: 20px auto 60px;
     background-color: rgba(255, 255, 255, 0.607);
     display: flex;
     width: 75%;
@@ -32,11 +33,6 @@ p{
 main {
     background-color: #f5eee8;
 }
-
-/* f5eee8
-e1ccc7
-e1c2b7
-be9485 */
 
 
 .create-form {
@@ -53,7 +49,7 @@ be9485 */
 .control-formulario label {
     /* font-style: italic; */
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .control {
@@ -66,9 +62,11 @@ be9485 */
 .control-formulario2 {
     text-align: center;
     margin: 10px;
-    font-size: 85%;
+    font-size: 12px;
 }
-
+button {
+    margin-top: 6px;
+}
 
 .button {
     background-color: #39b54a;
@@ -76,47 +74,44 @@ be9485 */
     border-radius: 5px;
     border: none;
     padding: 5px 10px;
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 6px;
 }
 
-footer {
-    background-color: #e1c2b7;
-    padding: 30px;
-    width: 100vw;
-    margin-bottom: 0;
-}
-
-.footer {
-    display: flex;
-    justify-content: space-evenly;
-
-}
-
-.links-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 80%;
-}
-
-.links-footer h2 {
-    font-size: 100%;
-    text-align: center;
-}
-
 @media (min-width: 480px){
+    
+    .control-formulario label {
+        font-size: 18px;
+    }
+
     .parte-arriba {
         display:flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
+    
+    .control-formulario2 {
+        font-size: 14px;
+    }
     .control-formulario {
         width:47%;
+    }
+    
+    .button {
+        font-size: 20px; 
+    }
+    .inicio1 {
+        width: 80%;
     }
 
 }
 @media (min-width: 768px){
+    .control-formulario label {
+        font-size: 18px;
+    }
+    .inicio1 {
+        width: 600px;
+    }
 
 }
 
