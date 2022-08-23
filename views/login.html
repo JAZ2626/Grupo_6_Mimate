@@ -8,22 +8,24 @@
     <script src="https://kit.fontawesome.com/ff9aab0ecf.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/login.css">
     <title>Login</title>
 </head>
 
 <body>
-    <header>
-        <div class="top"> </div>
-        <div class="main-header">
-            <img src="img/WhatsApp Image 2022-07-31 at 10.17.04 PM.jpeg" class="logo">
-            <h3 class="nombre">Mimate</h3>
+    <header class="main-header">
+        <div class="top-bar">
+                <a href="/" class="lo-nom">
+                 <img src="img/LOGO.svg" class="logo">
+                <h3 class="nombre">Mimate</h3>
+            </a>
         </div>
     </header>
     <main>
+        <div class="main-login"> 
         <h1>¡Hola de nuevo!</h1>
-        <section class="inicio">
+        <section class="inicio1">
         <form action="/" method="post" class="create-form">
             <div class="control-formulario">
                 <label>Email:</label>
@@ -36,7 +38,7 @@
             </div>
             <div class="control-formulario2">
                 <button type="submit" class="button">Iniciar Sesion</button> <br>
-                <button> <a href="#"></a>Iniciar con google</button>
+                <button> <a href="#">Iniciar con google</a></button>
                 </div>
                 <div class="control-formulario2">
                     <a href="#">No recuerdo mi contraseña</a><br>
@@ -46,37 +48,57 @@
 
         </form>
         </section>
+    </div>
     </main>
     <footer>
-        <section class="footer">
-            <article class="links-footer">
-                <h2>Titulo</h2>
-                <a href="#">texto</a>
-                <a href="#">texto</a>
-                <a href="#">texto</a>
-            </article>
-            <article class="links-footer">
-                <h2>Titulo</h2>
-                <a href="#">texto</a>
-                <a href="#">texto</a>
-                <a href="#">texto</a>
-            </article>
-            <article class="links-footer">
-                <h2>Titulo</h2>
-                <a href="#">texto</a>
-                <a href="#">texto</a>
-                <a href="#">texto</a>
-            </article>
-            <article class="links-footer">
-                <h2>Contacto</h2>
-                <ul>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">E-mail</a></li>
-                    <li><a href="#">Telefono</a></li>
-                    <li><a href="#">Telefono</a></li>
-                </ul>
-            </article>
-        </section>
+        <div class="footer-comp">
+            <div class="footer-top">
+                <h3 class="tit">Mimate</h3>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a> <a href="#"><i
+                        class="fa-brands fa-facebook"></i></a> <a href="#"><i class="fa-brands fa-whatsapp"></i></a> <a
+                    href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <br>
+            <section class="footer">
+                <article class="links-footer">
+                    <h6>En Mimate:</h6>
+                    <p>Estamos de lunes a jueves desde 9hs hasta 20hs.</p>
+                </article>
+                <br>
+                <article class="links-footer">
+                    <h6>Links:</h6>
+                    <ul>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Tratamientos</a></li>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Dudas frecuentes</a></li>
+                    </ul>
+                </article>
+                <br>
+                <article class="links-footer">
+                    <h6>Cuenta:</h6>
+                    <ul>
+                        <li><a href="#">Mi cuenta</a></li>
+                        <li><a href="#">Mi carrito</a></li>
+                        <li><a href="#">Envios</a></li>
+                    </ul>
+                </article>
+                <br>
+                <article class="links-footer">
+                    <h6>Contacto:</h6>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i> E-mail</a></li>
+                        <li><a href="#"><i class="fa-solid fa-phone"></i> Telefono</a></li>
+                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+                    </ul>
+                    <br>
+                    <h6>Formas de pago:</h6>
+                    <div class="iconos">
+                        <i class="fa-brands fa-cc-mastercard"></i> <i class="fa-brands fa-cc-visa"></i> <i class="fa-brands fa-cc-amex"></i> <i class="fa-brands fa-cc-diners-club"></i>
+                    </div>
+                </article>
+            </section>
+        </div>
     </footer>
 </body>
 

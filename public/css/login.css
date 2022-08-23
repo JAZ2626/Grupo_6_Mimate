@@ -16,48 +16,17 @@ h1 {
 
 }
 
-.inicio {
+.inicio1 {
     border-radius: 8px;
     border: solid 0.5px black;
-    margin: 40px auto 60px;
+    margin: 20px auto 60px;
     background-color: rgba(255, 255, 255, 0.607);
     display: block;
-    width: 55%;
+    width: 85%;
 }
 
 main {
     background-color: #f5eee8;
-}
-
-/* f5eee8
-e1ccc7
-e1c2b7
-be9485 */
-
-.top {
-    background-color: #e1c2b7;
-    height: 15px;
-    width: 100vw;
-
-}
-
-.main-header {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    background-color: #be9485;
-    width: 100vw;
-}
-
-.logo {
-    width: 50px;
-    margin-left: 5px;
-    padding-bottom: 3px;
-}
-
-header .nombre {
-    margin-left: 4px;
-    font-size: 100%;
 }
 
 .create-form {
@@ -72,7 +41,7 @@ header .nombre {
     /* font-style: italic; */
     margin-bottom: 5px;
     display: inline-block;
-    font-size: 20px;
+    font-size: 16px;
 
 }
 
@@ -86,7 +55,7 @@ header .nombre {
 .control-formulario2 {
     text-align: center;
     margin: 10px;
-    font-size: 85%;
+    font-size: 12px;
 }
 
 
@@ -96,45 +65,40 @@ header .nombre {
     border-radius: 5px;
     border: none;
     padding: 5px 10px;
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 15px;
 }
 
-footer {
-    background-color: #e1c2b7;
-    padding: 30px;
-    width: 100vw;
-    margin-bottom: 0;
-}
+@media (min-width: 480px) {
+    .inicio1 {
+        width: 60%;
+    }
 
-.footer {
-    display: flex;
-    justify-content: space-evenly;
+    .button {
+        font-size: 20px;
+    }
 
-}
+    
 
-.links-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 80%;
-}
+    .control-formulario label {
+        font-size: 20px;
 
-.links-footer h2 {
-    font-size: 100%;
-    text-align: center;
+    }
+    .control-formulario2 {
+        font-size: 14px;
+    }
 }
 
 @media (min-width: 768px) {
-    .inicio {
-        width: 40vw;
+    .inicio1 {
+        width: 50%;
     }
-
 }
 
 @media (min-width: 1200px) {
-    .inicio {
-        width: 30vw;
+    .main-login {
+        max-width: 1200px;
+        margin: auto;
     }
 
 }

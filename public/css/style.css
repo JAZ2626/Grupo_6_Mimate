@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -16,7 +18,6 @@ body {
     display: flex;
     text-align: center;
     align-content: center;
-    justify-content: space-around;
 }
 
 .text-bar a h6, .text-bar a i {
@@ -28,6 +29,8 @@ body {
     justify-content: flex-start;
     align-items: center;
     margin: 5px;
+    text-decoration: none;
+    color: #222222;
 }
 
 
@@ -46,8 +49,11 @@ body {
     width: 50px;
     display: none;
 }
+
 .nombre {
     font-size: 20px;
+    margin: 10px 0;
+    margin-left: 10px;
 }
 
 .search-bar{
@@ -59,7 +65,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 45%;
+    width: 50%;
     
 }
 .search-bar input{
@@ -123,33 +129,47 @@ body {
 }
 
 footer {
-    background-color: #e1c2b7;
-    padding: 30px;
-    width: 100vw;
-    margin-bottom: 0;
+    background-color:#be9485; 
 }
 
-.footer {
-    display: flex;
-    justify-content: space-evenly;
-
+.footer-comp {
+    padding: 10px;
+}
+.footer-top {
+    text-align: center;
+}
+.footer-top a {
+    color: #000000;
+}
+.tit {
+    margin-top: 20px;
+}
+footer h6 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 5px;
 }
 
-.links-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 80%;
+footer ul {
+    list-style: none;
 }
 
-.links-footer h2 {
-    font-size: 100%;
+footer article {
+    margin: 10px;
+}
+footer li {
+    margin: 5px 0;
+}
+footer li a {
+    text-decoration: none;
+    color: #000000;
+}
+.iconos { 
     text-align: center;
 }
 
 
-
-@media (min-width: 420px) {
+@media (min-width: 480px) {
     .logo {
         display: block;
     }
@@ -162,7 +182,10 @@ footer {
         max-width: 350px;
         text-align: right;
     }
-
+    .search-bar {
+        width: 35%;
+        justify-content:space-evenly;
+    }
 
     .hamburguer-button {
         display: none;
@@ -178,13 +201,29 @@ footer {
     }
     .nombre {
         font-size: 21px;
+        margin-left: 0;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .links-footer {
+        width: 25%;
+    }
+    footer h6 {
+        text-align: left;
+    }
+    footer li a, footer p {
+        font-size: 14px;
+    }
+    .iconos { 
+        text-align: left;
     }
 
 }
 
 @media (min-width: 768px) {
    
-  
     .nombre {
         font-size: 25px;
     }
@@ -196,13 +235,21 @@ footer {
     .main-navbar a {
         font-size: 18px;
     }
+    .search-bar {
+        width: 50%;
+        justify-content:space-between;
+    }
+    footer h6 {
+        font-size: 20px;
+    }
+    footer li a, footer p {
+        font-size: 18px;
+    }
+
 }
-
-
 @media (min-width: 1200px) {
 
-    .top-bar,
-    .nav-bar {
+    .top-bar, .nav-bar, .footer-comp {
         max-width: 1200px;
         margin: auto;
     }
@@ -227,6 +274,5 @@ footer {
         font-size: 19px;
 
     }
-
 
 }
