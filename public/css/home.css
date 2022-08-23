@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
 }
+main{
+    background-color: #f5eee8;
+    padding: 30px;
+}
 h3{
     font-size: 24px;
     font-family: 'Abhaya Libre', serif;
@@ -22,33 +26,48 @@ section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    
 }
-.articulos{
-    justify-content: space-between;
-}
+
 .banner{
     width: 70%;
     justify-content: space-between;
     display: flex;
 }
 article{
+<<<<<<< HEAD
     width: 250px;
     height: 250px;
     background-color: #F5EEE8;
+=======
+    width: 90%;
+    background-color: #ffffff;
+>>>>>>> f9b84ebe87a53a823d751f7c52f67685709de320
     border-radius: 1px solid black;
     box-shadow: 0 0 5px rgb(100, 100, 100);
-    border-radius: 12px;
+    border-radius: 6px;
     transition: 0.25s;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    margin-bottom: 10px;
 }
+<<<<<<< HEAD
 article img {
     width:70%;
     padding:10px 0;
     margin: auto;
+=======
+img {
+    width: 90%;
+    padding: 5px;
+    /* margin: 0 30px; */
+    margin: 10px;
+>>>>>>> f9b84ebe87a53a823d751f7c52f67685709de320
 }
+
 .detalle {
     width: 90%;
     margin: 0 20px;
@@ -61,26 +80,20 @@ article img {
     font-size: 14px;
     margin: 5px;
 }
-div.buton{
-   justify-items: center;
-   display: flex;
+.buton{
+   text-align: center;
 }
 @media (min-width: 420px){
-    .article {
+    article {
         display:flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        width: 33%;
+        margin: 30px 50px;
     }
-    img {
-        width: 70px;
-    }
+
 
 }
 @media (min-width: 768px){
-
-}
-
-@media (min-width: 1200px) {
-    
 
 }
