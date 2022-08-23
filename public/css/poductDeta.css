@@ -7,24 +7,28 @@
 main {
     background-color: #f5eee8;
     font-family: 'Abhaya Libre', serif;
-    padding: 0 30px;
+    padding: 10px 30px;
+}
+
+.inicio-bar {
+margin-bottom: 6px;
 }
 
 .inicio-bar a {
     color:black;
     text-decoration: none;
     color: #222222;
-    padding: 5px 0;
+    padding: 10px 0;
     font-size: 10px;
+
 }
 .product {
- border: 1px solid black;
  padding: 10px;
  border-radius: 10px;
  background-color: white;
  display: flex;
  flex-wrap: wrap;
- padding-top: 20px;
+justify-content: space-between; padding-top: 20px;
 }
 
 .product-img {
@@ -57,9 +61,10 @@ main {
 .detalle a{
     font-size: 10px;
 }
+
 #button {
     padding: 3px;
-    margin: auto;
+    margin: 6px auto;
     width: 75%;
 }
 .envios {
@@ -72,6 +77,9 @@ main {
 .envio-text{
     font-size: 10px;
     margin-top: 10px;
+}
+.envio-text i {
+    font-size: 8px;
 }
 .text-cod {
     width: 30%;
@@ -153,8 +161,7 @@ article img {
         font-size: 14px;
     }
     .detalle {
-        width: 45%;
-        margin: 0;
+        width: 40%;
     }
 
     .envios {
@@ -171,9 +178,10 @@ article img {
     .articulos {
         display: flex;
         flex-wrap: wrap;
+        
     }
    .product-img {
-        width:55%;
+        width:50%;
         margin: 0;
 
     }
