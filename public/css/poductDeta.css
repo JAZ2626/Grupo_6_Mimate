@@ -83,7 +83,7 @@ justify-content: space-between; padding-top: 20px;
 }
 .text-cod {
     width: 30%;
-    margin: 5px 5px 5px 1px;
+    margin: 5px 5px 4px 1px;
 }
 .calcular {
     width: 40%;
@@ -228,9 +228,7 @@ article img {
     .precio {
         font-size: 25px;
     }
-    .text-cod {
-        margin-bottom:  6px;
-    }
+
 
 }
 
