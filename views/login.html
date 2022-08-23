@@ -24,17 +24,18 @@
     <main>
         <h1>¡Hola de nuevo!</h1>
         <section class="inicio">
-        <form action="/login" method="post" class="create-form">
+        <form action="/" method="post" class="create-form">
             <div class="control-formulario">
                 <label>Email:</label>
-                <input type="email" name="email" placeholder="correo electronico" class="control">
+                <input type="email" name="email" placeholder="correo electronico" class="control" required>
+                <span class="feedback"></span>
             </div>
             <div class="control-formulario">
                 <label>Contraseña:</label>
                 <input type="password" name="password" placeholder="contraseña" class="control" required>
             </div>
             <div class="control-formulario2">
-                <button type="submit" class="button"> <a href="/"></a>Iniciar Sesion</button> <br>
+                <button type="submit" class="button">Iniciar Sesion</button> <br>
                 <button> <a href="#"></a>Iniciar con google</button>
                 </div>
                 <div class="control-formulario2">
