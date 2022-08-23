@@ -32,8 +32,8 @@ section {
     display: flex;
 }
 article{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     background-color: #F5EEE8;
     border-radius: 1px solid black;
     box-shadow: 0 0 5px rgb(100, 100, 100);
@@ -45,8 +45,9 @@ article{
     align-items: center;
 }
 article img {
-    width: 70%;
-    height: 70%;
+    width:70%;
+    padding:10px 0;
+    margin: auto;
 }
 .detalle {
     width: 90%;
