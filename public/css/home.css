@@ -50,7 +50,10 @@ article img {
 }
 
 
-.articulo1,.articulo2,.articulo3,.articulo4 {
+.articulo1,
+.articulo2,
+.articulo3,
+.articulo4 {
     width: 90%;
     background-color: white;
     margin: auto;
@@ -68,7 +71,8 @@ article img {
     margin-bottom: 10px;
 }
 
-.articulo3,.articulo4 {
+.articulo3,
+.articulo4 {
     display: none;
 }
 
@@ -79,27 +83,35 @@ article img {
         flex-wrap: wrap;
     }
 
-    
-
     .articulo1,
-    .articulo2,
-    .articulo3,
-    .articulo4 {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    .articulo2 {
         width: 40%;
+    }
+
+    main article {
+        transition: box-shadow 250mg;
+    }
+
+    main article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
 }
 
 @media (min-width: 768px) {
+
     .articulo3,
     .articulo4 {
         display: block;
     }
 
-    .articulo1, .articulo2, .articulo3, .articulo4 {
+    .articulo1,
+    .articulo2,
+    .articulo3,
+    .articulo4 {
         width: 20%;
     }
+
     .main-sub {
         max-width: 1200px;
         margin: auto;

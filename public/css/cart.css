@@ -19,6 +19,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-between; 
     width: 70%;
+    align-content: space-between;
 }
 .descripcion {
     display: flex;
@@ -50,25 +51,28 @@ main {
 }
 .name1 p{
     font-size: 16px;
+    margin-top: 4px;
 }
 
- h2{
+main h2{
     font-size: 16px;
 }
- p{
+main p{
     font-size: 14px;
+    margin-top: 4px;
 }
 
 #cantidad{
     width: 40px;
+    margin-top: 4px;
 }
 
 .resumen {
     padding: 8px;
     border-radius: 6px;
     background-color: rgba(213, 208, 208, 0.603);
-    width: 50%;
-    margin: 3% 50% 3%;
+    width: 100%;
+    margin: 10px 0;
 
 }
 
@@ -88,8 +92,8 @@ main {
 
 .total-precio{
     font-size: 18px;
-    margin-left: 20px;
-    margin-right: 3px;
+    margin-left: 30px;
+    margin-right: 4px;
 }
 
 .label2 {
@@ -111,11 +115,15 @@ main {
 
 
 @media (min-width: 480px) {
-    h2{
+    .name1 h2,main h2{
         font-size: 16px;
     }
-    p{
+    .name1 p,main p{
         font-size: 14px;
+    }
+    .resumen {
+        width: 50%;
+    margin: 3% 50% 3%;
     }
     
     .product1 { 
@@ -124,7 +132,7 @@ main {
     }
     .img-product{
         width: 20%;
-        margin-top: -15px;
+        margin-top: -4px;
     }
 
     .descripcion {
@@ -137,7 +145,12 @@ main {
 }
 
 @media (min-width: 768px) {
-
+    .name1 h2, main h2{
+        font-size: 22px;
+    }
+    .name1 p, main p{
+        font-size: 20px;
+    }
     
 
 }
