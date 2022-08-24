@@ -4,18 +4,21 @@ Nos reunimos, leimos el sprint 2, nos separamos el trabajo atravez de trello y r
 
 **Jueves: 11/08/2022:**
 
-cada una mostro lo que hizo, el header, footer, los productos. 
+Cada una mostro lo que hizo, el header, footer, los productos. 
 
 **Jueves: 18/08/2022:**
 
 Completado: login, register, descripcion de productos.
+En proceso: footer, carrito de compras, bocetos mobile.
+Faltaria hacer: main del home.
 
-En proceso: footer, carrito de compras, bocetos mobile
-.
-Faltaria hacer: main del home
-
-**Lunes: 23/08/2022:**
+**Lunes: 22/08/2022:**
 
 Completado: footer, carrito de compras.
+En proceso: main del home.
 
-En proceso main del home,
+**Martes: 23/08/2022:**
+
+Completado: Estuvimos trabajando con git y terminando el Home.
+Checkeamos que todo este bien y terminado.
+
