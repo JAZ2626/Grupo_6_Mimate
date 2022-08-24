@@ -20,6 +20,12 @@ h2{
     text-align: center;
 }
 
+.video{
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px;
+}
+
 /* article{
     width: 250px;
     height: 250px;
