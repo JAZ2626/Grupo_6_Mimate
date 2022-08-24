@@ -1,48 +1,31 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0;    
+    font-family: 'Abhaya Libre', serif;
 }
 main{
     background-color: #f5eee8;
-    padding: 30px;
+    padding: 10px;
 }
 h3{
     font-size: 24px;
-    font-family: 'Abhaya Libre', serif;
     font-weight: bold;
     text-align: center;
-}
-.servicios, .descripcion{
-    text-align: center;
-}
-h2{
-    font-size: 15px;
-    font-family: 'Abhaya Libre', serif;
-    font-weight: bold;
-    text-align: center;
-}
-section {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    
 }
 
-.banner{
-    width: 70%;
-    justify-content: space-between;
-    display: flex;
+h2{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
 }
-article{
-<<<<<<< HEAD
+
+/* article{
     width: 250px;
     height: 250px;
     background-color: #F5EEE8;
-=======
     width: 90%;
     background-color: #ffffff;
->>>>>>> f9b84ebe87a53a823d751f7c52f67685709de320
     border-radius: 1px solid black;
     box-shadow: 0 0 5px rgb(100, 100, 100);
     border-radius: 6px;
@@ -53,47 +36,65 @@ article{
     align-items: center;
     margin: auto;
     margin-bottom: 10px;
-}
-<<<<<<< HEAD
+} */
+
 article img {
-    width:70%;
-    padding:10px 0;
-    margin: auto;
-=======
-img {
     width: 90%;
-    padding: 5px;
-    /* margin: 0 30px; */
     margin: 10px;
->>>>>>> f9b84ebe87a53a823d751f7c52f67685709de320
+    /* padding: 5px;
+    margin: 0 30px; */
 }
 
-.detalle {
-    width: 90%;
-    margin: 0 20px;
-}
-.descripciones{
+.descripciones { 
     font-size: 16px;
-    margin: 5px;
+    margin-top: 10px;
+    /* margin: 5px; */
 }
-.precio {
-    font-size: 14px;
-    margin: 5px;
+
+
+.precios { 
+    font-size: 18px;
+    width: 30%;
 }
+
+
+.articulo1, .articulo2, .articulo3, .articulo4 {
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.descripcions {
+    padding: 15px 8px;
+    border-top: solid 1px #ebebeb;
+    position: relative;
+}
+
 .buton{
    text-align: center;
 }
-@media (min-width: 420px){
-    article {
-        display:flex;
+
+
+@media (min-width: 480px) {
+
+    .articulos {
+        display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        width: 33%;
-        margin: 30px 50px;
+        
     }
 
-
+    .articulo1, .articulo2, .articulo3, .articulo4{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 40%;
+    }
+    
 }
-@media (min-width: 768px){
 
+@media (min-width: 768px) {
+
+    .articulo1, .articulo2, .articulo3, .articulo4{
+    width: 20%;
+    }
 }
+
