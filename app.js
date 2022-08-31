@@ -6,6 +6,11 @@ const routerProducts = require('./routers/products');
 const app = express();
  
 app.set('view engine','ejs');
+app.set("views", [
+    path.join(__dirname, './views/users'),
+    path.join(__dirname, './views/products'),
+]);
+
 
 
 app.listen(3030, ()=>{
