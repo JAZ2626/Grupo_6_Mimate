@@ -99,6 +99,10 @@ article img {
 }
 
 @media (min-width: 768px) {
+    .articulo3,
+    .articulo4 {
+        display: block;
+    }
 
     .articulo1,
     .articulo2,
