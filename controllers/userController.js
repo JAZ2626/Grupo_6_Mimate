@@ -1,17 +1,16 @@
 const express = require('express');
-const path = require('path');
 
 const controller = {
 register:  (req, res)=>{
-    res.sendFile(path.resolve(__dirname, "../views/users/register.html"))
+    res.render('register')
 },
 
 login: (req, res)=>{
-    res.sendFile(path.resolve(__dirname, "../views/users/login.html"))
+    res.render('login')
 },
 
 productCart: (req, res)=>{
-    res.sendFile(path.resolve(__dirname, "../views/users/productCart.html"))
+    res.render('productCart')
 }
 
 }
