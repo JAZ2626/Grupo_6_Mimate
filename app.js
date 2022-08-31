@@ -14,3 +14,5 @@ app.use(express.static('public'));
 app.use('/', routerMain);
 app.use('/user', routerUser);
 app.use('/products', routerProducts);
+
+app.set("view enegine", "ejs");
