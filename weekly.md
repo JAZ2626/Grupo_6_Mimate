@@ -22,3 +22,7 @@ En proceso: main del home.
 Completado: Estuvimos trabajando con git y terminando el Home.
 Checkeamos que todo este bien y terminado.
 
+**Jueves: 25/08/2022:**
+nos reunimos para empezar el 3er sprint, realizamos el retro, actualizamos el trello y nos dividimos las tareas, tambien leimos todo el sprint y nos sacamos dudas...
+
+
