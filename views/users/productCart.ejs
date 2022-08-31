@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ff9aab0ecf.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>HOME</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Cart</title>
 </head>
 
 <body>
@@ -20,9 +20,11 @@
                 <i class="fas fa-bars"></i>
             </a>
             <a href="/" class="lo-nom">
-                <img src="img/LOGO.svg" class="logo">
+                <img src="../img/LOGO.svg" class="logo">
                 <h3 class="nombre">Mimate</h3>
             </a>
+
+
             <form action="/" method="GET" class="search-bar">
                 <input type="search" placeholder="Buscar productos, marcas y más...">
                 <button class="search-icon">
@@ -33,9 +35,11 @@
                 <li><a href="/user/login">
                         <h6 class="inicio">Inciar sesión</h6> <i class="fa-solid fa-right-to-bracket"> </i>
                     </a> </li>
-                <li><a href="/user/productCart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="/user/productoCart"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </div>
+
+
         <nav, class="main-navbar">
             <div class="nav-bar">
                 <ul>
@@ -50,92 +54,55 @@
             </nav>
     </header>
     <main>
-        <div class="main-sub">
+        <div class="main-cart">
+            <h1>Carrito de compras</h1>
+            <section class="product">
+                <img class="img-product" src="../img/3.png" alt="maquilaje">
+                <div class="product1">
+                    <div class="name1">
+                        <h2>Nombre del producto</h2>
+                        <p>Maquillaje</p>
+                    </div>
 
-            <div class="video">
-                <video src="/img/videohome.mp4" type="video/mp4" autoplay="true" muted="true" loop="true"></video>
-            </div>
-            <section class="servicios">
-                <div>
-                    <h3 class="titulo"> Nuestros Servicios</h3>
-                    <h4 class="sub-tit"> En Mimate te ofrecemos la mejor experiencia de belleza</h4>
-                </div>
-                <br>
-                <div class="articulos">
-                    <article class="articulo1">
-                        <img src="img/1.png" alt="i">
-                        <div class="descripcions">
-                            <p class="precios">$200</p>
-                            <p class="descripciones">Producto</p>
+                    <div class="descripcion">
+                        <div class="name">
+                            <h2>Cantidad</h2>
+                            <select name="cantidad" id="cantidad">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <!-- <input type="number" name="cantidad" id="cantidad"> -->
+
                         </div>
-                    </article>
-                    <article class="articulo2">
-                        <img src="img/5.png" alt="producto">
-                        <div class="descripcions">
-                            <p class="precios">$200</p>
-                            <p class="descripciones">Producto</p>
+                        <div class="name">
+                            <h2>Precio</h2>
+                            <p>$200</p>
                         </div>
-                    </article>
-                    <article class="articulo3">
-                        <img src="img/3.png" alt="i">
-                        <div class="descripcions">
-                            <p class="precios">$200</p>
-                            <p class="descripciones">Producto</p>
+                        <div class="name2">
+                            <i class="fas fa-trash-alt"></i>
                         </div>
-                    </article>
-                    <article class="articulo4">
-                        <img src="img/4.png" alt="i">
-                        <div class="descripcions">
-                            <p class="precios">$200</p>
-                            <p class="descripciones">Producto</p>
-                        </div>
-                    </article>
+                    </div>
                 </div>
             </section>
-            <br>
-            <div class="buton">
-                <a href="/home.html">Ver Mas</a>
-            </div>
-            <br>
-            <section class="servicios">
-                <h3 class="titulo"> Nuestros Productos </h3>
-                <br>
-                <div class="articulos">
-                    <article class="articulo1">
-                        <img src="img/9.png" alt="producto">
-                        <div class="descripcions">
-                            <p class="precios">$200</p>
-                            <p class="descripciones">Producto</p>
-                        </div>
-                    </article>
-                    <article class="articulo2">
-                        <img src="img/13.png" alt="producto">
-                        <div class="descripcions">
-                            <p class="precios">$200</p>
-                            <p class="descripciones">Producto</p>
-                        </div>
-                    </article>
-                    <article class="articulo3">
-                        <img src="img/12.png" alt="producto">
-                        <div class="descripcions">
-                            <p class="precios">$200</p>
-                            <p class="descripciones">Producto</p>
-                        </div>
-                    </article>
-                    <article class="articulo4">
-                        <img src="img/11.png" alt="producto">
-                        <div class="descripcions">
-                            <p class="precios">$200</p>
-                            <p class="descripciones">Producto</p>
-                        </div>
-                    </article>
+            <section class="resumen">
+                <div class="label">
+                    <h2>Total productos</h2>
+                    <p class="label2">1</p>
+                </div>
+                <div class="label">
+                    <h2>Envio</h2>
+                    <p class="label2">$100</p>
+                </div>
+                <div class="total">
+                    <h2>TOTAL</h2>
+
+                    <p class="total-precio">$300</p>
                 </div>
             </section>
-            <br>
-            <div class="buton">
-                <a href="/home.html">Ver Mas</a>
-            </div>
-            <br>
+            <a class="seguir-comprando" href="/"><i class="fas fa-angle-left"></i> Seguir comprando</a>
         </div>
     </main>
     <footer>
@@ -187,10 +154,9 @@
                     </div>
                 </article>
             </section>
-
-            <div class="copyright">
-                <p>Copyright Mimate - 2022. Todos los derechos reservados.</p>
-            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Mimate - 2022. Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>
