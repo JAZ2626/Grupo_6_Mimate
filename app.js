@@ -4,6 +4,8 @@ const routerMain = require('./routers/main');
 const routerUser = require('./routers/user');
 const routerProducts = require('./routers/products');
 const app = express();
+ 
+app.set('view engine','ejs');
 
 
 app.listen(3030, ()=>{
