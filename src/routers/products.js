@@ -5,6 +5,8 @@ const router = express.Router();
 
 router.get('/productDetail', controller.productDetail);
 
+router.get('/addProduct', controller.addProduct);
+
 // router.get('/productCart', controller.productCart);
 
 
