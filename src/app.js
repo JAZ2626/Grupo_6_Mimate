@@ -22,4 +22,3 @@ app.use('/', routerMain);
 app.use('/user', routerUser);
 app.use('/products', routerProducts);
 
-app.set("view enegine", "ejs");
