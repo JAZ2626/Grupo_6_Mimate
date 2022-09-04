@@ -8,14 +8,7 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="top-bar">
-            <a href="/" class="lo-nom">
-                <img src="../img/LOGO.svg" class="logo">
-                <h3 class="nombre">Mimate</h3>
-            </a>
-        </div>
-    </header>
+    <%- include('../partials/header2') %>
     <main>
         <div class="main-login">
             <h1>¡Hola de nuevo!</h1>
@@ -44,60 +37,7 @@
             </section>
         </div>
     </main>
-    <footer>
-        <div class="footer-comp">
-            <div class="footer-top">
-                <h3 class="tit">Mimate</h3>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a> <a href="#"><i
-                        class="fa-brands fa-facebook"></i></a> <a href="#"><i class="fa-brands fa-whatsapp"></i></a> <a
-                    href="#"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-            <br>
-            <section class="footer">
-                <article class="links-footer">
-                    <h6>En Mimate:</h6>
-                    <p>Estamos de lunes a jueves desde 9hs hasta 20hs.</p>
-                </article>
-                <br>
-                <article class="links-footer">
-                    <h6>Links:</h6>
-                    <ul>
-                        <li><a href="#">Productos</a></li>
-                        <li><a href="#">Tratamientos</a></li>
-                        <li><a href="#">Sobre nosotros</a></li>
-                        <li><a href="#">Dudas frecuentes</a></li>
-                    </ul>
-                </article>
-                <br>
-                <article class="links-footer">
-                    <h6>Cuenta:</h6>
-                    <ul>
-                        <li><a href="#">Mi cuenta</a></li>
-                        <li><a href="#">Mi carrito</a></li>
-                        <li><a href="#">Envios</a></li>
-                    </ul>
-                </article>
-                <br>
-                <article class="links-footer">
-                    <h6>Contacto:</h6>
-                    <ul>
-                        <li><a href="#"><i class="fa-solid fa-envelope"></i> E-mail</a></li>
-                        <li><a href="#"><i class="fa-solid fa-phone"></i> Telefono</a></li>
-                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
-                    </ul>
-                    <br>
-                    <h6>Formas de pago:</h6>
-                    <div class="iconos">
-                        <i class="fa-brands fa-cc-mastercard"></i> <i class="fa-brands fa-cc-visa"></i> <i
-                            class="fa-brands fa-cc-amex"></i> <i class="fa-brands fa-cc-diners-club"></i>
-                    </div>
-                </article>
-            </section>
-        </div>
-        <div class="copyright">
-            <p>Copyright Mimate - 2022. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+    <%- include('../partials/footer') %>
 </body>
 
 </html>
