@@ -22,9 +22,5 @@ app.listen(3030, ()=>{
 app.use(express.static('../public'));
 app.use('/', routerMain);
 app.use('/user', routerUser);
-<<<<<<< HEAD
 app.use('/products', routerProducts);
-=======
 app.use('/products', routerProducts);
-
->>>>>>> 10a11cccd50053c05f2c5307af098c4cbc060a24
