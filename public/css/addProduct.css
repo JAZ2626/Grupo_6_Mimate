@@ -1,0 +1,97 @@
+body {
+    background-color: #f5eee8;
+}
+
+main h1 {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 3px;
+}
+
+main p {
+    margin: 0 50px;
+    text-align: center;
+}
+
+.inicio1 {
+    border-radius: 8px;
+    margin: 20px auto 60px;
+    background-color: rgba(255, 255, 255, 0.607);
+    width: 70%;
+}
+
+.create-form {
+    padding: 20px 15px;
+}
+
+
+.control-formulario {
+    margin-bottom: 15px;
+}
+
+
+
+.control-formulario label {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+button a {
+    text-decoration: none;
+    color:black
+}
+.control {
+    width: 95%;
+    padding: 8px;
+    background-color: #f5eee862;
+    border-color: #f5eee862;
+}
+
+.control-formulario2 {
+    text-align: center;
+    margin: 10px;
+    font-size: 12px;
+}
+button {
+    margin-top: 6px;
+}
+
+.button {
+    background-color: #39b54a;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+@media (min-width: 480px){
+    
+    .control-formulario label {
+        font-size: 18px;
+    }
+    .inicio1 {
+        width: 70%;
+    }
+
+    .control-formulario2 {
+        font-size: 14px;
+    }
+    
+    .button {
+        font-size: 20px; 
+    }
+    
+
+}
+@media (min-width: 768px){
+    .control-formulario label {
+        font-size: 18px;
+    }
+   
+    .main-register {
+        max-width: 1200px;
+        margin: auto;
+    }   
+}

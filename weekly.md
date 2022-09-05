@@ -23,6 +23,16 @@ Completado: Estuvimos trabajando con git y terminando el Home.
 Checkeamos que todo este bien y terminado.
 
 **Jueves: 25/08/2022:**
-nos reunimos para empezar el 3er sprint, realizamos el retro, actualizamos el trello y nos dividimos las tareas, tambien leimos todo el sprint y nos sacamos dudas...
+Nos reunimos para empezar el 3er sprint, realizamos el retro, actualizamos el trello y nos dividimos las tareas, tambien leimos todo el sprint y nos sacamos dudas...
+
+**Viernes: 26/08/2022:**
+Dividimos las tareas del 3er sprint, actualizamos el trello y nos sacamos dudas
+
+
+**Lunes: 29/08/2022:**
+Hicimos las rutas y controladores.
+
+**Mièrcoles: 31/08/2022:**
+Mostramos lo que hicimos hasta ahora, hicimos el retro y terminamos los .ejs
 
 

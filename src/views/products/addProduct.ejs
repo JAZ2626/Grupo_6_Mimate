@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head') %>
+        <link rel="stylesheet" href="../css/addProduct.css">
+        <title>Document</title>
+</head>
+
+<body>
+    <%- include('../partials/header2') %>
+        <main>
+            <div class="main-register">
+                <h1>Agregar Producto</h1>
+                <section class="inicio1">
+                    <form action="/" method="post" class="create-form">
+                        <div class="parte-arriba">
+                            <div class="control-formulario">
+                                <label>Nombre del producto:</label>
+                                <input type="text" name="name" class="control" required>
+                                <span class="feedback"></span>
+                            </div>
+                            <div class="control-formulario">
+                                <label>Descripción:</label>
+                                <input type="textarea" name="description" class="control" required>
+                                <span class="feedback"></span>
+                            </div>
+                            <div class="control-formulario">
+                                <label>Agregar Imagen:</label>
+                                <input type="file" name="image" class="control" required>
+                                <span class="feedback"></span>
+                            </div>
+                            <div class="control-formulario">
+                                <label>Categoría:</label>
+                                <br>
+                                <input type="radio" value="product" name="category" id="product"><label for="product"
+                                    required>Producto</label></input>
+
+                                <input type="radio" value="treatment" name="category" id="treatment"><label
+                                    for="treatment" required>Tratamiento</label></input>
+                                <span class="feedback"></span>
+                            </div>
+                            <div class="control-formulario">
+                                <label>Precio:</label>
+                                <input type="text" name="price" class="control" required>
+                                <span class="feedback"></span>
+                            </div>
+                            <div>
+                                <button type="submit" value="add" class="button">Agregar producto</button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <%- include('../partials/footer') %>
+</body>
+
+</html>
