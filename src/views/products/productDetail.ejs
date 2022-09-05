@@ -17,8 +17,8 @@
                 <section class="product">
                     <img class="product-img" src="../img/11.png" alt="">
                     <div class="detalle">
-                        <h3 class="product-name">Nombre del producto</h3>
-                        <h6 class="precio">$600</h6>
+                        <h3 class="product-name"><%= nombre %></h3>
+                        <h6 class="precio">$<%= precio %></h6>
                         <div class="pay">
                             <i class="fa fa-credit-card"></i>
                             <p>6 cuotas sin interes de <strong>100</strong></p>
@@ -45,11 +45,7 @@
                     </div>
                     <div class="descripicion">
                         <h4>Descripcion:</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi deleniti veritatis nam
-                            placeat
-                            obcaecati ducimus impedit, repellendus autem recusandae quaerat magnam illum qui illo
-                            nesciunt
-                            non dolor quod itaque iusto.</p>
+                        <p><%= detalle %></p>
                     </div>
                 </section>
                 <section class="product-relac">
@@ -58,7 +54,7 @@
                     <br>
                     <div class="articulos">
                         <article class="articulo1">
-                            <img src="../img/1.png" alt="i">
+                            <img src= "../img/1.png"  alt="i">
                             <div class="descripcions">
                                 <p class="precios">$200</p>
                                 <p class="descripciones">Producto</p>
