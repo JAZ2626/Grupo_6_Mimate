@@ -7,6 +7,8 @@ router.get('/productDetail', controller.productDetail);
 
 router.get('/addProduct', controller.addProduct);
 
+router.get('/editProduct', controller.editProduct);
+
 // router.get('/productCart', controller.productCart);
 
 

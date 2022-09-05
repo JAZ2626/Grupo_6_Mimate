@@ -3,92 +3,95 @@
 
 <head>
     <%- include('../partials/head') %>
-    <link rel="stylesheet" href="../css/poductDeta.css">
-    <title>Document</title>
+        <link rel="stylesheet" href="../css/poductDeta.css">
+        <title>Document</title>
 </head>
 
 <body>
     <%- include('../partials/header') %>
-    <main>
-        <div class="main-sub">
-            <p class="inicio-bar"><a href="/">Inicio</a> > <a href="#">Productos</a> > <a href="/productDetail">Nombre
-                    del producto</a></p>
-            <section class="product">
-                <img class="product-img" src="../img/11.png" alt="">
-                <div class="detalle">
-                    <h3 class="product-name">Nombre del producto</h3>
-                    <h6 class="precio">$600</h6>
-                    <div class="pay">
-                        <i class="fa fa-credit-card"></i>
-                        <p>6 cuotas sin interes de <strong>100</strong></p>
+        <main>
+            <div class="main-sub">
+                <p class="inicio-bar"><a href="/">Inicio</a> > <a href="#">Productos</a> > <a
+                        href="/productDetail">Nombre
+                        del producto</a></p>
+                <section class="product">
+                    <img class="product-img" src="../img/11.png" alt="">
+                    <div class="detalle">
+                        <h3 class="product-name">Nombre del producto</h3>
+                        <h6 class="precio">$600</h6>
+                        <div class="pay">
+                            <i class="fa fa-credit-card"></i>
+                            <p>6 cuotas sin interes de <strong>100</strong></p>
+                        </div>
+                        <div class="pay">
+                            <i class="fa fa-credit-card"></i>
+                            <p>%15 con tranferencia</p>
+                        </div>
+                        <a href="#">Ver medios de pago</a>
+                        <br>
+                        <input id="button" type="button" value="Agregar al Carrito" href="/productCart">
+                        <div class="envios">
+                            <p class="envio-text"><i class="fa-solid fa-truck"></i> Medios de envio</p>
+
+                            <div class="envio">
+                                <input class="text-cod" type="search" value="">
+                                <input class="calcular" type="button" value="Calcular">
+                            </div>
+
+                            <a href="#">No se mi codigo postal</a>
+                        </div>
+                        <p class="compartir">Compartir: <i class="fa-brands fa-instagram"></i> <i
+                                class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-whatsapp"></i></p>
                     </div>
-                    <div class="pay">
-                        <i class="fa fa-credit-card"></i>
-                        <p>%15 con tranferencia</p>
+                    <div class="descripicion">
+                        <h4>Descripcion:</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi deleniti veritatis nam
+                            placeat
+                            obcaecati ducimus impedit, repellendus autem recusandae quaerat magnam illum qui illo
+                            nesciunt
+                            non dolor quod itaque iusto.</p>
                     </div>
-                    <a href="#">Ver medios de pago</a>
+                </section>
+                <section class="product-relac">
                     <br>
-                    <input id="button" type="button" value="Agregar al Carrito" href="/productCart">
-                    <div class="envios">
-                        <p class="envio-text"><i class="fa-solid fa-truck"></i> Medios de envio</p>
-
-                        <div class="envio">
-                            <input class="text-cod" type="search" value="">
-                            <input class="calcular" type="button" value="Calcular">
-                        </div>
-
-                        <a href="#">No se mi codigo postal</a>
+                    <h3 class="titulo">Producto relacionados:</h3>
+                    <br>
+                    <div class="articulos">
+                        <article class="articulo1">
+                            <img src="../img/1.png" alt="i">
+                            <div class="descripcions">
+                                <p class="precios">$200</p>
+                                <p class="descripciones">Producto</p>
+                            </div>
+                        </article>
+                        <article class="articulo2">
+                            <img src="../img/2.png" alt="i">
+                            <div class="descripcions">
+                                <p class="precios">$200</p>
+                                <p class="descripciones">Producto</p>
+                            </div>
+                        </article>
+                        <article class="articulo3">
+                            <img src="../img/3.png" alt="i">
+                            <div class="descripcions">
+                                <p class="precios">$200</p>
+                                <p class="descripciones">Producto</p>
+                            </div>
+                        </article>
+                        <article class="articulo4">
+                            <img src="../img/4.png" alt="i">
+                            <div class="descripcions">
+                                <p class="precios">$200</p>
+                                <p class="descripciones">Producto</p>
+                            </div>
+                        </article>
                     </div>
-                    <p class="compartir">Compartir: <i class="fa-brands fa-instagram"></i> <i
-                            class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-whatsapp"></i></p>
-                </div>
-                <div class="descripicion">
-                    <h4>Descripcion:</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi deleniti veritatis nam placeat
-                        obcaecati ducimus impedit, repellendus autem recusandae quaerat magnam illum qui illo nesciunt
-                        non dolor quod itaque iusto.</p>
-                </div>
+            </div>
+            </div>
             </section>
-            <section class="product-relac">
-                <br>
-                <h3 class="titulo">Producto relacionados:</h3>
-                <br>
-                <div class="articulos">
-                    <article class="articulo1">
-                        <img src="../img/1.png" alt="i">
-                        <div class="descripcions">
-                            <p class="precios">$200</p>
-                            <p class="descripciones">Producto</p>
-                        </div>
-                    </article>
-                    <article class="articulo2">
-                        <img src="../img/2.png" alt="i">
-                        <div class="descripcions">
-                            <p class="precios">$200</p>
-                            <p class="descripciones">Producto</p>
-                        </div>
-                    </article>
-                    <article class="articulo3">
-                        <img src="../img/3.png" alt="i">
-                        <div class="descripcions">
-                            <p class="precios">$200</p>
-                            <p class="descripciones">Producto</p>
-                        </div>
-                    </article>
-                    <article class="articulo4">
-                        <img src="../img/4.png" alt="i">
-                        <div class="descripcions">
-                            <p class="precios">$200</p>
-                            <p class="descripciones">Producto</p>
-                        </div>
-                    </article>
-                </div>
-        </div>
-        </div>
-        </section>
-        <br>
-    </main>
-    <%- include('../partials/footer') %>
+            <br>
+        </main>
+        <%- include('../partials/footer') %>
 </body>
 
 </html>
