@@ -1,24 +1,24 @@
 const express = require('express');
 
 const productList = [
-    { productName: "Masajes corporales",
+    { productName: "Limpieza Facial",
       price: 4500,
-    //   img: "../img/4.png",
-      detail: " Lorem ipsum dolor sit amet consectetur adipisicing elit."
-    },
-    { productName: "Cremas",
-      price: 8000,
-    //   img: "../img/8.png",
-      detail: " Lorem ipsum dolor sit amet consectetur adipisicing elit."
-    },
-    { productName: "Labial",
-      price: 3000,
-    //   img: "../img/13.png",
-      detail: " Lorem ipsum dolor sit amet consectetur adipisicing elit."
-    },
-    { productName: "Limpieza facial",
-      price: 4000,
     //   img: "../img/1.png",
+      detail: " Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    { productName: "Masajes Corporales",
+      price: 8000,
+    //   img: "../img/5.png",
+      detail: " Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    { productName: "Maquillaje",
+      price: 3000,
+    //   img: "../img/3.png",
+      detail: " Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    { productName: "Masajes Sueves",
+      price: 4000,
+    //   img: "../img/4.png",
       detail: " Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
 ]
