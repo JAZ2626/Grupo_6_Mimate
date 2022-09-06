@@ -6,42 +6,36 @@ main h1 {
     font-size: 18px;
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 3px;
-}
 
-main p {
-    margin: 0 50px;
-    text-align: center;
 }
 
 .inicio1 {
     border-radius: 8px;
+    border: solid 0.5px black;
     margin: 20px auto 60px;
     background-color: rgba(255, 255, 255, 0.607);
-    width: 70%;
+    display: block;
+    width: 85%;
 }
+
 
 .create-form {
     padding: 20px 15px;
 }
 
-
 .control-formulario {
     margin-bottom: 15px;
 }
 
-
-
 .control-formulario label {
     margin-bottom: 5px;
+    display: inline-block;
     font-size: 16px;
+
 }
-button a {
-    text-decoration: none;
-    color:black
-}
+
 .control {
-    width: 95%;
+    width: 100%;
     padding: 8px;
     background-color: #f5eee862;
     border-color: #f5eee862;
@@ -52,9 +46,11 @@ button a {
     margin: 10px;
     font-size: 12px;
 }
-button {
-    margin-top: 6px;
+.button1{
+    display: flex;
+    justify-content: space-around;
 }
+
 
 .button {
     background-color: #39b54a;
@@ -63,35 +59,38 @@ button {
     border: none;
     padding: 5px 10px;
     font-size: 16px;
-    margin-bottom: 6px;
+    margin-bottom: 15px;
+
 }
 
-@media (min-width: 480px){
-    
-    .control-formulario label {
-        font-size: 18px;
-    }
+
+@media (min-width: 480px) {
     .inicio1 {
-        width: 70%;
+        width: 60%;
+    }
+
+    .button {
+        font-size: 20px;
+    }
+
+
+
+    .control-formulario label {
+        font-size: 20px;
+
     }
 
     .control-formulario2 {
         font-size: 14px;
     }
-    
-    .button {
-        font-size: 20px; 
-    }
-    
-
 }
-@media (min-width: 768px){
-    .control-formulario label {
-        font-size: 18px;
+
+@media (min-width: 768px) {
+    .inicio1 {
+        width: 50%;
     }
-   
-    .main-register {
+    .main-login {
         max-width: 1200px;
         margin: auto;
-    }   
+    }
 }
