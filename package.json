@@ -1,22 +1,4 @@
 {
-  "name": "grupo_6_nombre7",
-  "version": "1.0.0",
-  "description": "En Mimate ofrecemos distintos servicios y productos de belleza y relax para que tomes un break y te sientas bien.\r Ofrecemos: masajes, tratamientos faciales y corporales, maquillaje, depilación y también vendemos cremas y distintos productos para hacerte sentir bien.\r Nos dirigimos a un público desde adolescentes mujeres en adelante también podemos atender a varones.",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JAZ2626/grupo_6_nombre7.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JAZ2626/grupo_6_nombre7/issues"
-  },
-  "homepage": "https://github.com/JAZ2626/grupo_6_nombre7#readme",
   "dependencies": {
     "ejs": "^3.1.8",
     "express": "^4.18.1"

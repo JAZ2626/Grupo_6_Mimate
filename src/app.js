@@ -6,7 +6,6 @@ const routerProducts = require('./routers/products');
 const app = express();
 
 app.set('view engine','ejs');
-app.search('views', 'src/views');
 
 app.set("views", [
     path.join(__dirname, './views/users'),
@@ -22,5 +21,4 @@ app.listen(3030, ()=>{
 app.use(express.static('../public'));
 app.use('/', routerMain);
 app.use('/user', routerUser);
-app.use('/products', routerProducts);
 app.use('/products', routerProducts);
