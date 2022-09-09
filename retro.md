@@ -4,15 +4,10 @@ En nuestro grupo hay muy buena comunicacion, hacemos zoom semanales y nos comuni
 siempre nos consultamos y nos ayudamos y antes de entregar un archivos nos ponemos de acuerdo. Utilizamos el trello para organizarnos mejor.
 Continuaremos manejandonos de esta forma que nos resulta muy comoda!
 
-**Sprint 2:**
+**Sprint 3:**
 
 Continuar haciendo:
-La división de tareas y archivos, el estilo de las páginas, el producto final.
-El apoyo y ayuda a las demás.
+Nos supimos dividir bien los trabajos y nos organizamos bien para poder entregar el sprint a tiempo, buena comunicacion y todas participamos!
 
 Hacer más:
-Que todas las integrantes manejen bien el tiempo y no dejar para lo último, acordarse de hacer pull y push y así evitar conflictos con Git.
-Comunicarse con las integrantes del grupo y compartir bien por donde anda cada una.
-
-
-Al final pudimos hacer todas las tareas!
+Mejorar el uso del git.
