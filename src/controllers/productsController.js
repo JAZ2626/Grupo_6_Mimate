@@ -4,25 +4,25 @@ const productList = [
     {
         productName: "Limpieza Facial",
         price: 4500,
-        img: "../img/1.png",
+        img: "/img/1.png",
         detail: " Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
         productName: "Masajes Corporales",
         price: 8000,
-        mg: "../img/5.png",
+        img: "/img/5.png",
         detail: " Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
         productName: "Maquillaje",
         price: 3000,
-        img: "../img/3.png",
+        img: "/img/3.png",
         detail: " Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {
         productName: "Masajes Sueves",
         price: 4000,
-        img: "../img/4.png",
+        img: "/img/4.png",
         detail: " Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
 ]
@@ -41,7 +41,7 @@ const controller = {
     },
     productDetailOriginal: (req, res) => {
         res.render('productDetailOriginal')
-     },
+    },
 
     addProduct: (req, res) => {
         res.render('addProduct')
