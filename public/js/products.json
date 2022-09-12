@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Limpieza Facial",
+        "description": "Limpieza facial para sentirte lo mejor Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "image": "./img/1.png",
+        "category": "servicio",
+        "price": 4500,
+        "type": "mas-vendido"
+    },
+    {
+        "id": 2,
+        "name": "Masajes Corporales",
+        "description": "tomate unos 30 minutos con los mejores masajes del mundo para relajarte Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "image": "./img/2.png",
+        "category": "servicio",
+        "price": 8000,
+        "type": "mas-vendido"
+    },
+    {
+        "id": 3,
+        "name": "Maquillaje",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "image": "./img/3.png",
+        "category": "servicio",
+        "price": 3000,
+        "type": "mas-vendido"
+    },
+    {
+        "id": 4,
+        "name": "Masajes Sueves",
+        "description": "Lapiz para delinear ojos Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "image": "./img/4.png",
+        "category": "servicio",
+        "price": 4000,
+        "type": "mas-vendido"
+    },
+        {
+        "id": 5,
+        "name": "Labial",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "image": "./img/13.png",
+        "category": "producto",
+        "price": 4500,
+        "type": "mas-vendido"
+    },
+    {
+        "id": 6,
+        "name": "Foundation",
+        "description": "tomate unos 30 minutos con los mejores masajes del mundo para relajarte Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "image": "./img/9.png",
+        "category": "producto",
+        "price": 8000,
+        "type": "mas-vendido"
+    },
+    {
+        "id": 7,
+        "name": "Aceite",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "image": "./img/9.png",
+        "category": "producto",
+        "price": 3000,
+        "type": "mas-vendido"
+    },
+    {
+        "id": 8,
+        "name": "Limpiador Bifasico",
+        "description": "Lapiz para delinear ojos Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "image": "./img/8.png",
+        "category": "servicio",
+        "price": 4000,
+        "type": "mas-vendido"
+    }
+]
