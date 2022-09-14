@@ -70,5 +70,13 @@
         "image": "/img/1663171214373-polvo.jpg",
         "category": "product",
         "price": 3500
+    },
+    {
+        "id": 1663172140076,
+        "name": "hola",
+        "description": "como",
+        "image": "/img/1663172139920-IMG_20181231_064619.jpg",
+        "category": "product",
+        "price": 473
     }
 ]
