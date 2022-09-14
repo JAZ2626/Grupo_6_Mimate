@@ -1,58 +1,72 @@
 const express = require('express');
+const fs = require('fs');
+const path = require('path');
 
-const productList = [
-    {
-        productName: "Limpieza Facial",
-        price: 4500,
-        img: "/img/1.png",
-        detail: " Lorem ipsum dolor sit amet consectetur adipisicing elit."
-    },
-    {
-        productName: "Masajes Corporales",
-        price: 8000,
-        img: "/img/5.png",
-        detail: " Lorem ipsum dolor sit amet consectetur adipisicing elit."
-    },
-    {
-        productName: "Maquillaje",
-        price: 3000,
-        img: "/img/3.png",
-        detail: " Lorem ipsum dolor sit amet consectetur adipisicing elit."
-    },
-    {
-        productName: "Masajes Sueves",
-        price: 4000,
-        img: "/img/4.png",
-        detail: " Lorem ipsum dolor sit amet consectetur adipisicing elit."
-    },
-]
 
 const controller = {
 
     productDetail: (req, res) => {
         const id = req.params.id - 1
-        const productI = productList[id];
-        res.render('productDetail', {
-            nombre: productI.productName,
-            precio: productI.price,
-            imagen: productI.img,
-            detalle: productI.detail
-        });
+        const productsJSON = fs.readFileSync(path.join(__dirname, "../data/products.json"), "utf-8");
+        const products = JSON.parse(productsJSON);
+
+            const findProduct = products.find(actualProduct => actualProduct.id-1 == id);
+    
+            res.render('productDetail', {
+                name: findProduct.name,
+                image: findProduct.image,
+                price: findProduct.price,
+                description: findProduct.description,
+            });
+
+
     },
     productDetailOriginal: (req, res) => {
         res.render('productDetailOriginal')
     },
 
-    addProduct: (req, res) => {
-        res.render('addProduct')
-    },
     editProduct: (req, res) => {
         res.render('editProduct')
     },
 
+    getProduct: (req, res) => {
+        res.render("addProduct");
+    },
 
+    addProduct: (req, res) => {
+        const productsData = req.file; 
+        const productsJSON = fs.readFileSync(path.join(__dirname, "../data/products.json"), "utf-8");
+        const products = JSON.parse(productsJSON);
+console.log(req);
+        const newProduct = {
+                id: Date.now(),
+                name: req.body.name,
+                description: req.body.description,
+                image: '/img/' + req.file.filename,
+                category: req.body.category,
+                price: req.body.price,
+            };
 
+        // newProduct.id = products[products.length - 1].id + 1
+        newProduct.price = Number(newProduct.price);
+        products.push(newProduct);
+
+        const newListProducts = JSON.stringify(products);
+
+        fs.writeFileSync(path.join(__dirname, "../data/products.json"), newListProducts, "utf-8");
+        res.redirect('/' );
+        
+    },
 }
 module.exports = controller;
+
+
+
+    //     ///res.render("users")
+    //     const productsJSON = JSON.stringify(productos);
+    //     fs.writeFileSync(path.join(__dirname, "../data/products.json"), productsJSON, "utf-8");
+    //     res.redirect("/products");
+    // }
+
 
 
