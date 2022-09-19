@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head') %>
+    <link rel="stylesheet" href="../css/products.css">
+    <title>PRODUCTOS</title>
+</head>
+
+<body>
+    <%- include('../partials/header') %>
+    <main>
+        <div class="main-sub">
+            <section class="servicios">
+                <div>
+                    <h3 class="titulo"> Nuestros Productos</h3>
+                    <h4 class="sub-tit"> En Mimate te ofrecemos la mejor experiencia de belleza</h4>
+                </div>
+                <br> <div class="articulos">
+                <% products.forEach(product => {
+                 if (product.category === 'service') { %>
+                    <article class="articulo1">
+                        <a href="/products/productDetail/<%=product.id%>">
+                        <img src= <%= product.image %>  alt="i">
+                        <div class="descripcions">
+                            <p class="precios">$<%= product.price %></p>
+                            <p class="descripciones"><%= product.name %></p>
+                        </div>
+                        </a> 
+                     </article>
+                     <% }}); %> 
+                  
+                </div>
+            </section>
+            <br>
+
+        </div>
+    </main>
+    <%- include('../partials/footer') %>
+</body>
+
+</html>

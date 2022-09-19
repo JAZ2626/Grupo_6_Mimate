@@ -15,13 +15,13 @@
                         href="#">Nombre
                         del producto</a></p>
                 <section class="product">
-                    <img class="product-img" src=<%= image %> alt="">
+                    <img class="product-img" src= <%= image %> alt="">
                     <div class="detalle">
                         <h3 class="product-name"><%= name %></h3>
                         <h6 class="precio">$<%= price %></h6>
                         <div class="pay">
                             <i class="fa fa-credit-card"></i>
-                            <p>6 cuotas sin interes de <strong>100</strong></p>
+                            <p>6 cuotas sin interes de <strong><%= price/6 %></strong></p>
                         </div>
                         <div class="pay">
                             <i class="fa fa-credit-card"></i>

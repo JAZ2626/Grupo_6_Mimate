@@ -9,8 +9,7 @@ const controller = {
         const id = req.params.id - 1
         const productsJSON = fs.readFileSync(path.join(__dirname, "../data/products.json"), "utf-8");
         const products = JSON.parse(productsJSON);
-
-            const findProduct = products.find(actualProduct => actualProduct.id-1 == id);
+        const findProduct = products.find(actualProduct => actualProduct.id-1 == id);
     
             res.render('productDetail', {
                 name: findProduct.name,
@@ -21,9 +20,24 @@ const controller = {
 
 
     },
+    products: (req, res) => {
+        const productsJSON = fs.readFileSync(path.join(__dirname, "../data/products.json"), "utf-8");
+        const products = JSON.parse(productsJSON);
+            res.render('products', {products:products,
+            });
+
+    },
+    services: (req, res) => {
+        const productsJSON = fs.readFileSync(path.join(__dirname, "../data/products.json"), "utf-8");
+        const products = JSON.parse(productsJSON);
+            res.render('servicios', {products:products,
+            });
+
+    },
     productDetailOriginal: (req, res) => {
         res.render('productDetailOriginal')
     },
+
 
     editProduct: (req, res) => {
         res.render('editProduct')
@@ -37,9 +51,10 @@ const controller = {
         const productsData = req.file; 
         const productsJSON = fs.readFileSync(path.join(__dirname, "../data/products.json"), "utf-8");
         const products = JSON.parse(productsJSON);
+
 console.log(req);
         const newProduct = {
-                id: Date.now(),
+                id: products[products.length - 1].id + 1,
                 name: req.body.name,
                 description: req.body.description,
                 image: '/img/' + req.file.filename,
@@ -54,7 +69,11 @@ console.log(req);
         const newListProducts = JSON.stringify(products);
 
         fs.writeFileSync(path.join(__dirname, "../data/products.json"), newListProducts, "utf-8");
-        res.redirect('/' );
+        
+        if (newProduct.category === 'product'){
+            res.redirect('/products/products')
+        }else{res.redirect('/products/services')};
+        
         
     },
 }

@@ -20,6 +20,10 @@ router.get('/productDetail', controller.productDetailOriginal);
 
 router.get('/productDetail/:id', controller.productDetail);
 
+router.get('/products', controller.products);
+
+router.get('/services', controller.services);
+
 router.post('/editProduct', controller.editProduct);
 
 router.get('/addProduct', controller.getProduct);

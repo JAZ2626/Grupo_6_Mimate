@@ -4,7 +4,7 @@
         "name": "Limpieza Facial",
         "description": "Limpieza facial para sentirte lo mejor Lorem ipsum dolor sit amet consectetur adipisicing elit",
         "image": "/img/1.png",
-        "category": "servicio",
+        "category": "service",
         "price": 4500
     },
     {
@@ -12,7 +12,7 @@
         "name": "Masajes Corporales",
         "description": "tomate unos 30 minutos con los mejores masajes del mundo para relajarte Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "image": "/img/2.png",
-        "category": "servicio",
+        "category": "service",
         "price": 8900
     },
     {
@@ -20,7 +20,7 @@
         "name": "Maquillaje",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
         "image": "/img/3.png",
-        "category": "servicio",
+        "category": "service",
         "price": 3000
     },
     {
@@ -28,7 +28,7 @@
         "name": "Masajes Sueves",
         "description": "Lapiz para delinear ojos Lorem ipsum dolor sit amet consectetur adipisicing elit",
         "image": "/img/4.png",
-        "category": "servicio",
+        "category": "service",
         "price": 4000
     },
     {
@@ -36,7 +36,7 @@
         "name": "Labial",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
         "image": "/img/13.png",
-        "category": "producto",
+        "category": "product",
         "price": 4500
     },
     {
@@ -44,7 +44,7 @@
         "name": "Foundation",
         "description": "tomate unos 30 minutos con los mejores masajes del mundo para relajarte Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "image": "/img/9.png",
-        "category": "producto",
+        "category": "product",
         "price": 8000
     },
     {
@@ -52,7 +52,7 @@
         "name": "Aceite",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
         "image": "/img/9.png",
-        "category": "producto",
+        "category": "product",
         "price": 3000
     },
     {
@@ -60,11 +60,11 @@
         "name": "Limpiador Bifasico",
         "description": "Lapiz para delinear ojos Lorem ipsum dolor sit amet consectetur adipisicing ",
         "image": "/img/8.png",
-        "category": "producto",
+        "category": "product",
         "price": 4000
     },
     {
-        "id": 1663171214613,
+        "id": 9,
         "name": "Polvo Fijador",
         "description": "Polvo para fijar tu maquillaje que quede intacto!",
         "image": "/img/1663171214373-polvo.jpg",
@@ -72,7 +72,7 @@
         "price": 3500
     },
     {
-        "id": 1663172140076,
+        "id": 10,
         "name": "hola",
         "description": "como",
         "image": "/img/1663172139920-IMG_20181231_064619.jpg",
