@@ -24,7 +24,11 @@ router.get('/products', controller.products);
 
 router.get('/services', controller.services);
 
-router.post('/editProduct', controller.editProduct);
+router.get('/:id/edit', controller.editProduct);
+
+router.put('/:id', upload.single('image'),  controller.actualice);
+
+router.delete('/', controller.delete);
 
 router.get('/addProduct', controller.getProduct);
 

@@ -3,7 +3,7 @@
 
 <head>
     <%- include('../partials/head') %>
-        <link rel="stylesheet" href="../css/addProduct.css">
+        <link rel="stylesheet" href="/css/addProduct.css">
         <title>Document</title>
 </head>
 
@@ -13,21 +13,21 @@
             <div class="main-register">
                 <h1>Agregar Producto</h1>
                 <section class="inicio1">
-                    <form action="/" method="post" class="create-form">
+                    <form action='/products/:id?_method=PUT' method='post' class="create-form">
                         <div class="parte-arriba">
                             <div class="control-formulario">
                                 <label>Nombre del producto:</label>
-                                <input type="text" name="name" class="control" required>
+                                <input type="text" name="name" class="control" value= <%= productEdit.name %> required>
                                 <span class="feedback"></span>
                             </div>
                             <div class="control-formulario">
                                 <label>Descripción:</label>
-                                <input type="textarea" name="description" class="control" required>
+                                <input type="textarea" name="description" value= <%= productEdit.description %> class="control" required>
                                 <span class="feedback"></span>
                             </div>
                             <div class="control-formulario">
                                 <label>Agregar Imagen:</label>
-                                <input type="file" name="image" class="control" required>
+                                <input type="file" name="image" value= <%= productEdit.image %> class="control" required>
                                 <span class="feedback"></span>
                             </div>
                             <div class="control-formulario">
@@ -42,14 +42,16 @@
                             </div>
                             <div class="control-formulario">
                                 <label>Precio:</label>
-                                <input type="text" name="price" class="control" required>
+                                <input type="text" name="price" value= <%= productEdit.price %> class="control" required>
                                 <span class="feedback"></span>
                             </div>
                             <div class="button1">
                                 <button type="submit" value="update" class="button">Actualizar producto</button>
-                                <button type="reset" value="clear" class="button">Eliminar producto</button>
                             </div>
                         </div>
+                    </form>
+                    <form action='/products?_method=DELETE' method='post'>
+                        <button type="submit" class="button">Eliminar producto</button>
                     </form>
                 </section>
             </div>
