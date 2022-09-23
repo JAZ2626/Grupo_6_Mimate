@@ -35,4 +35,9 @@ Hicimos las rutas y controladores.
 **Mièrcoles: 31/08/2022:**
 Mostramos lo que hicimos hasta ahora, hicimos el retro y terminamos los .ejs
 
+**viernes: 23/09/2022:**
+mostramos lo que cada uno hiso, y terminamos con las rutas de los productos json.
+
+
+
 
