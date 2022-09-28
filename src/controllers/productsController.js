@@ -83,13 +83,15 @@ const controller = {
     },
 
     actualice:  (req, res) => {
-        console.log(res.body)
+        console.log(req.body)
 
         const productsJSON = fs.readFileSync(path.join(__dirname, "../data/products.json"), "utf-8");
         const products = JSON.parse(productsJSON);
+        const id = req.params.id;
 
+console.log(id)
         const editProduct = {
-                id: req.params.id,
+                id: id,
                 name: req.body.name,
                 description: req.body.description,
                 image: '/img/' + req.file.filename,
@@ -97,10 +99,11 @@ const controller = {
                 price: req.body.price,
             };
 
+        editProduct.id = Number(editProduct.id);
         editProduct.price = Number(editProduct.price);
-
+console.log(editProduct)
         const newListProducts = products.map( (v, i) => { 
-            if(i == editProduct.id) {
+            if(i+1 == editProduct.id) {
                 v = editProduct
             };
             return v
@@ -119,19 +122,18 @@ const controller = {
     }, 
 
     delete: (req, res) => {
-        const { id } = req.params;
+        const id = req.params.id;
+        console.log(id)
         const productsJSON = fs.readFileSync(path.join(__dirname, "../data/products.json"), "utf-8");
-        const products = JSON.parse(productsJSON);
-        const productIndex = products.findIndex((product) => product.id == id);
-        products.splice(productIndex, 1);
+        let products = JSON.parse(productsJSON);
+        products = products.filter(productActual => productActual.id != id);
 
         const ListProducts = JSON.stringify(products);
 
         fs.writeFileSync(path.join(__dirname, "../data/products.json"), ListProducts, "utf-8");
         
-        if (editProduct.category === 'product'){
-            res.redirect('/products/products')
-        }else{res.redirect('/products/services')};
+            res.redirect('/')
+
 },
 }
 module.exports = controller;

@@ -72,14 +72,6 @@
         "price": 3500
     },
     {
-        "id": 10,
-        "name": "hola",
-        "description": "como",
-        "image": "/img/1663172139920-IMG_20181231_064619.jpg",
-        "category": "product",
-        "price": 473
-    },
-    {
         "id": 11,
         "name": "serum",
         "description": "te deja la pirl mejor",

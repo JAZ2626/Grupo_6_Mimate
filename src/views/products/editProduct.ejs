@@ -13,7 +13,7 @@
             <div class="main-register">
                 <h1>Agregar Producto</h1>
                 <section class="inicio1">
-                    <form action='/products/edit/:id?_method=PUT' method='POST' class="create-form">
+                    <form action='/products/edit/<%= productEdit.id %>?_method=PUT' method='POST' class="create-form" enctype="multipart/form-data">
                         <div class="parte-arriba">
                             <div class="control-formulario">
                                 <label>Nombre del producto:</label>
@@ -50,7 +50,7 @@
                             </div>
                         </div>
                     </form>
-                    <form action='/products?_method=DELETE' method='post'>
+                    <form action='/products/edit/<%= productEdit.id %>?_method=DELETE' method='post'>
                         <button type="submit" class="button">Eliminar producto</button>
                     </form>
                 </section>

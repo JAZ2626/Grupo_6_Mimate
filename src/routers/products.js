@@ -28,7 +28,7 @@ router.get('/edit/:id', controller.editProduct);
 
 router.put('/edit/:id', upload.single('image'),  controller.actualice);
 
-router.delete('/', controller.delete);
+router.delete('/edit/:id', controller.delete);
 
 router.get('/addProduct', controller.getProduct);
 
