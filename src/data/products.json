@@ -78,5 +78,13 @@
         "image": "/img/1663172139920-IMG_20181231_064619.jpg",
         "category": "product",
         "price": 473
+    },
+    {
+        "id": 11,
+        "name": "serum",
+        "description": "te deja la pirl mejor",
+        "image": "/img/1663938878624-7.png",
+        "category": "product",
+        "price": 5000
     }
 ]

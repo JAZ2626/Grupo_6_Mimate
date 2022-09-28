@@ -51,7 +51,7 @@ const controller = {
     },
 
     getProduct: (req, res) => {
-        res.render("addProduct");
+        res.render('addProduct');
     },
 
     addProduct: (req, res) => { 
@@ -83,7 +83,7 @@ const controller = {
     },
 
     actualice:  (req, res) => {
-        console.log(req.body)
+        console.log(res.body)
 
         const productsJSON = fs.readFileSync(path.join(__dirname, "../data/products.json"), "utf-8");
         const products = JSON.parse(productsJSON);
@@ -99,18 +99,24 @@ const controller = {
 
         editProduct.price = Number(editProduct.price);
 
-        products.push(editProduct);
+        const newListProducts = products.map( (v, i) => { 
+            if(i == editProduct.id) {
+                v = editProduct
+            };
+            return v
+        });
+        console.log(newListProducts)
 
-        const newListProducts = JSON.stringify(products);
+        const newListProductsA = JSON.stringify(newListProducts);
 
-        fs.writeFileSync(path.join(__dirname, "../data/products.json"), newListProducts, "utf-8");
+        fs.writeFileSync(path.join(__dirname, "../data/products.json"), newListProductsA, "utf-8");
         
-        if (editProduct.category === 'product'){
+        if ( editProduct.category === 'product'){
             res.redirect('/products/products')
         }else{res.redirect('/products/services')};
         
         
-    },
+    }, 
 
     delete: (req, res) => {
         const { id } = req.params;
@@ -130,13 +136,6 @@ const controller = {
 }
 module.exports = controller;
 
-
-
-    //     ///res.render("users")
-    //     const productsJSON = JSON.stringify(productos);
-    //     fs.writeFileSync(path.join(__dirname, "../data/products.json"), productsJSON, "utf-8");
-    //     res.redirect("/products");
-    // }
 
 
 
