@@ -84,12 +84,9 @@ const controller = {
 
     actualice:  (req, res) => {
         console.log(req.body)
-
         const productsJSON = fs.readFileSync(path.join(__dirname, "../data/products.json"), "utf-8");
         const products = JSON.parse(productsJSON);
         const id = req.params.id;
-
-console.log(id)
         const editProduct = {
                 id: id,
                 name: req.body.name,
@@ -101,12 +98,11 @@ console.log(id)
 
         editProduct.id = Number(editProduct.id);
         editProduct.price = Number(editProduct.price);
-console.log(editProduct)
-        const newListProducts = products.map( (v, i) => { 
-            if(i+1 == editProduct.id) {
-                v = editProduct
+        const newListProducts = products.map( (productActual) => { 
+            if(productActual == editProduct.id) {
+                productActual = editProduct
             };
-            return v
+            return productActual
         });
         console.log(newListProducts)
 
@@ -118,7 +114,20 @@ console.log(editProduct)
             res.redirect('/products/products')
         }else{res.redirect('/products/services')};
         
-        
+        /*update: (req, res) => {
+        const productId = Number(req.params.id);
+
+		const newArrayProducts = products.map(oneProduct => {
+			if (oneProduct.id === Number(req.params.id)) {
+			return { 
+				...oneProduct,
+				...req.body,
+				image: req.file ? req.file.filename : oneProduct.image
+				}
+			}
+			return oneProduct;
+		});
+*/
     }, 
 
     delete: (req, res) => {
