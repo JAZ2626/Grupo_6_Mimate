@@ -26,7 +26,7 @@ router.get('/services', controller.services);
 
 router.get('/edit/:id', controller.editProduct);
 
-router.put('/edit/:id', upload.single('image'),  controller.actualice);
+router.put('/edit/:id', upload.single('image'),  controller.update);
 
 router.delete('/edit/:id', controller.delete);
 

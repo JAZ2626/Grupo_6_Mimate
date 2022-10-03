@@ -82,7 +82,7 @@ const controller = {
         
     },
 
-    actualice:  (req, res) => {
+    update:  (req, res) => {
         console.log(req.body)
         const productsJSON = fs.readFileSync(path.join(__dirname, "../data/products.json"), "utf-8");
         const products = JSON.parse(productsJSON);
