@@ -10,15 +10,16 @@ const controller = {
         const productsJSON = fs.readFileSync(path.join(__dirname, "../data/products.json"), "utf-8");
         const products = JSON.parse(productsJSON);
         const findProduct = products.find(actualProduct => actualProduct.id-1 == id);
-    
-            res.render('productDetail', {
-                category: findProduct.category,
-                name: findProduct.name,
-                image: findProduct.image,
-                price: findProduct.price,
-                description: findProduct.description,
-                products: products,
-            });
+        if (productEdit){res.render('productDetail', {
+            category: findProduct.category,
+            name: findProduct.name,
+            image: findProduct.image,
+            price: findProduct.price,
+            description: findProduct.description,
+            products: products})}
+        else {
+             res.redirect("/")
+            };
 
 
     },
@@ -46,8 +47,11 @@ const controller = {
         const productsJSON = fs.readFileSync(path.join(__dirname, "../data/products.json"), "utf-8");
         const products = JSON.parse(productsJSON);
         const productEdit = products.find(actualProduct => actualProduct.id-1 == id);
-
-       res.render('editProduct', {productEdit: productEdit});
+        console.log(productEdit);
+        if (productEdit){res.render('editProduct', {productEdit: productEdit});}
+       else{
+        res.redirect("/")
+       }
     },
 
     getProduct: (req, res) => {
@@ -99,7 +103,7 @@ const controller = {
         editProduct.id = Number(editProduct.id);
         editProduct.price = Number(editProduct.price);
         const newListProducts = products.map( (productActual) => { 
-            if(productActual == editProduct.id) {
+            if(productActual.id == editProduct.id) {
                 productActual = editProduct
             };
             return productActual

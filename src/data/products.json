@@ -1,1 +1,90 @@
-[{"id":1,"name":"Limpieza Facial","description":"Limpieza facial para sentirte lo mejor Lorem ipsum dolor sit amet consectetur adipisicing elit","image":"/img/1.png","category":"service","price":4500},{"id":2,"name":"Masajes Corporales","description":"tomate unos 30 minutos con los mejores masajes del mundo para relajarte Lorem ipsum dolor sit amet consectetur adipisicing elit.","image":"/img/2.png","category":"service","price":8900},{"id":3,"name":"Maquillaje","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit","image":"/img/3.png","category":"service","price":3000},{"id":4,"name":"Masajes Sueves","description":"Lapiz para delinear ojos Lorem ipsum dolor sit amet consectetur adipisicing elit","image":"/img/4.png","category":"service","price":4000},{"id":5,"name":"Labial","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit","image":"/img/13.png","category":"product","price":4500},{"id":6,"name":"Foundation","description":"tomate unos 30 minutos con los mejores masajes del mundo para relajarte Lorem ipsum dolor sit amet consectetur adipisicing elit.","image":"/img/9.png","category":"product","price":8000},{"id":7,"name":"Aceite","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit","image":"/img/9.png","category":"product","price":3000},{"id":8,"name":"Limpiador Bifasico","description":"Lapiz para delinear ojos Lorem ipsum dolor sit amet consectetur adipisicing ","image":"/img/8.png","category":"product","price":4000},{"id":9,"name":"Polvo Fijador","description":"Polvo para fijar tu maquillaje que quede intacto!","image":"/img/1663171214373-polvo.jpg","category":"product","price":3500},{"id":11,"name":"serum","description":"te deja la pirl mejor","image":"/img/1663938878624-7.png","category":"product","price":5000}]
+[
+    {
+        "id": 1,
+        "name": "Limpieza Facial",
+        "description": "Limpieza facial para sentirte lo mejor Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "image": "/img/1.png",
+        "category": "service",
+        "price": 4500
+    },
+    {
+        "id": 2,
+        "name": "Masajes Corporales",
+        "description": "tomate unos 30 minutos con los mejores masajes del mundo para relajarte Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "image": "/img/2.png",
+        "category": "service",
+        "price": 8900
+    },
+    {
+        "id": 3,
+        "name": "Maquillaje",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "image": "/img/3.png",
+        "category": "service",
+        "price": 3000
+    },
+    {
+        "id": 4,
+        "name": "Masajes Sueves",
+        "description": "Lapiz para delinear ojos Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "image": "/img/4.png",
+        "category": "service",
+        "price": 4000
+    },
+    {
+        "id": 5,
+        "name": "Labial",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "image": "/img/13.png",
+        "category": "product",
+        "price": 4500
+    },
+    {
+        "id": 6,
+        "name": "Foundation",
+        "description": "tomate unos 30 minutos con los mejores masajes del mundo para relajarte Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "image": "/img/9.png",
+        "category": "product",
+        "price": 8000
+    },
+    {
+        "id": 7,
+        "name": "Aceite",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "image": "/img/9.png",
+        "category": "product",
+        "price": 3000
+    },
+    {
+        "id": 8,
+        "name": "Limpiador Bifasico",
+        "description": "Lapiz para delinear ojos Lorem ipsum dolor sit amet consectetur adipisicing ",
+        "image": "/img/8.png",
+        "category": "product",
+        "price": 4000
+    },
+    {
+        "id": 9,
+        "name": "Polvo Fijador",
+        "description": "Polvo para fijar tu maquillaje que quede intacto!",
+        "image": "/img/1663171214373-polvo.jpg",
+        "category": "product",
+        "price": 3500
+    },
+    {
+        "id": 11,
+        "name": "serum",
+        "description": "te deja la pirl mejor",
+        "image": "/img/1663938878624-7.png",
+        "category": "product",
+        "price": 5000
+    },
+    {
+        "id": 12,
+        "name": "fgjdflh",
+        "description": "gbhkgj",
+        "image": "/img/1664807221874-6.png",
+        "category": "service",
+        "price": 422
+    }
+]

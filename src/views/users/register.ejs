@@ -15,7 +15,7 @@
                 <p>Comprá más rápido y lleva el control de tus pedidos. ¡En un solo lugar!</p>
 
                 <section class="inicio1">
-                    <form action="/login" method="post" class="create-form">
+                    <form action="/login" method="POST" enctype="multipart/form-data" class="create-form">
                         <div class="parte-arriba">
                             <div class="control-formulario">
                                 <label>Nombre:</label>
@@ -45,6 +45,11 @@
                             <div class="control-formulario">
                                 <label>Confirmar contraseña:</label>
                                 <input type="password" name="confirmPassword" class="control" required>
+                                <span class="feedback"></span>
+                            </div>
+                            <div class="control-formulario">
+                                <label>Agregar Imagen:</label>
+                                <input type="file" name="image" class="control" required>
                                 <span class="feedback"></span>
                             </div>
                         </div>
