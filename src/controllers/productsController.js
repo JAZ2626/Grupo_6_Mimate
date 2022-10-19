@@ -10,7 +10,7 @@ const controller = {
         const productsJSON = fs.readFileSync(path.join(__dirname, "../data/products.json"), "utf-8");
         const products = JSON.parse(productsJSON);
         const findProduct = products.find(actualProduct => actualProduct.id-1 == id);
-        if (productEdit){res.render('productDetail', {
+        if (findProduct){res.render('productDetail', {
             category: findProduct.category,
             name: findProduct.name,
             image: findProduct.image,
