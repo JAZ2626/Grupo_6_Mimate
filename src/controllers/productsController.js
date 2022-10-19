@@ -66,7 +66,7 @@ const controller = {
                 id: products[products.length - 1].id + 1,
                 name: req.body.name,
                 description: req.body.description,
-                image: '/img/' + req.file.filename,
+                image: '/imgProducts/' + req.file.filename,
                 category: req.body.category,
                 price: req.body.price,
             };
@@ -95,7 +95,7 @@ const controller = {
                 id: id,
                 name: req.body.name,
                 description: req.body.description,
-                image: '/img/' + req.file.filename,
+                image: '/imgProducts/' + req.file.filename,
                 category: req.body.category,
                 price: req.body.price,
             };

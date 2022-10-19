@@ -1,7 +1,6 @@
 const express = require('express');
 const controller = require('../controllers/userController');
 const multer = require('multer');
-const bcrypt = require ('bcryptjs');
 const router = express.Router();
 const { body } = require('express-validator');
 const path = require('path');
@@ -25,7 +24,6 @@ const validationLog = [
     .isLength({ min: 6 }).withMessage('La contraseña debe tener al menos 6 caracteres'),
 ];
 
-router.get('/register', upload.single('image'), controller.register);
 router.get('/register', controller.register);
 
 router.post('/register', upload.single('image'), controller.addUser);
