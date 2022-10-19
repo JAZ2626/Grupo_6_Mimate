@@ -22,7 +22,7 @@ app.listen(3030, ()=>{
 
 app.use(methodOverride('_method'));
 
-app.use(express.static('../public'));
+app.use(express.static(__dirname, "../public"));
 
 // Configuración para obtener body
 app.use(express.urlencoded({ extended: true }));
