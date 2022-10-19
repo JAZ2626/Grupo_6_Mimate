@@ -24,7 +24,6 @@ app.use(methodOverride('_method'));
 
 app.use(express.static(__dirname, "../public"));
 
-// Configuración para obtener body
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
