@@ -1,4 +1,6 @@
 const express = require('express');
+const fs = require('fs');
+const path = require('path');
 
 const controller = {
 register:  (req, res)=>{
@@ -15,16 +17,17 @@ addUser: (req, res) => {
         image: '/img/' + req.file.filename,
         email: req.body.email,
         password: req.body.password,
-    };
+        telefono: Number(req.body.telefono)
 
-    newUser.price = Number(newUser.price);
+    };
+    
     users.push(newUser);
 
     const newListUsers = JSON.stringify(users);
 
     fs.writeFileSync(path.join(__dirname, "../data/user.json"), newListUsers, "utf-8");
 
-    res.redirect('/users')
+    res.redirect('/')
 
 },
 
