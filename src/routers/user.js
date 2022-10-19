@@ -24,6 +24,8 @@ const validationLog = [
     .isLength({ min: 6 }).withMessage('La contraseña debe tener al menos 6 caracteres'),
 ];
 
+router.get('/', controller.users);
+
 router.get('/register', controller.register);
 
 router.post('/register', upload.single('image'), controller.addUser);
