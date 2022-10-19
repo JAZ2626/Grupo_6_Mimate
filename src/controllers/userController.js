@@ -18,9 +18,10 @@ addUser: (req, res) => {
         email: req.body.email,
         password: req.body.password,
         telefono: Number(req.body.telefono)
+    
 
     };
-    
+
     users.push(newUser);
 
     const newListUsers = JSON.stringify(users);
