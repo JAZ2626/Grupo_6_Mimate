@@ -37,7 +37,7 @@ login: (req, res)=>{
     if (errors.isEmpty()){
         let user = req.body;
         userId = usersModel.create(user);
-        res.redirect('/' + userId)
+        res.redirect('/')
     }else{
         return res.render('login', {errors: errors.mapped(),
             old: req.body});

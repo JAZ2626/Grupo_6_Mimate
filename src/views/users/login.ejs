@@ -16,12 +16,11 @@
                     <form action="/" method="post" class="create-form">
                         <div class="control-formulario">
                             <label for="email">Correo electrónico:</label>
-                            <input type="email" name="email" id="email" class="control" value= "<%= locals.old && old.name ? old.name : ""%>">
-                            
-                            <% if (locals.errors && errors.name) { %>
-                                <p class="feedback">
-                                    <%= errors.name %>
-                                </p>
+                            <input type="email" name="email" id="email" class="control" value= "<%= locals.old && old.email ? old.email : " "%> ">
+                            <% if (locals.errors && errors.email) { %>
+                                <div class=text-danger> 
+                                    <%= errors.email.msg %>
+                                </div>
                                 <% } %>
 
                         </div>
