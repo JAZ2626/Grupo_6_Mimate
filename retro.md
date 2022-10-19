@@ -11,3 +11,11 @@ Nos supimos dividir bien los trabajos y nos organizamos bien para poder entregar
 
 Hacer más:
 Mejorar el uso del git.
+
+**Sprint 4:**
+Continuar haciendo:
+Nos organizamos y nos dividimos bien las tareas, cada una aporto y realizo su parte a tiempo.
+
+Hacer más:
+Creemos que con este sprint nos manejamos un poco mejor con el tema de git.
+

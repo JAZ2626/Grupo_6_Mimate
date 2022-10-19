@@ -1,8 +1,21 @@
 const express = require('express');
 const controller = require('../controllers/userController');
+const multer = require('multer');
 const router = express.Router();
 
-router.get('/register', controller.register);
+const storage = multer.diskStorage({
+    destination: function(req, file, cb){
+        cb(null, path.join(__dirname, '../../public/img'));
+    },
+
+    filename: function(req, file, cb){
+        cb(null, Date.now() + '-' + file.originalname);
+    }
+});
+
+const upload = multer({storage: storage});
+
+router.get('/register', upload.single('image'), controller.register);
 
 router.get('/login', controller.login);
 

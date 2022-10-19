@@ -4,6 +4,7 @@ const routerMain = require('./routers/main');
 const routerUser = require('./routers/user');
 const routerProducts = require('./routers/products');
 const app = express();
+const methodOverride = require('method-override');
 
 app.set('view engine','ejs');
 
@@ -16,9 +17,17 @@ app.set("views", [
 
 app.listen(3030, ()=>{
     console.log(" ");
-})
+});
+
+
+app.use(methodOverride('_method'));
 
 app.use(express.static('../public'));
+
+// Configuración para obtener body
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 app.use('/', routerMain);
 app.use('/user', routerUser);
 app.use('/products', routerProducts);
