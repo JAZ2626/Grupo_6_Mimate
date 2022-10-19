@@ -1,5 +1,6 @@
 const express = require('express');
 const fs = require('fs');
+const bcrypt = require ('bcryptjs');
 const path = require('path');
 
 const controller = {
@@ -16,7 +17,7 @@ addUser: (req, res) => {
         apellido: req.body.apellido,
         image: '/img/' + req.file.filename,
         email: req.body.email,
-        password: bycrypt.hashSync(req.body.password, 10);
+        password: bcrypt.hashSync(req.body.password, 10),
         telefono: Number(req.body.telefono)
 
     };
