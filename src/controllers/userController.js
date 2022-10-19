@@ -17,7 +17,7 @@ addUser: (req, res) => {
         apellido: req.body.apellido,
         image: '/img/' + req.file.filename,
         email: req.body.email,
-        password: bycrypt.hashSync(req.body.password, 10);
+        password: req.body.password,
         telefono: Number(req.body.telefono)
 
     };
