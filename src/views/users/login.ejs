@@ -15,9 +15,15 @@
                 <section class="inicio1">
                     <form action="/" method="post" class="create-form">
                         <div class="control-formulario">
-                            <label>Email:</label>
-                            <input type="email" name="email" class="control" required>
-                            <span class="feedback"></span>
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" name="email" id="email" class="control" value= "<%= locals.old && old.name ? old.name : ""%>">
+                            
+                            <% if (locals.errors && errors.name) { %>
+                                <p class="feedback">
+                                    <%= errors.name %>
+                                </p>
+                                <% } %>
+
                         </div>
                         <div class="control-formulario">
                             <label>Contraseña:</label>
