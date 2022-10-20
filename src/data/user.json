@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 [
     {
-        "id": 123,
+        "id": 1,
         "nombre": "marta",
         "apellido": "garcia",
         "email": "martagarcia@gmail.com",
@@ -31,11 +30,9 @@
     {
         "id": 1,
         "nombre": "Jana",
-        "image": "/imgUsers/1666190253241-WhatsApp Image 2022-10-18 at 8.09.43 PM.jpeg",
+        "image": "/img/1666190253241-WhatsApp Image 2022-10-18 at 8.09.43 PM.jpeg",
         "email": "janateitel@gmail.com",
         "password": "Jasna",
         "telefono": 122
     }
 ]
-=======
->>>>>>> 8593cc002b7c3d669bfa7de29680213a0b10a474

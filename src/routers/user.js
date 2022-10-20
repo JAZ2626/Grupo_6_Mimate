@@ -31,7 +31,9 @@ router.get('/register', controller.register);
 router.post('/register', upload.single('image'), controller.addUser);
 
 router.get('/login',validationLog, controller.login);
+
 router.post('/login', validationLog, controller.login);
+
 router.get('/productCart', controller.productCart);
 
 
