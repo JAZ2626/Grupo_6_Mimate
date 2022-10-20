@@ -18,7 +18,7 @@ const storage = multer.diskStorage({
 const upload = multer({storage: storage});
 
 const validationLog = [
-    body('email').notEmpty().withMessage('Debes completar el nombre').bail()
+    body('email').notEmpty().withMessage('Debes completar el email').bail()
     .isEmail().withMessage('Debes escribir un email valido'),
     body('password').notEmpty().withMessage('Debes completar la contraseña').bail()
     .isLength({ min: 6 }).withMessage('La contraseña debe tener al menos 6 caracteres'),
@@ -30,8 +30,8 @@ router.get('/register', controller.register);
 
 router.post('/register', upload.single('image'), controller.addUser);
 
-router.get('/login', validationLog, controller.login);
-
+router.get('/login',validationLog, controller.login);
+router.post('/login', validationLog, controller.login);
 router.get('/productCart', controller.productCart);
 
 
