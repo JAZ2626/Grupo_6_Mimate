@@ -38,23 +38,23 @@ const controller = {
         res.redirect('/')
 
     },
-    getLogin: (req, res)=>{
-        // let errors = validationResult(req);
-        // if (errors.isEmpty()){
-        //     let user = req.body;
-        //     userId = usersModel.create(user);
-        //     res.redirect('/')
-        // }else{
-        //     return res.render('login', {errors: errors.mapped(),
-        //         old: req.body});
-        // }
+getLogin: (req, res)=>{
         res.render('login');
     },
 loginUser: (req, res)=>{
-    res.send('sssion iniciada correctamente');
+    //   let errors = validationResult(req);
+    //     if (errors.isEmpty()){
+    //         let user = req.body;
+    //         userId = usersModel.create(user);
+    //         res.redirect('/')
+    //     }else{
+    //         return res.render('login', {errors: errors.mapped(),
+    //             old: req.body});
+    //     }
+    res.redirect('/');
 },
     productCart: (req, res) => {
-        res.render('productCart')
+        res.render('index')
     },
 }
 

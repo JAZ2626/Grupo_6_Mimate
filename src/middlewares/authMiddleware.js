@@ -1,16 +1,16 @@
 const fs = require('fs');
-const path = ('path');
+const path = require('path');
 
 const authMiddleware = {
 checkPassword: function(req, res, next){
     const user = req.body;
-    const usersJson = fs.readFileSync(path.join(__dirname, '../data/user.json'), 'utf-8');
-const users = JSON.parse(usersJson);
+    const usersJSON = fs.readFileSync(path.join(__dirname, "../data/user.json"), "utf-8");
+const users = JSON.parse(usersJSON);
 const reqUser = users.find(actualUser => actualUser.email === user.email);
 if(reqUser.password === user.password){
     next();
 }else{
-    res.send("La contraseña es incorrecta");
+    res.send("La contraseña es incorrectaaa");
 }
 const isCorrect = bcrypt.compareSync(user.password, reqUser.password);
 
