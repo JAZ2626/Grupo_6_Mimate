@@ -4,6 +4,7 @@ const multer = require('multer');
 const router = express.Router();
 const { body } = require('express-validator');
 const path = require('path');
+const authMiddleware = require("../middlewares/authMiddleware");
 
 const storage = multer.diskStorage({
     destination: function(req, file, cb){
@@ -30,9 +31,9 @@ router.get('/register', controller.register);
 
 router.post('/register', upload.single('image'), controller.addUser);
 
-router.get('/login',validationLog, controller.login);
+router.get('/login', controller.getLogin);
 
-router.post('/login', validationLog, controller.login);
+router.post('/login', authMiddleware.checkPassword, controller.loginUser);
 
 router.get('/productCart', controller.productCart);
 
