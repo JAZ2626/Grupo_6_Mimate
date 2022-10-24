@@ -29,7 +29,9 @@ router.get('/', controller.users);
 
 router.get('/register', controller.register);
 
-router.post('/register', upload.single('image'), controller.addUser);
+//router.post('/register', upload.single('image'), controller.addUser);
+
+router.post ('/register' , controller.processRegister);
 
 router.get('/login', controller.getLogin);
 

@@ -30,3 +30,5 @@ app.use(express.json());
 app.use('/', routerMain);
 app.use('/user', routerUser);
 app.use('/products', routerProducts);
+
+app.use(express.urlencoded ({extended:false}));
