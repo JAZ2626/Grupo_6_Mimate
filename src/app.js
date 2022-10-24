@@ -24,7 +24,7 @@ app.listen(3030, ()=>{
 app.use(session({ 
     secret: "Shhh, it's a secret",
     resave: false,
-    saveUnitialized: false,
+    saveUninitialized: false,
     }));
 app.use(userLoggedMiddleware);
 app.use(methodOverride('_method'));

@@ -40,7 +40,7 @@ router.get('/login', [guestMiddleware, validationLog], controller.getLogin);
 router.post('/login', authMiddleware.checkPassword, controller.loginUser);
 
 router.get('/productCart', controller.productCart);
-router.get('/profile', authMiddleware, controller.profile);
+router.get('/profile', loginAuthMiddleware, controller.profile);
 router.get('/logout', controller.logout);
 
 module.exports = router;

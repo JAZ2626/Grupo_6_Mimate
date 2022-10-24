@@ -3,7 +3,7 @@ const fs = require('fs');
 const bcrypt = require('bcryptjs');
 const path = require('path');
 const { validationResult } = require('express-validator');
-
+const User = require('../models/User')
 const controller = {
     users: (req, res) => {
         const usersJSON = fs.readFileSync(path.join(__dirname, "../data/user.json"), "utf-8");
@@ -49,7 +49,7 @@ const controller = {
         let userToLogin = User.findByField('email', req.body.email);
 
         if (userToLogin) {
-            let okPassword = bcryptjs.compareSync(req.body.password, userToLogin.password)
+            let okPassword = bcrypt.compareSync(req.body.password, userToLogin.password)
             if (okPassword) {
                 delete userToLogin.password;
                 req.session.userLogged = userToLogin
