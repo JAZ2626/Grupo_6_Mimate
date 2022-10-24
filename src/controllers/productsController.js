@@ -37,10 +37,6 @@ const controller = {
             });
 
     },
-    productDetailOriginal: (req, res) => {
-        res.render('productDetailOriginal')
-    },
-
 
     editProduct: (req, res) => {
         const id = req.params.id - 1
@@ -66,12 +62,11 @@ const controller = {
                 id: products[products.length - 1].id + 1,
                 name: req.body.name,
                 description: req.body.description,
-                image: '/img/' + req.file.filename,
+                image: '/imgProducts/' + req.file.filename,
                 category: req.body.category,
                 price: req.body.price,
             };
 
-        // newProduct.id = products[products.length - 1].id + 1
         newProduct.price = Number(newProduct.price);
         products.push(newProduct);
 
@@ -95,7 +90,7 @@ const controller = {
                 id: id,
                 name: req.body.name,
                 description: req.body.description,
-                image: '/img/' + req.file.filename,
+                image: '/imgProducts/' + req.file.filename,
                 category: req.body.category,
                 price: req.body.price,
             };
@@ -116,22 +111,8 @@ const controller = {
         
         if ( editProduct.category === 'product'){
             res.redirect('/products/products')
-        }else{res.redirect('/products/services')};
+        } else {res.redirect('/products/services')};
         
-        /*update: (req, res) => {
-        const productId = Number(req.params.id);
-
-		const newArrayProducts = products.map(oneProduct => {
-			if (oneProduct.id === Number(req.params.id)) {
-			return { 
-				...oneProduct,
-				...req.body,
-				image: req.file ? req.file.filename : oneProduct.image
-				}
-			}
-			return oneProduct;
-		});
-*/
     }, 
 
     delete: (req, res) => {

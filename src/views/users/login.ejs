@@ -13,11 +13,16 @@
             <div class="main-login">
                 <h1>¡Hola de nuevo!</h1>
                 <section class="inicio1">
-                    <form action="/" method="post" class="create-form">
+                    <form action="/user/login" method="POST" class="create-form">
                         <div class="control-formulario">
-                            <label>Email:</label>
-                            <input type="email" name="email" class="control" required>
-                            <span class="feedback"></span>
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" name="email" id="email" class="control" value= "<%= locals.old && old.email ? old.email : " "%> ">
+                            <% if (locals.errors && errors.email) { %>
+                                <div class=text-danger> 
+                                    <%= errors.email.msg %>
+                                </div>
+                                <% } %>
+
                         </div>
                         <div class="control-formulario">
                             <label>Contraseña:</label>

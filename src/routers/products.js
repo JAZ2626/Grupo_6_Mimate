@@ -6,7 +6,7 @@ const router = express.Router();
 
 const storage = multer.diskStorage({
     destination: function(req, file, cb){
-        cb(null, path.join(__dirname, '../../public/imgPoducts'));
+        cb(null, path.join(__dirname, '../../public/imgProducts'));
     },
 
     filename: function(req, file, cb){
@@ -15,8 +15,6 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({storage: storage});
-
-router.get('/productDetail', controller.productDetailOriginal);
 
 router.get('/productDetail/:id', controller.productDetail);
 
