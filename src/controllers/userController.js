@@ -1,6 +1,7 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+const bcrypt = require('bcryptjs')
 const { validationResult } = require('express-validator');
 
 const controller = {
@@ -23,7 +24,7 @@ const controller = {
             apellido: req.body.apellido,
             image: '/imgUsers/' + req.file.filename,
             email: req.body.email,
-            password: req.body.password,
+            password: bcrypt.hashSync(req.body.password, 10),
             telefono: Number(req.body.telefono)
 
 
@@ -38,21 +39,21 @@ const controller = {
         res.redirect('/')
 
     },
-getLogin: (req, res)=>{
+    getLogin: (req, res) => {
         res.render('login');
     },
-loginUser: (req, res)=>{
-    //   let errors = validationResult(req);
-    //     if (errors.isEmpty()){
-    //         let user = req.body;
-    //         userId = usersModel.create(user);
-    //         res.redirect('/')
-    //     }else{
-    //         return res.render('login', {errors: errors.mapped(),
-    //             old: req.body});
-    //     }
-    res.redirect('/');
-},
+    loginUser: (req, res) => {
+        //   let errors = validationResult(req);
+        //     if (errors.isEmpty()){
+        //         let user = req.body;
+        //         userId = usersModel.create(user);
+        //         res.redirect('/')
+        //     }else{
+        //         return res.render('login', {errors: errors.mapped(),
+        //             old: req.body});
+        //     }
+        res.redirect('/');
+    },
     productCart: (req, res) => {
         res.render('index')
     },
