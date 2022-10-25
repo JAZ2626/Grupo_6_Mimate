@@ -8,11 +8,23 @@ const controller = {
     users: (req, res) => {
         const usersJSON = fs.readFileSync(path.join(__dirname, "../data/user.json"), "utf-8");
         const users = JSON.parse(usersJSON);
-        res.render('users')
+        res.render('users', {users:users});
+    }, 
+    profile: (req, res) => {
+            const id = req.params.id - 1
+            const usersJSON = fs.readFileSync(path.join(__dirname, "../data/user.json"), "utf-8");
+            const users = JSON.parse(usersJSON);
+            const findUsers = users.find(actualUser => actualUser.id-1 == id);
+            if (findUsers){res.render('profile', {
+                users:findUsers})}
+            else {
+                 res.redirect("/user")
+                };
+            
     },
 
     register: (req, res) => {
-        res.render('register')
+        res.render('register');
     },
     addUser: (req, res) => {
         const usersJSON = fs.readFileSync(path.join(__dirname, "../data/user.json"), "utf-8");

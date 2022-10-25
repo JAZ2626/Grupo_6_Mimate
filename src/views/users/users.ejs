@@ -3,7 +3,7 @@
 
 <head>
     <%- include('../partials/head') %>
-        <link rel="stylesheet" href="../css/products.css">
+        <link rel="stylesheet" href="../css/users.css">
         <title>PRODUCTOS</title>
 </head>
 
@@ -17,13 +17,11 @@
                     </div>
                     <br>
                     <div class="articulos">
-                        <% users.forEach(user=> {
+                        <% users.forEach(user=> { %>
                             <article class="articulo1">
                                 <img src= "<%=user.image %>" alt="i">
                                 <div class="descripcions">
-                                    <p class="precios">$<%= user.name %>
-                                            <%= user.apellido %>
-                                    </p>
+                                    <p class="precios"><%= user.nombre %>  <%= user.apellido %> </p>
                                     <p class="descripciones">
                                         <%= user.email %>
                                     </p>

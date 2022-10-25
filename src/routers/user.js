@@ -31,6 +31,8 @@ router.get('/register', controller.register);
 
 router.post('/register', upload.single('image'), controller.addUser);
 
+router.get('/:id', controller.profile);
+
 router.get('/login', controller.getLogin);
 
 router.post('/login', authMiddleware.checkPassword, controller.loginUser);

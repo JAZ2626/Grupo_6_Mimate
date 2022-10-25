@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head') %>
+        <link rel="stylesheet" href="/css/profile.css">
+        <title>Document</title>
+</head>
+
+<body>
+    <%- include('../partials/header') %>
+        <main>
+            <div class="main-sub">
+                <p class="inicio-bar"><a href="/">Inicio</a> > <a href="#">usuarios</a> > <a
+                        href="#">Nombre
+                        del usuario</a></p>
+                <section class="product">
+                    <img class="product-img" src= <%= users.image %> alt="">
+                    <div class="detalle">
+                        <h3 class="product-name"><%= users.nombre%> <%= users.apellido%> </h3>
+                        <h6 class="precio">Telefono: <%= users.telefono %></h6>
+                        <h6 class="precio">Email: <%= users.email %></h6>
+                        <h6 class="precio">Categoria: <%= users.category %></h6>
+                        <p class="compartir">Compartir: <i class="fa-brands fa-instagram"></i> <i
+                                class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-whatsapp"></i></p>
+                    </div>
+                </section>
+            <br>
+        </main>
+        <%- include('../partials/footer') %>
+</body>
+
+</html>
