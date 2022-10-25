@@ -20,6 +20,8 @@ router.get('/productDetail/:id', controller.productDetail);
 
 router.get('/products', controller.products);
 
+router.get('/admin', controller.admin);
+
 router.get('/services', controller.services);
 
 router.get('/edit/:id', controller.editProduct);
