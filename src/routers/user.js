@@ -33,7 +33,7 @@ router.get('/register', guestMiddleware, controller.register);
 
 //router.post('/register', upload.single('image'), controller.addUser);
 
-router.get('/:id', controller.profile);
+router.get('/:id', controller.profile1);
 
 router.get('/login', controller.getLogin);
 
@@ -44,7 +44,9 @@ router.get('/login', [guestMiddleware, validationLog], controller.getLogin);
 router.post('/login', authMiddleware.checkPassword, controller.loginUser);
 
 router.get('/productCart', controller.productCart);
+
 router.get('/profile', loginAuthMiddleware, controller.profile);
+
 router.get('/logout', controller.logout);
 
 module.exports = router;

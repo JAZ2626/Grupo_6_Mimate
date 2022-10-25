@@ -30,6 +30,7 @@
     {
         "id": 1,
         "nombre": "Jana",
+        "apellido": "teitelbaum",
         "image": "/img/1666190253241-WhatsApp Image 2022-10-18 at 8.09.43 PM.jpeg",
         "email": "janateitegl@gmail.com",
         "password": "Jasna",
@@ -38,6 +39,7 @@
     {
         "id": 2,
         "nombre": "Jana",
+        "apellido": "teitelbaum",
         "image": "/imgUsers/1666614865573-img_4138.jpg",
         "email": "janateitefl@gmail.com",
         "password": "$2a$10$IduAsAIn/HF86wzDR8gsr.cJjPYIhxbsuXxxsqKGpTpnP5UMMi7B.",
@@ -46,6 +48,7 @@
     {
         "id": 3,
         "nombre": "Jana",
+        "apellido": "teitelbaum",
         "image": "/imgUsers/1666614927042-img_4138.jpg",
         "email": "ariegoro@gmail.com",
         "password": "$2a$10$9bebp5.iOQgDM3uNGAwTEeQYdx6QlTloqrHZLpfvPRLZWTLBP3ocW",

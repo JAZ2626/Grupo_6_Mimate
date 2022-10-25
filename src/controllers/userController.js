@@ -8,19 +8,22 @@ const controller = {
     users: (req, res) => {
         const usersJSON = fs.readFileSync(path.join(__dirname, "../data/user.json"), "utf-8");
         const users = JSON.parse(usersJSON);
-        res.render('users', {users:users});
-    }, 
-    profile: (req, res) => {
-            const id = req.params.id - 1
-            const usersJSON = fs.readFileSync(path.join(__dirname, "../data/user.json"), "utf-8");
-            const users = JSON.parse(usersJSON);
-            const findUsers = users.find(actualUser => actualUser.id-1 == id);
-            if (findUsers){res.render('profile', {
-                users:findUsers})}
-            else {
-                 res.redirect("/user")
-                };
-            
+        res.render('users', { users: users });
+    },
+    profile1: (req, res) => {
+        const id = req.params.id - 1
+        const usersJSON = fs.readFileSync(path.join(__dirname, "../data/user.json"), "utf-8");
+        const users = JSON.parse(usersJSON);
+        const findUsers = users.find(actualUser => actualUser.id - 1 == id);
+        if (findUsers) {
+            res.render('profile', {
+                users: findUsers
+            })
+        }
+        else {
+            res.redirect("/user")
+        };
+
     },
 
     register: (req, res) => {
@@ -37,12 +40,11 @@ const controller = {
             id: users[users.length - 1].id + 1,
             nombre: req.body.nombre,
             apellido: req.body.apellido,
+            telefono: Number(req.body.telefono),
             image: '/imgUsers/' + req.file.filename,
             email: req.body.email,
             password: bcrypt.hashSync(req.body.password, 10),
-            telefono: Number(req.body.telefono)
-
-
+            category: "usuario"     
         };
 
         users.push(newUser);
@@ -82,7 +84,7 @@ const controller = {
                 }
             }
         });
-    
+
 
         //   let errors = validationResult(req);
         //     if (errors.isEmpty()){
@@ -93,22 +95,22 @@ const controller = {
         //         return res.render('login', {errors: errors.mapped(),
         //             old: req.body});
         //     }
-},
+    },
     productCart: (req, res) => {
-        res.render('index')
+        res.render('productCart')
     },
 
-    profile: (req, res)=>{
+    profile: (req, res) => {
         return res.render('userProfile', {
-        user: req.session.userLogged
+            user: req.session.userLogged
         });
-        },
-        
-        logout: (req, res)=>{
-         req.session.destroy();
+    },
+
+    logout: (req, res) => {
+        req.session.destroy();
         return res.redirect('/');
-        }
-        
+    }
+
 }
 
 
