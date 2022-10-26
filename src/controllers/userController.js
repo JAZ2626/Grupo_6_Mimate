@@ -16,6 +16,8 @@ const controller = {
     },
     processRegister:(req, res) =>{
         return res.send (req.body);
+       const resultValidation = validationResult(req);
+       return res.send(resultValidation);
     },
     addUser: (req, res) => {
         const usersJSON = fs.readFileSync(path.join(__dirname, "../data/user.json"), "utf-8");
