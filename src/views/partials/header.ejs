@@ -17,13 +17,37 @@
         </form>
     
         <ul class="text-bar">
+
+<% if (locals.isLogged) { %>
+
+    <li class="nav-item dropdown">
+    
+    <a class="nav-link dropdown-toggle" href="#" id="dropUser" role="button" data-bs-toggle="dropdown" aria-expanded="false">     
+    Hi 
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+    
+    <a class="inicio" href="/user/profile">My profile</a> 
+    
+    <li><hr class="dropdown-divider"></li>
+    
+    <a class="inicio" href="/user/logout">Logout</a>
+    
+    </ul>
+    
+    </li>
+    
+    <% } else { %>
             <li><a href="/products/admin"><h6 class="inicio">Admin</h6> </a></li>
 
             <li><a href="/user/login">
                     <h6 class="inicio">Inciar sesión</h6> <i class="fa-solid fa-right-to-bracket"> </i>
                 </a> </li>
-            <li><a href="/user/productCart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <% } %>
+        <li><a href="/user/productCart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+
         </ul>
+
     </div>
 
 

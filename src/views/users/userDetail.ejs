@@ -4,7 +4,7 @@
 <head>
     <%- include('../partials/head') %>
         <link rel="stylesheet" href="/css/profile.css">
-        <title>Document</title>
+        <title>userDetail</title>
 </head>
 
 <body>
@@ -20,11 +20,9 @@
                         <br>
                         <p class="precio">Nombre y Apellido: <%= users.nombre%> <%= users.apellido%></p>
                         <p class="precio">Telefono: <%= users.telefono %> </p>
+                        <p class="precio">Categoria: <%= users.category %> </p>
                         <p class="precio">Email: <%= users.email %>  </p>
                         <br>
-                        <a href='/' class="home">Comenzar a comprar</a> 
-                        <br>
-                        <a href='/user/login' class="home">Cerrar sesión</a>
                         
                     </div>
                 </section>

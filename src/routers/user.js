@@ -33,9 +33,7 @@ router.get('/register', guestMiddleware, controller.register);
 
 //router.post('/register', upload.single('image'), controller.addUser);
 
-router.get('/:id', controller.profile1);
-
-router.get('/login', controller.getLogin);
+router.get('/:id', controller.userDetail);
 
 router.post('/register', controller.processRegister);
 

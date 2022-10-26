@@ -1,4 +1,37 @@
-//<h2>Hi <%= user.name %> </h2>
-<img src=    avatars/<%= user.avatar %>
-user.email
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head') %>
+        <link rel="stylesheet" href="/css/profile.css">
+        <title>Document</title>
+</head>
+
+<body>
+    <%- include('../partials/header') %>
+        <main>
+            <div class="main-sub">
+                <p class="inicio-bar"><a href="/">Inicio</a> > <a href="#">usuarios</a> > <a href="#">Nombre
+                        del usuario</a></p>
+                <section class="product">
+                    <img class="product-img" src=<%=users.image %> alt="">
+                    <div class="detalle">
+                        <p class="precio">Bienvenido a Mimame!</p>
+                        <br>
+                        <p class="precio">Nombre y Apellido: <%= users.nombre%> <%= users.apellido%></p>
+                        <p class="precio">Telefono: <%= users.telefono %> </p>
+                        <p class="precio">Email: <%= users.email %>  </p>
+                        <br>
+                        <a href='/' class="home">Comenzar a comprar</a> 
+                        <br>
+                        <a href='/user/login' class="home">Cerrar sesión</a>
+                        
+                    </div>
+                </section>
+                <br>
+        </main>
+        <%- include('../partials/footer') %>
+</body>
+
+</html>

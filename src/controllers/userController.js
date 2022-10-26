@@ -10,13 +10,13 @@ const controller = {
         const users = JSON.parse(usersJSON);
         res.render('users', { users: users });
     },
-    profile1: (req, res) => {
+    userDetail: (req, res) => {
         const id = req.params.id - 1
         const usersJSON = fs.readFileSync(path.join(__dirname, "../data/user.json"), "utf-8");
         const users = JSON.parse(usersJSON);
         const findUsers = users.find(actualUser => actualUser.id - 1 == id);
         if (findUsers) {
-            res.render('profile', {
+            res.render('userDetail', {
                 users: findUsers
             })
         }
@@ -27,6 +27,7 @@ const controller = {
     },
 
     register: (req, res) => {
+
         res.render('register');
     },
     processRegister: (req, res) => {
@@ -59,6 +60,7 @@ const controller = {
     getLogin: (req, res) => {
         res.render('login');
     },
+    
     loginUser: (req, res) => {
         let userToLogin = User.findByField('email', req.body.email);
 
@@ -67,7 +69,12 @@ const controller = {
             if (okPassword) {
                 delete userToLogin.password;
                 req.session.userLogged = userToLogin
-                return res.redirect('/userProfile')
+
+                if(req.body.recodar){
+                    res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 10})
+                }
+
+                return res.redirect('user/userProfile')
             }
             return res.render('login', {
                 errors: {
@@ -102,11 +109,12 @@ const controller = {
 
     profile: (req, res) => {
         return res.render('userProfile', {
-            user: req.session.userLogged
+            users: req.session.userLogged
         });
     },
 
     logout: (req, res) => {
+        res.clearCookie('userEmail');
         req.session.destroy();
         return res.redirect('/');
     }
