@@ -30,10 +30,21 @@ const controller = {
 
         res.render('register');
     },
+    /*processRegister:(req, res) =>{
+        return res.send (req.body);
+       const resultValidation = validationResult(req);
+       return res.send(resultValidation);
+    },*/
     processRegister: (req, res) => {
-        return res.send(req.body);
-    },
-    addUser: (req, res) => {
+        const resultValidation = validationResult(req);
+
+        if (resultValidation.errors.length > 0){
+            res.render('register', {
+                errors: resultValidation.mapped(),
+                oldData: req.body
+            })
+        }
+        
         const usersJSON = fs.readFileSync(path.join(__dirname, "../data/user.json"), "utf-8");
         const users = JSON.parse(usersJSON);
 

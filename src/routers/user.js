@@ -29,13 +29,24 @@ const validationLog = [
 
 router.get('/', controller.users);
 
+const validations = [
+    body("Nombre").notEmpty(),
+    body("Apellido").notEmpty(),
+    body("Email").notEmpty(),
+    body("Telefono").notEmpty(),
+    body("Password").notEmpty(),
+    body("confirmPassword").notEmpty(),
+]
+
 router.get('/register', guestMiddleware, controller.register);
 
-router.post('/register', upload.single('image'), controller.addUser);
+router.post('/register', upload.single('image'),  validations, controller.processRegister);
 
 router.get('/detail/:id', controller.userDetail);
 
-//router.post('/register', controller.processRegister);
+//router.post ('/register' , upload.single('image'), validations, controller.processRegister);
+
+router.get('/:id', controller.userDetail);
 
 router.get('/login', [guestMiddleware, validationLog], controller.getLogin);
 
