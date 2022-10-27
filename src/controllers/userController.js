@@ -74,7 +74,7 @@ const controller = {
                     res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 10})
                 }
 
-                return res.redirect('user/userProfile')
+                return res.redirect('/user/profile')
             }
             return res.render('login', {
                 errors: {

@@ -8,6 +8,7 @@ const methodOverride = require('method-override');
 const session = require('express-session');
 const cookies = require('cookie-parser');
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
+const morgan = require('morgan');
 
 
 app.set('view engine','ejs');
@@ -20,6 +21,7 @@ app.set("views", [
 app.listen(3030, ()=>{
     console.log(" ");
 });
+app.use(morgan("tiny"));
 
 app.use(session({ 
     secret: "Shhh, it's a secret",

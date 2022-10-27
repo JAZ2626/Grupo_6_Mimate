@@ -31,15 +31,15 @@ router.get('/', controller.users);
 
 router.get('/register', guestMiddleware, controller.register);
 
-//router.post('/register', upload.single('image'), controller.addUser);
+router.post('/register', upload.single('image'), controller.addUser);
 
-router.get('/:id', controller.userDetail);
+router.get('/detail/:id', controller.userDetail);
 
-router.post('/register', controller.processRegister);
+//router.post('/register', controller.processRegister);
 
 router.get('/login', [guestMiddleware, validationLog], controller.getLogin);
 
-router.post('/login', authMiddleware.checkPassword, controller.loginUser);
+router.post('/login', /*authMiddleware.checkPassword,*/ controller.loginUser);
 
 router.get('/productCart', controller.productCart);
 
