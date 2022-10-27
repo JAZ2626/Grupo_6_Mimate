@@ -23,6 +23,13 @@ const controller = {
 
 
     },
+
+    admin:(req, res) => {
+        const productsJSON = fs.readFileSync(path.join(__dirname, "../data/products.json"), "utf-8");
+        const products = JSON.parse(productsJSON);
+            res.render('productsAdmin', {products:products,
+            });
+    },
     products: (req, res) => {
         const productsJSON = fs.readFileSync(path.join(__dirname, "../data/products.json"), "utf-8");
         const products = JSON.parse(productsJSON);
