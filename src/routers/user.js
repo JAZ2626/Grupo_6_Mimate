@@ -27,7 +27,6 @@ const validationLog = [
         .isLength({ min: 6 }).withMessage('La contraseña debe tener al menos 6 caracteres'),
 ];
 
-router.get('/', controller.users);
 
 const validations = [
     body("Nombre").notEmpty(),
@@ -36,7 +35,9 @@ const validations = [
     body("Telefono").notEmpty(),
     body("Password").notEmpty(),
     body("confirmPassword").notEmpty(),
-]
+];
+
+router.get('/', controller.users);
 
 router.get('/register', guestMiddleware, controller.register);
 
@@ -45,8 +46,6 @@ router.post('/register', upload.single('image'),  validations, controller.proces
 router.get('/detail/:id', controller.userDetail);
 
 //router.post ('/register' , upload.single('image'), validations, controller.processRegister);
-
-router.get('/:id', controller.userDetail);
 
 router.get('/login', [guestMiddleware, validationLog], controller.getLogin);
 
