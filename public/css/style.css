@@ -126,7 +126,23 @@
     font-size: 16px;
     padding: 5px 0;
 }
+.dropdown-menu li {
+    display:block
+}
+ul li ul.dropdown-menu li{
+display: block;
+}
+ul li ul.dropdown-menu  {
+    width:100px;
+    background:#be9485;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
 
+ul li:hover ul.dropdown-menu{
+    display: block;
+}
 footer {
     background-color:#be9485; 
 }

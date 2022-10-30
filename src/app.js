@@ -21,7 +21,7 @@ app.set("views", [
 app.listen(3030, ()=>{
     console.log(" ");
 });
-app.use(morgan("tiny"));
+//app.use(morgan("tiny"));
 
 app.use(session({ 
     secret: "Shhh, it's a secret",
@@ -37,7 +37,7 @@ app.use(methodOverride('_method'));
 
 app.use(express.static(path.join(__dirname, "../public")));
 
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 
 app.use(express.json());
 

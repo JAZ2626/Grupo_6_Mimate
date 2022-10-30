@@ -27,7 +27,6 @@ const controller = {
     },
 
     register: (req, res) => {
-
         res.render('register');
     },
     /*processRegister:(req, res) =>{
@@ -65,7 +64,7 @@ const controller = {
 
         fs.writeFileSync(path.join(__dirname, "../data/user.json"), newListUsers, "utf-8");
 
-        res.redirect('/')
+        res.redirect('/user/login')
 
     },
     getLogin: (req, res) => {
@@ -74,14 +73,13 @@ const controller = {
     
     loginUser: (req, res) => {
         let userToLogin = User.findByField('email', req.body.email);
-
         if (userToLogin) {
             let okPassword = bcrypt.compareSync(req.body.password, userToLogin.password)
             if (okPassword) {
                 delete userToLogin.password;
                 req.session.userLogged = userToLogin
 
-                if(req.body.recodar){
+                if(req.body.recordar){
                     res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 10})
                 }
 

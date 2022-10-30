@@ -2,10 +2,10 @@ const fs = require('fs');
 const path = require('path');
 
 const User = {
-    fileName: './data/user.json',
+    fileName: '../data/user.json',
 
     getData: function () {
-        return JSON.parse(fs.readFileSync(this.fileName, 'utf-8'));
+        return JSON.parse(fs.readFileSync(path.join(__dirname, this.fileName), 'utf-8'));
     },
 
     generateId: function () {
