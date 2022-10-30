@@ -19,3 +19,9 @@ Nos organizamos y nos dividimos bien las tareas, cada una aporto y realizo su pa
 Hacer más:
 Creemos que con este sprint nos manejamos un poco mejor con el tema de git.
 
+**Sprint 5:**
+Continuar haciendo:
+Nos organizamos y nos dividimos bien las tareas, cada una aporto y realizo su parte a tiempo.
+
+Hacer más:
+Nos manejamos mejor con la division de tareas!.
