@@ -29,12 +29,28 @@ const validationLog = [
 
 
 const validations = [
-    body("Nombre").notEmpty(),
-    body("Apellido").notEmpty(),
-    body("Email").notEmpty(),
-    body("Telefono").notEmpty(),
-    body("Password").notEmpty(),
-    body("confirmPassword").notEmpty(),
+    body("Nombre").notEmpty().withMessage("tenes que poner tu nombre"),
+    body("Apellido").notEmpty().withMessage("tenes que poner tu apellido"),
+    body("Email").notEmpty().withMessage("tenes que poner tu email"),
+    body("Telefono").notEmpty().withMessage("tenes que poner tu telefono"),
+    body("Password").notEmpty().withMessage("tenes que poner tu contraseña").bail()
+    .isEmail().withMessage('Campo Invalido'),
+    body("confirmPassword").notEmpty().withMessage("tenes que poner tu confirmar tu contraseña"),
+    body("Agregar Imagen").custom((value, { req })=> {
+        let file = req.file;
+        let acceptedExtensions = ['.jpg', '.png'];
+        if (!file) {
+            throw new Error('Subi una imagen');
+        } else{ 
+            let fileExtension = path.extname(file.originalname);
+            if (!acceptedExtensions.includes(fileExtension)){
+           throw new Error('Ese formato de archivo no es permitido las permitidas son $acceptedExtensions.join(' ,')');
+
+        }
+       
+        }
+        return true;
+    })
 ];
 
 router.get('/', controller.users);

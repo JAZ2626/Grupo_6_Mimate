@@ -42,7 +42,8 @@ const controller = {
                 errors: resultValidation.mapped(),
                 oldData: req.body
             })
-        }
+            return res.semd('Estas registrad@');
+        };
         
         const usersJSON = fs.readFileSync(path.join(__dirname, "../data/user.json"), "utf-8");
         const users = JSON.parse(usersJSON);
