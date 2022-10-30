@@ -29,22 +29,30 @@ const validationLog = [
 
 
 const validations = [
-    body("Nombre").notEmpty().withMessage("tenes que poner tu nombre"),
-    body("Apellido").notEmpty().withMessage("tenes que poner tu apellido"),
-    body("Email").notEmpty().withMessage("tenes que poner tu email"),
-    body("Telefono").notEmpty().withMessage("tenes que poner tu telefono"),
-    body("Password").notEmpty().withMessage("tenes que poner tu contraseña").bail()
-    .isEmail().withMessage('Campo Invalido'),
-    body("confirmPassword").notEmpty().withMessage("tenes que poner tu confirmar tu contraseña"),
-    body("Agregar Imagen").custom((value, { req })=> {
+    body("Nombre").notEmpty().withMessage("Tenes que poner tu nombre"),
+    body("Apellido").notEmpty().withMessage("Tenes que poner tu apellido"),
+    body('Email').notEmpty().withMessage('Tenes que escribir un email').bail()
+    .isEmail().withMessage("Formato de email inválido"),
+    body("Telefono").notEmpty().withMessage("Tenes que poner tu telefono").bail()
+    .isInt().withMessage("Tiene que ser un valor númerico"),
+    body('Password').notEmpty().withMessage('Debes completar una contraseña válida')
+    .trim().notEmpty().isLength({ min: 6}).withMessage('La contraseña debe tener al menos 6 caracteres'), 
+    body('confirmPassword').notEmpty().withMessage('Debes completar la confirmacion de tu contraseña')
+   .trim().custom((value, {req}) => {
+         if (value !== req.body.Password) {
+             throw new Error('Las contraseñas deben coincidir')
+         }
+         return true; 
+     }),
+    body("image").custom((value, { req })=> {
         let file = req.file;
-        let acceptedExtensions = ['.jpg', '.png'];
+        let acceptedExtensions = ['.jpg', '.jpeg','.png', '.gif'];
         if (!file) {
             throw new Error('Subi una imagen');
         } else{ 
             let fileExtension = path.extname(file.originalname);
             if (!acceptedExtensions.includes(fileExtension)){
-           throw new Error('Ese formato de archivo no es permitido las permitidas son $acceptedExtensions.join(' ,')');
+           throw new Error('Ese formato de archivo no es permitido las permitidas son acceptedExtensions.join(' ,')');
 
         }
        
@@ -60,8 +68,6 @@ router.get('/register', guestMiddleware, controller.register);
 router.post('/register', upload.single('image'),  validations, controller.processRegister);
 
 router.get('/detail/:id', controller.userDetail);
-
-//router.post ('/register' , upload.single('image'), validations, controller.processRegister);
 
 router.get('/login', [guestMiddleware, validationLog], controller.getLogin);
 

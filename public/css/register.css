@@ -50,6 +50,11 @@ button a {
     padding: 8px;
     background-color: #f5eee862;
     border-color: #f5eee862;
+    border-radius: 5%;
+}
+.control.is-invalid {
+   
+    border-color: #ff000062;
 }
 
 .control-formulario2 {
@@ -69,6 +74,9 @@ button {
     padding: 5px 10px;
     font-size: 16px;
     margin-bottom: 6px;
+}
+.danger-text {
+    color: red
 }
 
 @media (min-width: 480px){

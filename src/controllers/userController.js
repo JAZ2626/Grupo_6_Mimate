@@ -29,33 +29,27 @@ const controller = {
     register: (req, res) => {
         res.render('register');
     },
-    /*processRegister:(req, res) =>{
-        return res.send (req.body);
-       const resultValidation = validationResult(req);
-       return res.send(resultValidation);
-    },*/
+
     processRegister: (req, res) => {
         const resultValidation = validationResult(req);
-
+console.log(req.file)
         if (resultValidation.errors.length > 0){
             res.render('register', {
                 errors: resultValidation.mapped(),
                 oldData: req.body
             })
-            return res.semd('Estas registrad@');
-        };
-        
+        } else {
         const usersJSON = fs.readFileSync(path.join(__dirname, "../data/user.json"), "utf-8");
         const users = JSON.parse(usersJSON);
 
         const newUser = {
             id: users[users.length - 1].id + 1,
-            nombre: req.body.nombre,
-            apellido: req.body.apellido,
-            telefono: Number(req.body.telefono),
+            nombre: req.body.Nombre,
+            apellido: req.body.Apellido,
+            telefono: Number(req.body.Telefono),
             image: '/imgUsers/' + req.file.filename,
-            email: req.body.email,
-            password: bcrypt.hashSync(req.body.password, 10),
+            email: req.body.Email,
+            password: bcrypt.hashSync(req.body.Password, 10),
             category: "usuario"     
         };
 
@@ -65,7 +59,7 @@ const controller = {
 
         fs.writeFileSync(path.join(__dirname, "../data/user.json"), newListUsers, "utf-8");
 
-        res.redirect('/user/login')
+        res.redirect('/user/login')}
 
     },
     getLogin: (req, res) => {

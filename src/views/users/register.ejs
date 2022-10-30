@@ -19,85 +19,79 @@
                         <div class="parte-arriba">
                             <div class="control-formulario">
                                 <label>Nombre:</label>
-                                <input type="text" name="Nombre" class="control <%= locals.errors && errors.Nombre ? 'is-invalid' : null %> " required 
-                                value="<%= locals.oldData ? oldData.Nombre : null %>"
-                                >
+                                <input type="text" name="Nombre"
+                                    class="control <%= locals.errors && errors.Nombre ? 'is-invalid' : null %> "
+                                     value="<%= locals.oldData ? oldData.Nombre : null %>">
                                 <% if (locals.errors && errors.Nombre) { %>
-                                    <div class="danger-text"> 
-                                        <%= errors.Nombre.msg %> 
+                                    <div class="danger-text">
+                                        <%= errors.Nombre.msg %>
                                     </div>
                                     <% } %>
                             </div>
-                            <span class="feedback"></span>
-                            <div class="control-formulario" >
+                            <div class="control-formulario">
                                 <label>Apellido:</label>
-                                <input type="text" name="Apellido" class="control <%= locals.errors && errors.Apellido ? 'is-invalid' : null %>" required
-                                value="<%= locals.oldData ? oldData.Apellido : null %> "
-                                >
-                                <% if (locals.errors && errors.Apellido) { %>
-                                    <div class="danger-text"> 
-                                        <%= errors.Apellido.msg %> 
-                                    </div>
-                                    <% } %>
-                                <span class="feedback"></span>
+                                <input type="text" name="Apellido"
+                                class="control <%= locals.errors && errors.Apellido ? 'is-invalid' : null %> "
+                                 value="<%= locals.oldData ? oldData.Apellido : null %>">
+                            <% if (locals.errors && errors.Apellido) { %>
+                                <div class="danger-text">
+                                    <%= errors.Apellido.msg %>
+                                </div>
+                                <% } %>
                             </div>
                             <div class="control-formulario">
                                 <label>Email:</label>
-                                <input type="email" name="Email" class="control <%= locals.errors && errors.Email ? 'is-invalid' : null %>" required
-                                value="<%= locals.oldData ? oldData.Email : null %>
-                                >
+                                <input type="email" name="Email"
+                                    class="control <%= locals.errors && errors.Email ? 'is-invalid' : null %>"
+                                    value="<%= locals.oldData ? oldData.Email : null %>">
                                 <% if (locals.errors && errors.Email) { %>
-                                    <div class="danger-text"> 
-                                        <%= errors.Email.msg %> 
+                                    <div class="danger-text">
+                                        <%= errors.Email.msg %>
                                     </div>
                                     <% } %>
-                                <span class="feedback"></span>
                             </div>
                             <div class="control-formulario">
                                 <label>Telefono:</label>
-                                <input type="tel" name="Telefono" class="control <%= locals.errors && errors.Telefono ? 'is-invalid' : null %>"
-                                value="<%= locals.oldData ? oldData.Telefono : null %>
-                                >
+                                <input type="tel" name="Telefono"
+                                    class="control <%= locals.errors && errors.Telefono ? 'is-invalid' : null %>"
+                                    value="<%= locals.oldData ? oldData.Telefono : null %>">
                                 <% if (locals.errors && errors.Telefono) { %>
-                                    <div class="danger-text"> 
-                                        <%= errors.Telefono.msg %> 
+                                    <div class=" danger-text">
+                                        <%= errors.Telefono.msg %>
                                     </div>
                                     <% } %>
-                                <span class="feedback"></span>
                             </div>
                             <div class="control-formulario">
                                 <label>Contraseña:</label>
-                                <input type="password" name="Password" class="control <%= locals.errors && errors.Password ? 'is-invalid' : null %>" required
-                                value="<%= locals.oldData ? oldData.Password : null %>
-                                >
+                                <input type="password" name="Password"
+                                    class="control <%= locals.errors && errors.Password ? 'is-invalid' : null %>"
+                                    value="<%= locals.oldData ? oldData.Password : null %>">
                                 <% if (locals.errors && errors.Password) { %>
-                                    <div class="danger-text"> 
-                                        <%= errors.Password.msg %> 
+                                    <div class=" danger-text">
+                                        <%= errors.Password.msg %>
                                     </div>
                                     <% } %>
-                                <span class="feedback"></span>
                             </div>
                             <div class="control-formulario">
                                 <label>Confirmar contraseña:</label>
-                                <input type="password" name="confirmPassword" class="control <%= locals.errors && errors.confirmPassword ? 'is-invalid' : null %>" required
-                                value="<%= locals.oldData ? oldData.confirmPassword : null %> "
-                                >
+                                <input type="password" name="confirmPassword"
+                                    class="control <%= locals.errors && errors.confirmPassword ? 'is-invalid' : null %>"
+                                     value="<%= locals.oldData ? oldData.confirmPassword : null %>">
                                 <% if (locals.errors && errors.confirmPassword) { %>
-                                    <div class="danger-text"> 
-                                        <%= errors.confirmPassword.msg %> 
+                                    <div class="danger-text">
+                                        <%= errors.confirmPassword.msg %>
                                     </div>
                                     <% } %>
-                                <span class="feedback"></span>
                             </div>
                             <div class="control-formulario">
                                 <label>Agregar Imagen:</label>
-                                <input type="file" name="image" class="control" required>
+                                <input type="file" name="image" class="control <%= locals.errors && errors.image ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.image: null %>">
                                 <% if (locals.errors && errors.image) { %>
-                                    <div class="danger-text"> 
-                                        <%= errors.image.msg %> 
+                                    <div class="danger-text">
+                                        <%= errors.image.msg %>
                                     </div>
                                     <% } %>
-                                <span class="feedback"></span>
+
                             </div>
                         </div>
                         <div class="control-formulario2">

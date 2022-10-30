@@ -1,43 +1,6 @@
 [
     {
         "id": 1,
-        "nombre": "marta",
-        "apellido": "garcia",
-        "email": "martagarcia@gmail.com",
-        "password": "*******"
-    },
-    {
-        "id": 456,
-        "nombre": "jose",
-        "apellido": "rodriguez",
-        "email": "joserodriguez@gmail.com",
-        "password": "*********"
-    },
-    {
-        "id": 789,
-        "nombre": "mirta",
-        "apellido": "gonzales",
-        "email": "mirgon@gmail.com",
-        "password": "********"
-    },
-    {
-        "id": 101112,
-        "nombre": "sebastian",
-        "apellido": "perez",
-        "email": "sebasp@gmail.com",
-        "password": "*****"
-    },
-    {
-        "id": 1,
-        "nombre": "Jana",
-        "apellido": "teitelbaum",
-        "image": "/imgUsers/1666190253241-WhatsApp Image 2022-10-18 at 8.09.43 PM.jpeg",
-        "email": "janateitegl@gmail.com",
-        "password": "Jasna",
-        "telefono": 122
-    },
-    {
-        "id": 4,
         "nombre": "sara",
         "telefono": 4444,
         "image": "/imgUsers/1666795385902-img_4138.jpg",
@@ -46,7 +9,7 @@
         "category": "admin"
     },
     {
-        "id": 5,
+        "id": 2,
         "nombre": "arie",
         "apellido": "Gorowitz",
         "telefono": 2555566,
@@ -56,23 +19,33 @@
         "category": "usuario"
     },
     {
-        "id": 6,
+        "id": 3,
         "nombre": "Jana",
         "apellido": "Teitelbaum",
         "telefono": 123456,
         "image": "/imgUsers/1666796971407-img_4138.jpg",
         "email": "janateitel@gmail.com",
         "password": "$2a$10$y7J7M7AKwZpXlJNJIImCZOxhIBkD/BiCln4Qvg5t9KW2JAlBUEGRW",
-        "category": "usuario"
+        "category": "admin"
     },
     {
-        "id": 7,
+        "id": 4,
         "nombre": "iosi",
         "apellido": "Teitelbaum",
         "telefono": 1111,
         "image": "/imgUsers/1666797310146-img_4138.jpg",
         "email": "iosi@gmail.com",
         "password": "$2a$10$llEKmtwkGhB6RVmxoHISneWM1jqW8nZFMTLtzOwHqclBrypltapnu",
+        "category": "usuario"
+    },
+    {
+        "id": 5,
+        "nombre": "Roza",
+        "apellido": " Gorowitz",
+        "telefono": 13222,
+        "image": "/imgUsers/1667112680836-WhatsApp Image 2022-10-27 at 2.27.35 PM.jpeg",
+        "email": "roza@gmail.com",
+        "password": "$2a$10$kK/CyJmkAs5kAj4oDLeD.ecLfP0RNaqmdsZekGJZd0VdBS/SZyRVG",
         "category": "usuario"
     }
 ]
