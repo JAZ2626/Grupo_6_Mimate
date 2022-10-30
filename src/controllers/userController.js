@@ -38,7 +38,20 @@ console.log(req.file)
                 errors: resultValidation.mapped(),
                 oldData: req.body
             })
-        } else {
+        } 
+         let userInDB = User.findByField('email', req.body.Email);
+
+		if (userInDB) {
+			return res.render('register', {
+				errors: {
+					email: {
+						msg: 'Este email ya está registrado'
+					}
+				},
+				oldData: req.body
+			});
+		}
+        
         const usersJSON = fs.readFileSync(path.join(__dirname, "../data/user.json"), "utf-8");
         const users = JSON.parse(usersJSON);
 
