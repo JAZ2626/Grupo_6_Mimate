@@ -32,26 +32,26 @@ const controller = {
 
     processRegister: (req, res) => {
         const resultValidation = validationResult(req);
-console.log(req.file)
-        if (resultValidation.errors.length > 0){
-            res.render('register', {
+        console.log(req.file)
+        if (resultValidation.errors.length > 0) {
+            return res.render('register', {
                 errors: resultValidation.mapped(),
                 oldData: req.body
             })
-        } 
-         let userInDB = User.findByField('email', req.body.Email);
+        }
+        let userInDB = User.findByField('email', req.body.Email);
 
-		if (userInDB) {
-			return res.render('register', {
-				errors: {
-					email: {
-						msg: 'Este email ya está registrado'
-					}
-				},
-				oldData: req.body
-			});
-		}
-        
+        if (userInDB) {
+            return res.render('register', {
+                errors: {
+                    email: {
+                        msg: 'Este email ya está registrado'
+                    }
+                },
+                oldData: req.body
+            });
+        }
+
         const usersJSON = fs.readFileSync(path.join(__dirname, "../data/user.json"), "utf-8");
         const users = JSON.parse(usersJSON);
 
@@ -63,7 +63,7 @@ console.log(req.file)
             image: '/imgUsers/' + req.file.filename,
             email: req.body.Email,
             password: bcrypt.hashSync(req.body.Password, 10),
-            category: "usuario"     
+            category: "usuario"
         };
 
         users.push(newUser);
@@ -72,13 +72,15 @@ console.log(req.file)
 
         fs.writeFileSync(path.join(__dirname, "../data/user.json"), newListUsers, "utf-8");
 
-        res.redirect('/user/login')}
-
+        res.redirect('/user/login')
     },
+
+
+
     getLogin: (req, res) => {
         res.render('login');
     },
-    
+
     loginUser: (req, res) => {
         let userToLogin = User.findByField('email', req.body.email);
         if (userToLogin) {
@@ -87,8 +89,8 @@ console.log(req.file)
                 delete userToLogin.password;
                 req.session.userLogged = userToLogin
 
-                if(req.body.recordar){
-                    res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 10})
+                if (req.body.recordar) {
+                    res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 10 })
                 }
 
                 return res.redirect('/user/profile')

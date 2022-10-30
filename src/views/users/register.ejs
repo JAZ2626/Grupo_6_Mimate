@@ -85,7 +85,7 @@
                             </div>
                             <div class="control-formulario">
                                 <label>Agregar Imagen:</label>
-                                <input type="file" name="image" class="control <%= locals.errors && errors.image ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.image: null %>">
+                                <input type="file" name="image" class="control <%= locals.errors && errors.image ? 'is-invalid' : null %>">
                                 <% if (locals.errors && errors.image) { %>
                                     <div class="danger-text">
                                         <%= errors.image.msg %>
