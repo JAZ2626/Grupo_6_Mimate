@@ -48,6 +48,23 @@ mostramos lo que cada uno hiso, y terminamos con las rutas de los productos json
 **Mièrcoles: 28/09/2022:**
 Agregamos detalles y terminamos lo que faltaba.
 
+**Viernes: 7/10/2022:**
+Separarmos las tareas del sprint5.
+
+**Lunes: 3/10/2022:**
+Trabajamos en clase cada una con su parte y nos ayudamos mutuamente.
+
+**Miercoles: 19/10/2022:**
+Trabajamos en clase cada una con su parte y nos ayudamos mutuamente.
+
+**Lunes: 24/10/2022:**
+Trabajamos en clase cada una con su parte y nos ayudamos mutuamente.
+
+**Miércoles: 26/10/2022:**
+Trabajamos en clase cada una con su parte y nos ayudamos mutuamente.
+
+**Domingo: 31/10/2022:**
+Cierre de proyecto
 
 
 
