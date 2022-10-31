@@ -1,8 +1,27 @@
 <header class="main-header">
     <div class="top-bar">
-        <a href="#" class="hamburguer-button">
-            <i class="fas fa-bars"></i>
-        </a>
+        <ul class="non">
+            <li>
+                <a href="#" class="hamburguer-button">
+                    <i class="fas fa-bars"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <br>
+                    <li><a href="/"><h6 class="inicio1"> Inicio  </h6></a></li>
+                    <br>
+                    <li><a href="/products/products"> <h6 class="inicio1"> Productos </h6></a> </li>
+                    <br>
+                    <li><a href="/products/services"><h6 class="inicio1"> Servicios</h6> </a> </li>
+                    <br>
+                    <li><a href="#"><h6 class="inicio1"> Experiencia en Mimate</h6> </a> </li>
+                    <br>
+                    <li><a href="#"><h6 class="inicio1"> Contacto </h6></a> </li>
+                    <br>
+                    <li><a href="#"><h6 class="inicio1"> <i class="fa-brands fa-whatsapp"></i></h6> </a> </li>
+                </ul>
+            </li>
+        </ul>
         <a href="/" class="lo-nom">
             <img src="/imgProducts/LOGO.svg" class="logo">
             <h3 class="nombre">Mimate</h3>
@@ -26,20 +45,20 @@
                         <h6 class="inicio">Hi <%= locals.userLogged.nombre %> ↓</h6>
                     </a>
                     <ul class="dropdown-menu">
-                       <li><a href="/user/profile">
-                            <h6 class="inicio">My profile</h6>
-                        </a></li>
+                        <li><a href="/user/profile">
+                                <h6 class="inicio1">My profile</h6>
+                            </a></li>
 
 
                         <% if (locals.userLogged.category==="admin" ) { %>
-                            <li><a href="/products/admin">
-                                <h6 class="inicio">Admin</h6>
-                            </a></li>
-                        <% } %>
+                            <li><a href="#">
+                                    <h6 class="inicio1">Admin</h6>
+                                </a></li>
+                            <% } %>
                                 <li>
-                                <a href="/user/logout">
-                                    <h6 class="inicio">Logout</h6>
-                                </a>
+                                    <a href="/user/logout">
+                                        <h6 class="inicio1">Logout</h6>
+                                    </a>
                                 </li>
 
                     </ul>

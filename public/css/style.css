@@ -18,7 +18,7 @@
     align-content: center;
 }
 
-.text-bar a h6, .text-bar a i {
+.text-bar a h6, .text-bar a i,.non a h6, .non a i {
     font-size: 14px;
 }
 .lo-nom {
@@ -82,7 +82,7 @@
     font-size: 12px;
 }
 
-.top-bar ul {
+.text-bar, .non {
     display: flex;
     align-items: center;
     list-style: none;
@@ -91,7 +91,7 @@
 
 }
 
-.text-bar a {
+.text-bar a, .non a {
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -102,6 +102,11 @@
 
 .inicio {
     display: none;
+    margin: 0;
+    padding: 0 5px;
+}
+
+.inicio1 {
     margin: 0;
     padding: 0 5px;
 }
@@ -126,18 +131,22 @@
     font-size: 16px;
     padding: 5px 0;
 }
-.dropdown-menu li {
-    display:block
-}
+
 ul li ul.dropdown-menu li{
 display: block;
 }
 ul li ul.dropdown-menu  {
-    width:100px;
+    width: 50px;
     background:#be9485;
     position: absolute;
     z-index: 999;
     display: none;
+}
+.non ul.dropdown-menu  {
+    width:120px;
+}
+.non a:hover ul.dropdown-menu{
+    display: block;
 }
 
 ul li:hover ul.dropdown-menu{
@@ -190,6 +199,17 @@ font-size: 12px;
 
 
 @media (min-width: 480px) {
+    .non ul{
+    display: none;
+    }
+    .non {
+    display: none;
+    }
+
+    ul li ul.dropdown-menu{
+    width: 100px;
+    }
+    
     .logo {
         display: block;
     }
