@@ -40,7 +40,6 @@ const controller = {
             })
         }
         let userInDB = User.findByField('email', req.body.email);
-console.log
         if (userInDB) {
             return res.render('register', {
                 errors: {
