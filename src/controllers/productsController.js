@@ -53,7 +53,7 @@ const controller = {
         console.log(productEdit);
         if (productEdit){res.render('editProduct', {productEdit: productEdit});}
        else{
-        res.redirect("/")
+        res.redirect("/products/admin")
        }
     },
 
@@ -81,9 +81,8 @@ const controller = {
 
         fs.writeFileSync(path.join(__dirname, "../data/products.json"), newListProducts, "utf-8");
         
-        if (newProduct.category === 'product'){
-            res.redirect('/products/products')
-        }else{res.redirect('/products/services')};
+            res.redirect('/products/admin');
+       
         
         
     },
@@ -116,9 +115,7 @@ const controller = {
 
         fs.writeFileSync(path.join(__dirname, "../data/products.json"), newListProductsA, "utf-8");
         
-        if ( editProduct.category === 'product'){
-            res.redirect('/products/products')
-        } else {res.redirect('/products/services')};
+      res.redirect('/products/admin')
         
     }, 
 
@@ -133,8 +130,7 @@ const controller = {
 
         fs.writeFileSync(path.join(__dirname, "../data/products.json"), ListProducts, "utf-8");
         
-            res.redirect('/')
-
+             res.redirect('/products/admin')
 },
 }
 module.exports = controller;
