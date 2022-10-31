@@ -39,11 +39,11 @@ const controller = {
                 oldData: req.body
             })
         }
-        let userInDB = User.findByField('email', req.body.email);
+        let userInDB = User.findByField('email', req.body.Email);
         if (userInDB) {
             return res.render('register', {
                 errors: {
-                    email: {
+                    Email: {
                         msg: 'Este email ya está registrado'
                     }
                 },
