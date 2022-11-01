@@ -48,5 +48,6 @@ app.use('/user', routerUser);
 app.use('/products', routerProducts);
 
 app.use((req, res, next) => {
-    res.status(404).render('index')
+
+    res.status(404).redirect("/")
   })
